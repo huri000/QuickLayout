@@ -8,8 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLayout'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of QuickLayout.'
+  s.platform = :ios
+  s.ios.deployment_target = '9.0'
+  s.requires_arc = true
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,15 +31,16 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/huri000@gmail.com/QuickLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'QuickLayout/Classes/**/*'
+  s.source_files = 'QuickLayout/**/*.{swift,h}'
   
   # s.resource_bundles = {
   #   'QuickLayout' => ['QuickLayout/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  
+  # s.dependency 'Quick', '1.2.0'
+  # s.dependency 'Nimble', '7.0.2'
+
 end
