@@ -1,7 +1,9 @@
 PODS:
-  - QuickLayout (0.1.5)
+  - LoremIpsum (1.0.0)
+  - QuickLayout (0.1.7)
 
 DEPENDENCIES:
+  - LoremIpsum (~> 1.0)
   - QuickLayout (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  QuickLayout: 71ec0958a42b8cb49284d8d72d0dc79913421667
+  LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
+  QuickLayout: 4771abbd025ae83f7774e6a678e078d8d7068856
 
-PODFILE CHECKSUM: 4355e38a9b1d4a41449c3e8188a583e84654d465
+PODFILE CHECKSUM: 85dfba5de77f9fe859e57f0c8ab4983957fd00cf
 
 COCOAPODS: 1.3.0

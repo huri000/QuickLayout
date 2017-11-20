@@ -1,0 +1,6 @@
+framework module LoremIpsum {
+  umbrella header "LoremIpsum-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,51 +13,54 @@ extension Array where Element: UIView {
     
     // MARK: Set constant edge for each and every view in Array
     @discardableResult
-    public func setConstant(edge: NSLayoutAttribute, value: CGFloat, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+    public func setConstant(_ edge: NSLayoutAttribute, value: CGFloat, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
         var constraintsArray: [NSLayoutConstraint] = []
         for view in self {
-            let constraint = view.setConstant(edge: edge, value: value)!
+            let constraint = view.setConstant(edge, value: value)
             constraintsArray.append(constraint)
+        }
+        
+        return constraintsArray
+    }
+    
+    // MARK: Set constant edges (plural)
+    @discardableResult
+    public func setConstant(edges: NSLayoutAttribute..., value: CGFloat, priority: UILayoutPriority = .required) -> [[NSLayoutConstraint]] {
+        var constraintsArray: [[NSLayoutConstraint]] = []
+        for view in self {
+            let constraints = view.setConstant(edges: edges, value: value, priority: priority)
+            constraintsArray.append(constraints)
         }
         return constraintsArray
     }
     
-    // MARK: Layout views consecutively according to a given axis (.vertically, .horizontally)
+    // MARK: Layout views consecutively according to a given axis. Values might be: .vertically, .horizontally
     @discardableResult
-    public func layoutConsecutive(axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
-        guard isValid else {
+    public func layout(_ axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+        guard isValidForQuickLayout else {
             return nil
         }
         let attributes = axis.attributes
-        var constraintsArray: [NSLayoutConstraint] = []
+        var constraints: [NSLayoutConstraint] = []
         for (index, view) in enumerated() {
             guard index > 0 else {
                 continue
             }
-            let constraint = view.layout(attributes.0, to: attributes.1, of: self[index-1], constant: constant, priority: priority)!
-            constraintsArray.append(constraint)
+            let previousView = self[index-1]
+            let constraint = view.layout(attributes.first, to: attributes.second, of: previousView, constant: constant, priority: priority)!
+            constraints.append(constraint)
         }
-        return constraintsArray
+        return constraints
     }
     
     // MARK: Layout views to superview axis (.vertically, .horizontally)
     @discardableResult
     public func layoutToSuperview(axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> ([NSLayoutConstraint], [NSLayoutConstraint])? {
-        let firstAttribute: NSLayoutAttribute
-        let secondAttribute: NSLayoutAttribute
-        switch axis {
-        case .horizontally:
-            firstAttribute = .left
-            secondAttribute = .right
-        case .vertically:
-            firstAttribute = .top
-            secondAttribute = .bottom
-        }
-        
-        guard let firstConstraints = layoutToSuperview(firstAttribute, constant: constant, priority: priority) else {
+        let attributes = axis.attributes
+        guard let firstConstraints = layoutToSuperview(attributes.first, constant: constant, priority: priority) else {
             return nil
         }
-        guard let secondConstraints = layoutToSuperview(secondAttribute, constant: -constant, priority: priority) else {
+        guard let secondConstraints = layoutToSuperview(attributes.second, constant: -constant, priority: priority) else {
             return nil
         }
         return (firstConstraints, secondConstraints)
@@ -66,16 +69,16 @@ extension Array where Element: UIView {
     // MARK: Layout UIView elements edge to superview
     @discardableResult
     public func layoutToSuperview(_ edge: NSLayoutAttribute, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
-        guard isValid else {
+        guard isValidForQuickLayout else {
             return nil
         }
-        return layout(to: edge, of: first!.superview!, multiplier: multiplier, margin: constant, priority: priority)
+        return layout(to: edge, of: first!.superview!, multiplier: multiplier, constant: constant, priority: priority)
     }
     
     // MARK: Layout UIView elements edge to anchorView edge
     @discardableResult
-    public func layout(_ firstEdge: NSLayoutAttribute? = nil, to anchorEdge: NSLayoutAttribute, of anchorView: UIView, multiplier: CGFloat = 1, margin: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
-        guard isValid else {
+    public func layout(_ firstEdge: NSLayoutAttribute? = nil, to anchorEdge: NSLayoutAttribute, of anchorView: UIView, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+        guard isValidForQuickLayout else {
             return nil
         }
         
@@ -89,45 +92,41 @@ extension Array where Element: UIView {
         var result: [NSLayoutConstraint] = []
         
         for view in self {
-            let constraint = view.layout(edge, to: anchorEdge, of: anchorView, multiplier: multiplier, constant: margin, priority: priority)!
+            let constraint = view.layout(edge, to: anchorEdge, of: anchorView, multiplier: multiplier, constant: constant, priority: priority)!
             result.append(constraint)
         }
         
         return result
     }
     
-    // MARK: Keep multiple views edge to anotherEdge of view
-    //    @discardableResult
-    //    public func layout(views: [UIView], edges: [NSLayoutAttribute], to anchorEdges: [NSLayoutAttribute], of anchorView: UIView, multiplier: CGFloat = 1, margin: CGFloat = 0) -> [[NSLayoutConstraint]]? {
-    //        guard validate(views: views) else {
-    //            return nil
-    //        }
-    //
-    //        guard edges.count == anchorEdges.count else {
-    //            print("Warning: Edges must be identical")
-    //            return nil
-    //        }
-    //
-    //        var result: [[NSLayoutConstraint]] = []
-    //        for view in views {
-    //            var viewConstraints: [NSLayoutConstraint] = []
-    //            for (edge, anchorEdge) in zip(edges, anchorEdges) {
-    //                let constraint = view.layout(edge, to: anchorEdge, of: anchorView, multiplier: multiplier, constant: margin)!
-    //                viewConstraints.append(constraint)
-    //            }
-    //            result.append(viewConstraints)
-    //        }
-    //        return result
-    //    }
-    //
-    private var isValid: Bool {
+    // MARK: Layout UIView elements edges to anchorView edge
+    @discardableResult
+    public func layout(_ edges: NSLayoutAttribute..., to anchorView: UIView, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [[NSLayoutConstraint]]? {
+        guard !edges.isEmpty && isValidForQuickLayout else {
+            return nil
+        }
+        
+        var result: [[NSLayoutConstraint]] = []
+        for view in self {
+            var viewConstraints: [NSLayoutConstraint] = []
+            for edge in edges {
+                let constraint = view.layout(edge, to: edge, of: anchorView, multiplier: multiplier, constant: constant, priority: priority)!
+                viewConstraints.append(constraint)
+            }
+            result.append(viewConstraints)
+        }
+        
+        return result
+    }
+    
+    private var isValidForQuickLayout: Bool {
         guard !isEmpty else {
             print("\(String(describing: self)) Error in func: \(#function), Views collection is empty!")
             return false
         }
         
         for view in self {
-            guard let validated = try? view.validate(), validated else {
+            guard view.isValidForQuickLayout else {
                 print("\(String(describing: self)) Error in func: \(#function)")
                 return false
             }

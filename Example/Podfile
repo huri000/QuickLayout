@@ -2,5 +2,6 @@ use_frameworks!
 
 target 'QuickLayout_Example' do
   pod 'QuickLayout', :path => '../'
-
+  pod 'LoremIpsum', '~> 1.0'
+  
 end
