@@ -2,8 +2,7 @@
 //  UIView+QuickLayout.swift
 //  QuickLayout
 //
-//  Created by Daniel on 12/06/2016.
-//  Copyright © 2016 Daniel Huri. All rights reserved.
+//  Created by Daniel Huri on 11/19/17.
 //
 
 import Foundation
@@ -11,12 +10,26 @@ import UIKit
 
 public enum ConstraintErrorType : Error {
     case nullifiedSuperview(NSString?)
+    case mismatchedEdgesCount(NSString?)
 }
 
 // MARK: Possible axes enum
 public enum LayoutAxis {
     case horizontally
     case vertically
+    var attributes: (NSLayoutAttribute, NSLayoutAttribute) {
+        let first: NSLayoutAttribute
+        let second: NSLayoutAttribute
+        switch self {
+        case .horizontally:
+            first = .left
+            second = .right
+        case .vertically:
+            first = .top
+            second = .bottom
+        }
+        return (first: first, second: second)
+    }
 }
 
 // MARK: Layout priorities which are mostly used
@@ -29,8 +42,8 @@ public extension UIView {
     
     // MARK: Content Wrap (Compression and Hugging)
     public func forceContentWrap() {
-        contentHuggingPriority = (UILayoutPriority.required, UILayoutPriority.required)
-        contentCompressionResistancePriority = (UILayoutPriority.required, UILayoutPriority.required)
+        contentHuggingPriority = (.required, .required)
+        contentCompressionResistancePriority = (.required, .required)
     }
     
     // MARK: Content Hugging Priority
@@ -98,7 +111,7 @@ public extension UIView {
         // Enable autolayout mechanism
         translatesAutoresizingMaskIntoConstraints = false
         
-        let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: value)
+        let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: value)
         constraint.priority = priority
         
         addConstraint(constraint)
@@ -122,7 +135,7 @@ public extension UIView {
     // MARK: Layout to superview edge (.width , .height, .left, .right, .leading, .trailing)
     @discardableResult
     public func layoutToSuperview(_ edge: NSLayoutAttribute, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> NSLayoutConstraint? {
-        guard let validationSuccess = try? validate(), validationSuccess == true else {
+        guard let validated = try? validate(), validated else {
             print("\(String(describing: self)) Error in func: \(#function)")
             return nil
         }
@@ -135,18 +148,9 @@ public extension UIView {
     // MARK: Layout to superview axis (.verically, .horizontally)
     @discardableResult
     public func layoutToSuperview(axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> (NSLayoutConstraint?, NSLayoutConstraint?)? {
-        let firstAttribute: NSLayoutAttribute
-        let secondAttribute: NSLayoutAttribute
-        switch axis {
-        case .horizontally:
-            firstAttribute = .left
-            secondAttribute = .right
-        case .vertically:
-            firstAttribute = .top
-            secondAttribute = .bottom
-        }
-        let firstConstraint = layoutToSuperview(firstAttribute, constant: constant, priority: priority)
-        let secondConstraint = layoutToSuperview(secondAttribute, constant: -constant, priority: priority)
+        let attributes = axis.attributes
+        let firstConstraint = layoutToSuperview(attributes.0, constant: constant, priority: priority)
+        let secondConstraint = layoutToSuperview(attributes.1, constant: -constant, priority: priority)
         
         guard firstConstraint != nil && secondConstraint != nil else { return nil }
         
@@ -157,8 +161,8 @@ public extension UIView {
     @discardableResult
     public func sizeToSuperview(withMultiplier mult: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> (NSLayoutConstraint?, NSLayoutConstraint?)?
     {
-        let widthConstraint = layoutToSuperview(NSLayoutAttribute.width, multiplier: mult, constant: constant, priority: priority)
-        let heightConstraint = layoutToSuperview(NSLayoutAttribute.height, multiplier: mult, constant: constant, priority: priority)
+        let widthConstraint = layoutToSuperview(.width, multiplier: mult, constant: constant, priority: priority)
+        let heightConstraint = layoutToSuperview(.height, multiplier: mult, constant: constant, priority: priority)
         
         guard widthConstraint != nil && heightConstraint != nil else { return nil }
         
@@ -190,7 +194,7 @@ public extension UIView {
     }
     
     // MARK: Privately used - validates the view has superview, and sets it's 'translatesAutoresizingMaskIntoConstraints' to false.
-    private func validate() throws -> Bool {
+    func validate() throws -> Bool {
         
         // Implies it is the caller responsibility to make sure the view has superview
         guard let _ = superview else {
@@ -205,4 +209,3 @@ public extension UIView {
         return true
     }
 }
-

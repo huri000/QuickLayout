@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupBottomButtons()
         setupTitleLabel()
-        setupScrollView()
+//        setupScrollView()
+        setupMultipleLabels()
     }
     
     // MARK: Example of setting a table-view layout
@@ -57,6 +58,23 @@ class ViewController: UIViewController {
         rightBottomButton.layoutToSuperview(.right, constant: -sideMargin)
         rightBottomButton.layout(.left, to: .centerX, of: view, constant: sideMargin * 0.5)
         rightBottomButton.layoutToSuperview(.bottom, constant: -bottomMargin)
+    }
+    
+    // MARK: Example of using [UIView] to layout consecutively
+    private func setupMultipleLabels() {
+        var labelArray: [UILabel] = []
+        for _ in 0...13 {
+            let label = UILabel()
+            label.backgroundColor = UIColor.random
+            label.text = String.random(length: Int.random(min: 10, max: 60))
+            label.numberOfLines = 0
+            view.addSubview(label)
+            labelArray.append(label)
+        }
+        
+        labelArray.first!.layout(.top, to: .bottom, of: titleLabel, constant: 16)
+        labelArray.layoutToSuperview(axis: .horizontally, constant: 16)
+        labelArray.layoutConsecutive(axis: .vertically, constant: 8)
     }
     
     // MARK: Example of setting a scroll-view layout

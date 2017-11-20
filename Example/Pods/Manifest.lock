@@ -1,5 +1,5 @@
 PODS:
-  - QuickLayout (0.1.1)
+  - QuickLayout (0.1.5)
 
 DEPENDENCIES:
   - QuickLayout (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  QuickLayout: 71349fee8fc0001736ad6361235de24e2b7a9ff3
+  QuickLayout: 71ec0958a42b8cb49284d8d72d0dc79913421667
 
-PODFILE CHECKSUM: c7e1d114d8d156e02d5f7b8b2f3b7b6b7f6b8ed8
+PODFILE CHECKSUM: 4355e38a9b1d4a41449c3e8188a583e84654d465
 
 COCOAPODS: 1.3.0

@@ -20,7 +20,6 @@
 		149C80351FC222C1003BF76B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2FE3941152795ECE36923B78 /* Pods_QuickLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA85A2223F313FD65DA89B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4FAF4901D33BED3A305A1DDC /* Pods-QuickLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayout_Tests/Pods-QuickLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* QuickLayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +29,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		79D0E436E838A2B960D27763 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		98D7ACB1D0E6A38B11EC11ED /* Pods_QuickLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68DA86D4D83BDD543AA6B52 /* Pods-QuickLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayout_Tests/Pods-QuickLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CA716092BF8C707346F6A630 /* Pods-QuickLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayout_Example/Pods-QuickLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CF744FE52C7CD43181AC1BE0 /* QuickLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QuickLayout.podspec; path = ../QuickLayout.podspec; sourceTree = "<group>"; };
 		D6356001C68121EEE3092611 /* Pods-QuickLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayout_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayout_Example/Pods-QuickLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,8 +112,6 @@
 			children = (
 				D6356001C68121EEE3092611 /* Pods-QuickLayout_Example.debug.xcconfig */,
 				CA716092BF8C707346F6A630 /* Pods-QuickLayout_Example.release.xcconfig */,
-				4FAF4901D33BED3A305A1DDC /* Pods-QuickLayout_Tests.debug.xcconfig */,
-				B68DA86D4D83BDD543AA6B52 /* Pods-QuickLayout_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
