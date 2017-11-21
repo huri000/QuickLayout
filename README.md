@@ -11,7 +11,7 @@ Harness the power of QuickLayout to align your interface programmatically, witho
 QuickLayout offers you a simple and easy way to assign and manage constraints via code.
 
 ![sample](Example/Screenshots/TableScreen_screenshot.png)
-![sample](Example/Screenshots/scroll_gif.gif)
+![sample](Example/Screenshots/ScrollScreen_screenshot.png)
 
 ## Example
 The example project (xib/storyboard free) demonstrates the power of pragrammatic constraints with QuickLayout using several use cases.
