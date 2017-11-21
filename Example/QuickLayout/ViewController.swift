@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         setupBottomButtons()
         setupTitleLabel()
         setupScrollView()
-//        setupCoolAnimation()
     }
     
     // MARK: Example of setting a table-view layout
