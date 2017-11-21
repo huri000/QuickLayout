@@ -19,30 +19,30 @@ Swift 4.0 and iOS 9.0 (or higher).
 
 ## Usage of `UIView+QuickLayout`
 
-Simple use-case:
+Simple use case:
 
-    // Inside your ViewController Create UIView and add it to view hierarchy
+    // Create a view and add it to the view hierarchy
     let simpleView = UIView()
     simpleView.backgroundColor = .gray
     view.addSubview(simpleView)
     
-    // Set constant height for simpleView
+    // Set constant height
     simpleView.setConstant(.height, value: 50)
     
-    // Make simpleView cling to its superview's top
+    // Make simpleView cling to the top of it's superview
     simpleView.layoutToSuperview(.top)
     
-    // Make simpleView cling to its superview's centerX
+    // Make simpleView cling to the center of it's superview
     simpleView.layoutToSuperview(.centerX)
     
-    // Make simpleView cling to its superview's width
+    // Make simpleView get 80% of the width of it's superview
     simpleView.layoutToSuperview(.width, multiplier: 0.8)
 
 Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it):
 
     let constraint = simpleView.layoutToSuperview(.centerX)
 
-Center view in superview, and retrieve the x, y constraints in `QLCenterConstraints` object:
+Center simpleView in superview, and retrieve the x, y constraints in `QLCenterConstraints` object:
 
     let center = simpleView.centerInSuperview()
     
@@ -50,14 +50,14 @@ Center view in superview, and retrieve the x, y constraints in `QLCenterConstrai
     center?.x.constant = 20
     center?.y.constant = 20
 
-Size to superview, and retrieve the width, height constraints in `QLSizeConstraints` object:
+Size simpleView to it's superview, and retrieve the constraints in `QLSizeConstraints` object:
 
     let size = simpleView.sizeToSuperview()
     
-    // Set `width` less 20 dot of it's superview
+    // Access width and height constraints easily
     size?.width.constant = -20
     
-Totally fill superview, and retrieve all constraints via `QLFillConstraints`
+Make simpleView totally fill superview, and retrieve all constraints via `QLFillConstraints`:
 
     let constraints = simpleView.fillSuperview()
     
