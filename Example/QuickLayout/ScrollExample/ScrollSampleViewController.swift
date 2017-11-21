@@ -10,7 +10,7 @@ import UIKit
 import QuickLayout
 import LoremIpsum
 
-class ScrollSampleViewController: BaseViewController {
+class ScrollSampleViewController: ModalViewController {
 
     override var titleString: String {
         return "QuickLayout Scroll Example"
@@ -21,8 +21,8 @@ class ScrollSampleViewController: BaseViewController {
     private var scrollViewSubviews: [UIView] = []
     
     // MARK: Setup all subviews programmatically
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        super.loadView()
         setupScrollView()
     }
     

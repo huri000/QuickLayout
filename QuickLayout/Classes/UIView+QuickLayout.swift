@@ -74,8 +74,9 @@ public extension UIView {
         }
         var constraints: QLMultipleConstraints = [:]
         let uniqueEdges = Set(edges)
+        
         for edge in uniqueEdges {
-            let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: NSLayoutRelation.equal, toItem: superview, attribute: edge, multiplier: multiplier, constant: constant)
+            let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: .equal, toItem: superview, attribute: edge, multiplier: multiplier, constant: constant)
             constraint.priority = priority
             superview!.addConstraint(constraint)
             constraints[edge] = constraint
@@ -87,10 +88,13 @@ public extension UIView {
     @discardableResult
     public func layoutToSuperview(axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> QLAxisConstraints? {
         let attributes = axis.attributes
-        guard let constraints = layoutToSuperview(edges: attributes.first, attributes.second, constant: constant, priority: priority) else {
+        guard let first = layoutToSuperview(attributes.first, constant: constant, priority: priority) else {
             return nil
         }
-        return QLAxisConstraints(first: constraints[attributes.first]!, second: constraints[attributes.second]!)
+        guard let second = layoutToSuperview(attributes.second, constant: -constant, priority: priority) else {
+            return nil
+        }
+        return QLAxisConstraints(first: first, second: second)
     }
     
     // MARK: Size superview (.width, .height)

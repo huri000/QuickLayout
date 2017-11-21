@@ -54,3 +54,13 @@ extension String {
     }
 }
 
+extension UIColor {
+    static var satPink: UIColor {
+        return UIColor(red: 1, green: 45.0/255.0, blue: 85.0/255.0, alpha: 1)
+    }
+    
+    static var satBlue: UIColor {
+        return UIColor(red: 0, green: 122.0/255.0, blue: 255.0/255.0, alpha: 1)
+    }
+}
+

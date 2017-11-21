@@ -16,8 +16,11 @@ class BaseViewController: UIViewController {
         return ""
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: Load view programmatically
+    override func loadView() {
+        let view = UIView()
+        view.backgroundColor = .white
+        self.view = view
         setupTitleLabel()
     }
     

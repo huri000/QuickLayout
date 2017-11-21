@@ -12,16 +12,16 @@ import UIKit
 class MainViewController: BaseViewController {
     
     override var titleString: String {
-        return "QuickLayout Example App"
+        return "QuickLayout Examples"
     }
     
     // MARK: UI Props
-    private let leftBottomButton = UIButton()
-    private let rightBottomButton = UIButton()
+    private let scrollExampleButton = UIButton()
+    private let tableExampleButton = UIButton()
     
     // MARK: Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        super.loadView()
         setupBottomButtons()
     }
         
@@ -30,35 +30,44 @@ class MainViewController: BaseViewController {
         
         let sideMargin: CGFloat = 20
         let bottomMargin: CGFloat = 30
-        let height: CGFloat = 50
         
-        leftBottomButton.backgroundColor = .gray
-        leftBottomButton.setTitle("Left Button", for: .normal)
-        view.addSubview(leftBottomButton)
+        scrollExampleButton.backgroundColor = .satPink
+        scrollExampleButton.setTitle("Scroll View", for: .normal)
+        scrollExampleButton.addTarget(self, action: #selector(scrollViewExampleButtonPressed), for: .touchUpInside)
+        view.addSubview(scrollExampleButton)
         
-        rightBottomButton.backgroundColor = .gray
-        rightBottomButton.setTitle("Right Button", for: .normal)
-        view.addSubview(rightBottomButton)
+        tableExampleButton.backgroundColor = .satBlue
+        tableExampleButton.setTitle("Table View", for: .normal)
+        tableExampleButton.addTarget(self, action: #selector(tableViewExampleButtonPressed), for: .touchUpInside)
+        view.addSubview(tableExampleButton)
         
         // Align leftBottomButton to the left of it's superview
-        leftBottomButton.layoutToSuperview(.left, constant: sideMargin)
+        scrollExampleButton.layoutToSuperview(.left, constant: sideMargin)
         
         // Align leftBottomButton's right to centerX of it's superview, with constant distance
-        leftBottomButton.layout(.right, to: .centerX, of: leftBottomButton.superview!, constant: -sideMargin * 0.5)
+        scrollExampleButton.layout(.right, to: .centerX, of: scrollExampleButton.superview!, constant: -sideMargin * 0.5)
         
         // Align rightBottomButton to the right of it's superview
-        rightBottomButton.layoutToSuperview(.right, constant: -sideMargin)
+        tableExampleButton.layoutToSuperview(.right, constant: -sideMargin)
         
         // Align rightBottomButton's left to centerX of it's superview, with constant distance
-        rightBottomButton.layout(.left, to: .centerX, of: rightBottomButton.superview!, constant: sideMargin * 0.5)
+        tableExampleButton.layout(.left, to: .centerX, of: tableExampleButton.superview!, constant: sideMargin * 0.5)
         
         // Example for using an array of views to layout them using a single line
         
         // Align both buttons to superview's bottom
-        [leftBottomButton, rightBottomButton].layoutToSuperview(.bottom, constant: -bottomMargin)
+        [scrollExampleButton, tableExampleButton].layoutToSuperview(.bottom, constant: -bottomMargin)
         
         // Set constant height for both buttons
-        [leftBottomButton, rightBottomButton].setConstant(edges: .height, value: height)
+        scrollExampleButton.layout(.height, to: .width, of: scrollExampleButton)
+        tableExampleButton.layout(.height, to: .width, of: tableExampleButton)
     }
     
+    @objc func scrollViewExampleButtonPressed() {
+        present(ScrollSampleViewController(), animated: true, completion: nil)
+    }
+    
+    @objc func tableViewExampleButtonPressed() {
+        present(TableSampleViewController(), animated: true, completion: nil)
+    }
 }
