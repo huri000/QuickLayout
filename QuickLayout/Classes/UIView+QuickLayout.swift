@@ -8,136 +8,14 @@
 import Foundation
 import UIKit
 
-public enum ConstraintErrorType : Error {
-    case nullifiedSuperview(NSString?)
-    case mismatchedEdgesCount(NSString?)
-}
-
-// MARK: Layout priorities which are mostly used
-public extension UILayoutPriority {
-    public static let must = UILayoutPriority(rawValue: 999)
-    public static let zero = UILayoutPriority(rawValue: 0)
-}
-
-// MARK: Represents pair of attributes
-public struct QLAttributePair {
-    let first: NSLayoutAttribute
-    let second: NSLayoutAttribute
-}
-
-// MARK: Represents size constraints
-public struct QLSizeConstraints {
-    let width: NSLayoutConstraint
-    let height: NSLayoutConstraint
-}
-
-// MARK: Represents axis constraints (might be .top and .bottom, .left and .right, .leading and .trailing)
-public struct QLAxisConstraints {
-    let first: NSLayoutConstraint
-    let second: NSLayoutConstraint
-}
-
-// MARK: Represents center constraints
-public struct QLCenterConstraints {
-    let x: NSLayoutConstraint
-    let y: NSLayoutConstraint
-}
-
-// MARK: Represents center and size constraints
-public struct QLFillConstraints {
-    let center: QLCenterConstraints
-    let size: QLSizeConstraints
-}
-
-// MARK: Represents axis
-public enum LayoutAxis {
-    case horizontally
-    case vertically
-    var attributes: QLAttributePair {
-        let first: NSLayoutAttribute
-        let second: NSLayoutAttribute
-        switch self {
-        case .horizontally:
-            first = .left
-            second = .right
-        case .vertically:
-            first = .top
-            second = .bottom
-        }
-        return QLAttributePair(first: first, second: second)
-    }
-}
-
 public extension UIView {
     
-    // MARK: Content Wrap (Compression and Hugging)
-    public func forceContentWrap() {
-        contentHuggingPriority = (.required, .required)
-        contentCompressionResistancePriority = (.required, .required)
-    }
-    
-    // MARK: Content Hugging Priority
-    public var verticalHuggingPriority: UILayoutPriority {
-        set {
-            setContentHuggingPriority(newValue, for: .vertical)
-        }
-        get {
-            return contentHuggingPriority(for: .vertical)
-        }
-    }
-    
-    public var horizontalHuggingPriority: UILayoutPriority {
-        set {
-            setContentHuggingPriority(newValue, for: .horizontal)
-        }
-        get {
-            return contentHuggingPriority(for: .horizontal)
-        }
-    }
-    
-    public var contentHuggingPriority: (vertical: UILayoutPriority, horizontal: UILayoutPriority) {
-        set {
-            verticalHuggingPriority = newValue.vertical
-            horizontalHuggingPriority = newValue.horizontal
-        }
-        get {
-            return (verticalHuggingPriority, horizontalHuggingPriority)
-        }
-    }
-    
-    // MARK: Content Compression Resistance
-    public var verticalCompressionResistancePriority: UILayoutPriority {
-        set {
-            setContentCompressionResistancePriority(newValue, for: .vertical)
-        }
-        get {
-            return contentCompressionResistancePriority(for: .vertical)
-        }
-    }
-    
-    public var horizontalCompressionResistancePriority: UILayoutPriority {
-        set {
-            setContentCompressionResistancePriority(newValue, for: .horizontal)
-        }
-        get {
-            return contentCompressionResistancePriority(for: .horizontal)
-        }
-    }
-    
-    public var contentCompressionResistancePriority: (vertical: UILayoutPriority, horizontal: UILayoutPriority) {
-        set {
-            verticalCompressionResistancePriority = newValue.vertical
-            horizontalCompressionResistancePriority = newValue.horizontal
-        }
-        get {
-            return (verticalCompressionResistancePriority, horizontalCompressionResistancePriority)
-        }
-    }
-        
     // MARK: Set constant edge (Single edge) - Convenience
     @discardableResult
     public func setConstant(_ edge: NSLayoutAttribute, value: CGFloat, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
-        translatesAutoresizingMaskIntoConstraints = false
+        if translatesAutoresizingMaskIntoConstraints {
+            translatesAutoresizingMaskIntoConstraints = false
+        }
         let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: value)
         constraint.priority = priority
         addConstraint(constraint)
@@ -146,19 +24,19 @@ public extension UIView {
     
     // MARK: Set constant edges of view (Variadic parameters).
     @discardableResult
-    func setConstant(edges: [NSLayoutAttribute], value: CGFloat, priority: UILayoutPriority = .required) -> [NSLayoutConstraint] {
-        translatesAutoresizingMaskIntoConstraints = false
-        var constraints: [NSLayoutConstraint] = []
-        for edge in edges {
+    func setConstant(edges: [NSLayoutAttribute], value: CGFloat, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
+        var constraints: QLMultipleConstraints = [:]
+        let uniqueEdges = Set(edges)
+        for edge in uniqueEdges {
             let constraint = setConstant(edge, value: value, priority: priority)
-            constraints.append(constraint)
+            constraints[edge] = constraint
         }
         return constraints
     }
     
-    // MARK: Workaround in order to ork with variadic parameters
+    // MARK: Convenience workaround in order to work with variadic parameters
     @discardableResult
-    public func setConstant(edges: NSLayoutAttribute..., value: CGFloat, priority: UILayoutPriority = .required) -> [NSLayoutConstraint] {
+    public func setConstant(edges: NSLayoutAttribute..., value: CGFloat, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
         return setConstant(edges: edges, value: value, priority: priority)
     }
     
@@ -190,16 +68,17 @@ public extension UIView {
     
     // MARK: Layout to superview edges (.width , .height, .left, .right, .leading, .trailing, ...)
     @discardableResult
-    public func layoutToSuperview(edges: NSLayoutAttribute..., multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
-        guard isValidForQuickLayout else {
+    public func layoutToSuperview(edges: NSLayoutAttribute..., multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> QLMultipleConstraints? {
+        guard !edges.isEmpty && isValidForQuickLayout else {
             return nil
         }
-        var constraints: [NSLayoutConstraint] = []
-        for edge in edges {
+        var constraints: QLMultipleConstraints = [:]
+        let uniqueEdges = Set(edges)
+        for edge in uniqueEdges {
             let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: NSLayoutRelation.equal, toItem: superview, attribute: edge, multiplier: multiplier, constant: constant)
             constraint.priority = priority
             superview!.addConstraint(constraint)
-            constraints.append(constraint)
+            constraints[edge] = constraint
         }
         return constraints
     }
@@ -211,7 +90,7 @@ public extension UIView {
         guard let constraints = layoutToSuperview(edges: attributes.first, attributes.second, constant: constant, priority: priority) else {
             return nil
         }
-        return QLAxisConstraints(first: constraints.first!, second: constraints.last!)
+        return QLAxisConstraints(first: constraints[attributes.first]!, second: constraints[attributes.second]!)
     }
     
     // MARK: Size superview (.width, .height)
@@ -220,25 +99,25 @@ public extension UIView {
         guard let size = layoutToSuperview(edges: .width, .height, multiplier: multiplier, constant: constant, priority: priority) else {
             return nil
         }
-        return QLSizeConstraints(width: size.first!, height: size.last!)
+        return QLSizeConstraints(width: size[.width]!, height: size[.height]!)
     }
     
     // MARK: Center in superview
     @discardableResult
-    public func centerInSuperview(withMultiplier multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> QLCenterConstraints? {
+    public func centerInSuperview(constant: CGFloat = 0, priority: UILayoutPriority = .required) -> QLCenterConstraints? {
         guard let center = layoutToSuperview(edges: .centerX, .centerY, constant: constant) else {
             return nil
         }
-        return QLCenterConstraints(x: center.first!, y: center.last!)
+        return QLCenterConstraints(x: center[.centerX]!, y: center[.centerY]!)
     }
     
     // MARK: Fill superview totally.
     @discardableResult
-    public func fillSuperview(withSizeMultiplier multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> QLFillConstraints? {
+    public func fillSuperview(withSizeMultiplier sizeMultiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> QLFillConstraints? {
         guard let center = centerInSuperview(priority: priority) else {
             return nil
         }
-        guard let size = sizeToSuperview(withMultiplier: multiplier, constant: constant, priority: priority) else {
+        guard let size = sizeToSuperview(withMultiplier: sizeMultiplier, constant: constant, priority: priority) else {
             return nil
         }
         return QLFillConstraints(center: center, size: size)

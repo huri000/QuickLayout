@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         setupBottomButtons()
         setupTitleLabel()
         setupScrollView()
+//        setupCoolAnimation()
     }
     
     // MARK: Example of setting a table-view layout
@@ -166,7 +167,7 @@ class ViewController: UIViewController {
         labelArray.layout(.left, to: .right, of: columnView, constant: 8)
         
         // Align labels vertically with spacing of 8 between them
-        labelArray.layout(.vertically, constant: 8)
+        labelArray.spread(.vertically, constant: 8)
         
         // Align the top, bottom of the first, last labels to the scroll-view, respectively
         labelArray.first!.layoutToSuperview(.top)
