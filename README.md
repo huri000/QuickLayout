@@ -73,7 +73,7 @@ Use variatic parameter to easiliy install constraints for `simpleView`, simultan
     
 #### CocoaPods
 ```
-pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '0.2.0'
+pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '0.2.1'
 ```
 
 #### Manually
