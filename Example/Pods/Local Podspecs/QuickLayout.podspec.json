@@ -1,6 +1,6 @@
 {
   "name": "QuickLayout",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "summary": "A short description of QuickLayout.",
   "platforms": {
     "ios": "9.0"
@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/huri000@gmail.com/QuickLayout.git",
-    "tag": "0.1.8"
+    "tag": "0.2.0"
   },
   "source_files": "QuickLayout/**/*.{swift,h}",
   "frameworks": "UIKit"

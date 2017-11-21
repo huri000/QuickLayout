@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLayout'
-  s.version          = '0.1.8'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of QuickLayout.'
   s.platform = :ios
   s.ios.deployment_target = '9.0'

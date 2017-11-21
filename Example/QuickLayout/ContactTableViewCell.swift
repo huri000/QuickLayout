@@ -42,8 +42,9 @@ class ContactTableViewCell: UITableViewCell {
     
     private func setupThumbView() {
         contentView.addSubview(thumbView)
-        thumbView.layoutToSuperview(axis: .vertically, constant: 20)
-        thumbView.layoutToSuperview(.left, constant: 10)
+        thumbView.layoutToSuperview(axis: .vertically, constant: 20, priority: .must)
+        thumbView.layoutToSuperview(.centerY)
+        thumbView.layoutToSuperview(.left, constant: 16)
         thumbView.setConstant(edges: .width, .height, value: 50)
     }
     
