@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0F2ECB41673984BD515AA810C239440C /* LoremIpsum-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC18B0E46A54B2CC4C7E63D87E2461F /* LoremIpsum-dummy.m */; };
-		148448AB1FC4340700DB72E8 /* QLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448AA1FC4340700DB72E8 /* QLUtils.swift */; };
-		148448AD1FC4347100DB72E8 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448AC1FC4347100DB72E8 /* UIView+QLContentWrap.swift */; };
+		25BC87767E48A384AD70333F0B5ABA2F /* UIViewArray+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0581B42671C1B1C875C4B579D8CB60 /* UIViewArray+QuickLayout.swift */; };
 		270106257AD42B42B167C60B3E0D97F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		41D06A4F07AA1FDE482F9EE0CC33482E /* Pods-QuickLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F674B01517203AC329D9FC3CCAE5695C /* Pods-QuickLayout_Example-dummy.m */; };
-		422E220CD07C51CDDF0BF1EE0AF4420B /* QuickLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D8DB79F21DF6E19CC6EAE75BA026D /* QuickLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		422E220CD07C51CDDF0BF1EE0AF4420B /* QuickLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC2E013CD7257FDD2C56D151279D2B9 /* QuickLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42BB15A596DD516808230A61809D16E1 /* LoremIpsum.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD35FC8CE8CCAFA582D7C0AF3596048 /* LoremIpsum.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4BA15FA46A6253C869BB37A566735830 /* QuickLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA264320CA0160C14DEA5FDDE22A4B33 /* QuickLayout-dummy.m */; };
 		5A969DC1CF322CABEE899213B7B1E67F /* Pods-QuickLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC7EEDF0F722E2586BD00A7CB5AD829 /* Pods-QuickLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E5FB427315911EEF8754DAE65604E5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		76E5157C26F510BAC789297100EAD4AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		8C735C6B74E8180A3391750B95AE0867 /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2D9455AF0948EC02B11747D9F1E81B /* UIView+QuickLayout.swift */; };
+		9E5ADF4FC740E114B7347D309E1AC982 /* QuickLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F42BDB72FA17676D192D5C0DA507B106 /* QuickLayout-dummy.m */; };
+		A0D7CC86CE1264E779F293527B50C973 /* QLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A0EDC0FB5C0236BB07711AC8F1FD43 /* QLUtils.swift */; };
 		AEE697C1947F75048FE92A60FD24137A /* LoremIpsum.h in Headers */ = {isa = PBXBuildFile; fileRef = 228DF7CE9E97D8FFD233E1AB69BE6199 /* LoremIpsum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3C8B9B65D1BE435EA1B6E6F190D71D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		C0D2E9BD6484B4E112AED5A6C3F8704E /* LoremIpsum-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BA25A5FCB7C32CD159C7E5EF55E80D /* LoremIpsum-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBD112E91B54E09B46F9F8D259035184 /* UIViewArray+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D00D463A734ABD729F68CB4B8915C /* UIViewArray+QuickLayout.swift */; };
-		CF788209CD4871EF5E40997866E5D50F /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B3583D2112BE0DE762E254CCF512B /* UIView+QuickLayout.swift */; };
+		D856A510FA26FF472DE88E314FBBD5C1 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F312987413F390A2A52DDAB6F2E3B576 /* UIView+QLContentWrap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,37 +44,37 @@
 
 /* Begin PBXFileReference section */
 		0BC7EEDF0F722E2586BD00A7CB5AD829 /* Pods-QuickLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuickLayout_Example-umbrella.h"; sourceTree = "<group>"; };
-		148448AA1FC4340700DB72E8 /* QLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLUtils.swift; sourceTree = "<group>"; };
-		148448AC1FC4347100DB72E8 /* UIView+QLContentWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+QLContentWrap.swift"; sourceTree = "<group>"; };
 		16AB4E1511B903C56E325E6214996BB3 /* Pods-QuickLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1A6870EA4DF1565A2E385DEDC3EB5AB1 /* QuickLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QuickLayout.modulemap; sourceTree = "<group>"; };
+		1B0581B42671C1B1C875C4B579D8CB60 /* UIViewArray+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewArray+QuickLayout.swift"; path = "QuickLayout/Classes/UIViewArray+QuickLayout.swift"; sourceTree = "<group>"; };
 		228DF7CE9E97D8FFD233E1AB69BE6199 /* LoremIpsum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoremIpsum.h; path = LoremIpsum/LoremIpsum.h; sourceTree = "<group>"; };
+		2677BBAC545F1FBEDC9FE3223A56D32B /* QuickLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickLayout.xcconfig; sourceTree = "<group>"; };
 		36BA25A5FCB7C32CD159C7E5EF55E80D /* LoremIpsum-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoremIpsum-umbrella.h"; sourceTree = "<group>"; };
-		3A6B168A67D17B7EA3001148D24D34DC /* Pods_QuickLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D4B3583D2112BE0DE762E254CCF512B /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+QuickLayout.swift"; path = "QuickLayout/Classes/UIView+QuickLayout.swift"; sourceTree = "<group>"; };
-		406EABA4F611601A7FB3360A3BF29C17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		561E346927E8F80524AEF863A6A141B3 /* QuickLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2D8DB79F21DF6E19CC6EAE75BA026D /* QuickLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickLayout-umbrella.h"; sourceTree = "<group>"; };
+		3A6B168A67D17B7EA3001148D24D34DC /* Pods_QuickLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuickLayout_Example.framework; path = "Pods-QuickLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		561E346927E8F80524AEF863A6A141B3 /* QuickLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickLayout.framework; path = QuickLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5902B0056F7909A5BB8281F07E74F9BB /* QuickLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickLayout-prefix.pch"; sourceTree = "<group>"; };
+		5AC2E013CD7257FDD2C56D151279D2B9 /* QuickLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickLayout-umbrella.h"; sourceTree = "<group>"; };
 		6257EC843EFB981B946F093EE0578D63 /* Pods-QuickLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		77A0EDC0FB5C0236BB07711AC8F1FD43 /* QLUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QLUtils.swift; path = QuickLayout/Classes/QLUtils.swift; sourceTree = "<group>"; };
 		7FC18B0E46A54B2CC4C7E63D87E2461F /* LoremIpsum-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoremIpsum-dummy.m"; sourceTree = "<group>"; };
 		8DD35FC8CE8CCAFA582D7C0AF3596048 /* LoremIpsum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoremIpsum.m; path = LoremIpsum/LoremIpsum.m; sourceTree = "<group>"; };
 		92144FC8C402B9CEACAC244BB647C3FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A202B26880C8432FF8C0B099A39C07A /* Pods-QuickLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuickLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A084EC2B682B2CC09FE02C5996667D9C /* Pods-QuickLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuickLayout_Example.modulemap"; sourceTree = "<group>"; };
-		A3F71434847B6F2039A779906CA40D21 /* LoremIpsum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoremIpsum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A084EC2B682B2CC09FE02C5996667D9C /* Pods-QuickLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuickLayout_Example.modulemap"; sourceTree = "<group>"; };
+		A3F71434847B6F2039A779906CA40D21 /* LoremIpsum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LoremIpsum.framework; path = LoremIpsum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80567C5D38A42ED4E61960FEA8C6CAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEB587BB1AC255CDB3DEBA602DF30C3 /* Pods-QuickLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuickLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B7A40C258BF429FD41C8F1B24BA1CA05 /* QuickLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickLayout-prefix.pch"; sourceTree = "<group>"; };
-		BCD383283E1B52E43007F90B69094385 /* LoremIpsum.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoremIpsum.modulemap; sourceTree = "<group>"; };
+		BBB0E9009FDE3F901B953C48199DBE45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD383283E1B52E43007F90B69094385 /* LoremIpsum.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LoremIpsum.modulemap; sourceTree = "<group>"; };
 		C0C9F354896CF74D9DD11D8A6F550E22 /* LoremIpsum.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoremIpsum.xcconfig; sourceTree = "<group>"; };
-		D0DDE914EF9BBA0917C6E26C28A2A455 /* QuickLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickLayout.xcconfig; sourceTree = "<group>"; };
 		D6D4846297695FD118C04A98EDED2C9B /* Pods-QuickLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuickLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DA264320CA0160C14DEA5FDDE22A4B33 /* QuickLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickLayout-dummy.m"; sourceTree = "<group>"; };
+		ECE9706DA11AAD866027BA92D615F54F /* QuickLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = QuickLayout.modulemap; sourceTree = "<group>"; };
+		ED2D9455AF0948EC02B11747D9F1E81B /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+QuickLayout.swift"; path = "QuickLayout/Classes/UIView+QuickLayout.swift"; sourceTree = "<group>"; };
+		F312987413F390A2A52DDAB6F2E3B576 /* UIView+QLContentWrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+QLContentWrap.swift"; path = "QuickLayout/Classes/UIView+QLContentWrap.swift"; sourceTree = "<group>"; };
 		F342F04B64F2C594BA7622ACF82E97E2 /* LoremIpsum-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoremIpsum-prefix.pch"; sourceTree = "<group>"; };
-		F61D00D463A734ABD729F68CB4B8915C /* UIViewArray+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewArray+QuickLayout.swift"; path = "QuickLayout/Classes/UIViewArray+QuickLayout.swift"; sourceTree = "<group>"; };
+		F42BDB72FA17676D192D5C0DA507B106 /* QuickLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickLayout-dummy.m"; sourceTree = "<group>"; };
 		F674B01517203AC329D9FC3CCAE5695C /* Pods-QuickLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuickLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		FFBE4E83C6591D1AF9D6F3BE22D257DF /* Pods-QuickLayout_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuickLayout_Example-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,12 +126,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		320EB61D279EBD02B743DA26603F3629 /* Development Pods */ = {
+		27852548BA4A64436DF9D7C89D46B087 /* QuickLayout */ = {
 			isa = PBXGroup;
 			children = (
-				759999AB3A62D5F88B9AF14433B566AC /* QuickLayout */,
+				77A0EDC0FB5C0236BB07711AC8F1FD43 /* QLUtils.swift */,
+				F312987413F390A2A52DDAB6F2E3B576 /* UIView+QLContentWrap.swift */,
+				ED2D9455AF0948EC02B11747D9F1E81B /* UIView+QuickLayout.swift */,
+				1B0581B42671C1B1C875C4B579D8CB60 /* UIViewArray+QuickLayout.swift */,
+				E3AA88392A5F0E05CFBB0138E27DDFCF /* Support Files */,
 			);
-			name = "Development Pods";
+			name = QuickLayout;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -151,19 +156,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		759999AB3A62D5F88B9AF14433B566AC /* QuickLayout */ = {
-			isa = PBXGroup;
-			children = (
-				F61D00D463A734ABD729F68CB4B8915C /* UIViewArray+QuickLayout.swift */,
-				3D4B3583D2112BE0DE762E254CCF512B /* UIView+QuickLayout.swift */,
-				148448AA1FC4340700DB72E8 /* QLUtils.swift */,
-				148448AC1FC4347100DB72E8 /* UIView+QLContentWrap.swift */,
-				A4EF3DEF72AF7DF4CC0666DE60F04D45 /* Support Files */,
-			);
-			name = QuickLayout;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7C72557AC72FB5E4E22A329C82413313 /* LoremIpsum */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +163,7 @@
 				8DD35FC8CE8CCAFA582D7C0AF3596048 /* LoremIpsum.m */,
 				C3EA9F4D7F399B5370474075102AAA47 /* Support Files */,
 			);
+			name = LoremIpsum;
 			path = LoremIpsum;
 			sourceTree = "<group>";
 		};
@@ -178,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				320EB61D279EBD02B743DA26603F3629 /* Development Pods */,
+				AC8201AA1AD99B20C508F8C68C28855A /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				204A388122C8E209C1DD6446B97C35B9 /* Pods */,
 				200D6B46FA352FE5473F2733F6020D09 /* Products */,
@@ -204,18 +197,12 @@
 			path = "Target Support Files/Pods-QuickLayout_Example";
 			sourceTree = "<group>";
 		};
-		A4EF3DEF72AF7DF4CC0666DE60F04D45 /* Support Files */ = {
+		AC8201AA1AD99B20C508F8C68C28855A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				406EABA4F611601A7FB3360A3BF29C17 /* Info.plist */,
-				1A6870EA4DF1565A2E385DEDC3EB5AB1 /* QuickLayout.modulemap */,
-				D0DDE914EF9BBA0917C6E26C28A2A455 /* QuickLayout.xcconfig */,
-				DA264320CA0160C14DEA5FDDE22A4B33 /* QuickLayout-dummy.m */,
-				B7A40C258BF429FD41C8F1B24BA1CA05 /* QuickLayout-prefix.pch */,
-				5C2D8DB79F21DF6E19CC6EAE75BA026D /* QuickLayout-umbrella.h */,
+				27852548BA4A64436DF9D7C89D46B087 /* QuickLayout */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/QuickLayout";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C3EA9F4D7F399B5370474075102AAA47 /* Support Files */ = {
@@ -230,6 +217,20 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LoremIpsum";
+			sourceTree = "<group>";
+		};
+		E3AA88392A5F0E05CFBB0138E27DDFCF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBB0E9009FDE3F901B953C48199DBE45 /* Info.plist */,
+				ECE9706DA11AAD866027BA92D615F54F /* QuickLayout.modulemap */,
+				2677BBAC545F1FBEDC9FE3223A56D32B /* QuickLayout.xcconfig */,
+				F42BDB72FA17676D192D5C0DA507B106 /* QuickLayout-dummy.m */,
+				5902B0056F7909A5BB8281F07E74F9BB /* QuickLayout-prefix.pch */,
+				5AC2E013CD7257FDD2C56D151279D2B9 /* QuickLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/QuickLayout";
 			sourceTree = "<group>";
 		};
 		EE6929E416979CD710013674567D2273 /* Targets Support Files */ = {
@@ -311,7 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B98B01E5683BC1D565BBCE6E68AB5349 /* Build configuration list for PBXNativeTarget "QuickLayout" */;
 			buildPhases = (
-				F907EB1995C00F45AD982F8EAB0292C9 /* Sources */,
+				E3354A85C13B447A23474EEDA3B9C552 /* Sources */,
 				8ABBB238D2D501D8DB532193E77A6345 /* Frameworks */,
 				A03009F33FA7C8600218474F4EDF2D94 /* Headers */,
 			);
@@ -370,15 +371,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F907EB1995C00F45AD982F8EAB0292C9 /* Sources */ = {
+		E3354A85C13B447A23474EEDA3B9C552 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD112E91B54E09B46F9F8D259035184 /* UIViewArray+QuickLayout.swift in Sources */,
-				148448AD1FC4347100DB72E8 /* UIView+QLContentWrap.swift in Sources */,
-				4BA15FA46A6253C869BB37A566735830 /* QuickLayout-dummy.m in Sources */,
-				148448AB1FC4340700DB72E8 /* QLUtils.swift in Sources */,
-				CF788209CD4871EF5E40997866E5D50F /* UIView+QuickLayout.swift in Sources */,
+				A0D7CC86CE1264E779F293527B50C973 /* QLUtils.swift in Sources */,
+				9E5ADF4FC740E114B7347D309E1AC982 /* QuickLayout-dummy.m in Sources */,
+				D856A510FA26FF472DE88E314FBBD5C1 /* UIView+QLContentWrap.swift in Sources */,
+				8C735C6B74E8180A3391750B95AE0867 /* UIView+QuickLayout.swift in Sources */,
+				25BC87767E48A384AD70333F0B5ABA2F /* UIViewArray+QuickLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +553,7 @@
 		};
 		B22D4AE97AAC8099B95206944D04B895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0DDE914EF9BBA0917C6E26C28A2A455 /* QuickLayout.xcconfig */;
+			baseConfigurationReference = 2677BBAC545F1FBEDC9FE3223A56D32B /* QuickLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -587,7 +588,7 @@
 		};
 		DCE206985331D48333A80D1FBC84D8E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0DDE914EF9BBA0917C6E26C28A2A455 /* QuickLayout.xcconfig */;
+			baseConfigurationReference = 2677BBAC545F1FBEDC9FE3223A56D32B /* QuickLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

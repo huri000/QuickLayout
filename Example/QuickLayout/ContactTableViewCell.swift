@@ -31,6 +31,7 @@ class ContactTableViewCell: UITableViewCell {
     // MARK: Setup
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         setupThumbView()
         setupNameLabel()
     }

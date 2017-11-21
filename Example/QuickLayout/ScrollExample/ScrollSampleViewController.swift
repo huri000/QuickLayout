@@ -37,9 +37,9 @@ class ScrollSampleViewController: ModalViewController {
         contentScrollView.layoutToSuperview(edges: .bottom, .left, .right)
         
         // Setup scroll-view custom subviews
-        setupCustomViewsInScrollView()
         setupMultipleLabelsInScrollView()
-        
+        setupCustomViewsInScrollView()
+
         // Align the first subview to the top of the scroll-view
         scrollViewSubviews.first!.layoutToSuperview(.top)
         
@@ -49,27 +49,66 @@ class ScrollSampleViewController: ModalViewController {
     
     // MARK: Demonstrates how one can fix a scroll-view subviews programmatically in a simple for-loop
     private func setupCustomViewsInScrollView() {
-        for _ in 0...10 {
-            let customView = UIView()
-            customView.backgroundColor = .random
-            contentScrollView.addSubview(customView)
+        let customViewsContainer = UIView()
+        contentScrollView.addSubview(customViewsContainer)
+        
+        // Align top with the bottom of scroll-view's last subview
+        customViewsContainer.layout(.top, to: .bottom, of: scrollViewSubviews.last!, constant: 16)
+        
+        // Align customView to superview's left and right (horizontally stretching)
+        customViewsContainer.layoutToSuperview(axis: .horizontally)
+        
+        // Align customView to superview's width (Strengthen scroll-view's anchor constraints)
+        customViewsContainer.layoutToSuperview(.width)
+        
+        let maxRowsCount = 10
+        var rowViews: [UIView] = []
+        for rowIndex in 0..<maxRowsCount {
+            let rowView = UIView()
+            customViewsContainer.addSubview(rowView)
             
+            let customViewsCount = 3
+            var customViews: [UIView] = []
+            for i in 0..<customViewsCount {
+                let customView = UIView()
+                customView.backgroundColor = .random
+                rowView.addSubview(customView)
+                if i == 0 {
+                    customView.layoutToSuperview(.leading)
+                } else {
+                    customView.layout(.leading, to: .trailing, of: customViews[i-1])
+                }
+                
+                if i == customViewsCount - 1 {
+                    customView.layoutToSuperview(.trailing)
+                }
+                customView.layoutToSuperview(axis: .vertically)
+                customView.layoutToSuperview(.width, multiplier: 1.0/CGFloat(customViewsCount))
+                
+                customViews.append(customView)
+            }
+
             // Align customView to superview's left and right (horizontally stretching)
-            customView.layoutToSuperview(axis: .horizontally)
-            
-            // Align customView to superview's width (Strengthen scroll-view constraints)
-            customView.layoutToSuperview(.width)
-            
+            rowView.layoutToSuperview(axis: .horizontally)
+
             // Set constant height for customView (Randomize it for fun)
-            customView.setConstant(.height, value: .random(min: 40, max: 120))
+            rowView.setConstant(.height, value: .random(min: 40, max: 120))
             
             // Not first item - Align top to previous's bottom, with margin of 16
-            if let previous = scrollViewSubviews.last {
-                customView.layout(.top, to: .bottom, of: previous, constant: 16)
+            if let previous = rowViews.last {
+                rowView.layout(.top, to: .bottom, of: previous)
+            } else {
+                rowView.layoutToSuperview(.top)
             }
             
-            scrollViewSubviews.append(customView)
+            if rowIndex == maxRowsCount - 1 {
+                rowView.layoutToSuperview(.bottom)
+            }
+            
+            rowViews.append(rowView)
         }
+        
+        scrollViewSubviews.append(customViewsContainer)
     }
     
     // MARK: Example of using [UIView]'s extension  to layout consecutively
@@ -77,9 +116,6 @@ class ScrollSampleViewController: ModalViewController {
         
         let labelsContainerView = UIView()
         contentScrollView.addSubview(labelsContainerView)
-        
-        // Align labelsContainerView's top to bottom of the last scroll-view's subviews
-        labelsContainerView.layout(.top, to: .bottom, of: scrollViewSubviews.last!, constant: 16)
         
         /* Example for aligning labelsContainerView to superview's
          left, right, width simultaniously using variadic parameters */
@@ -92,6 +128,7 @@ class ScrollSampleViewController: ModalViewController {
             let label = UILabel()
             label.backgroundColor = .random
             label.text = LoremIpsum.paragraph()
+            label.textColor = .white                                
             label.numberOfLines = 0
             labelsContainerView.addSubview(label)
             labelArray.append(label)
