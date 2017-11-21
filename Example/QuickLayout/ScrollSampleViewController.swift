@@ -1,90 +1,40 @@
 //
-//  ViewController.swift
-//  QuickLayout
+//  ScrollSampleViewController.swift
+//  QuickLayout_Example
 //
-//  Created by Daniel Huri on 11/19/2017.
-//  Copyright (c) 2017 Daniel Huri. All rights reserved.
+//  Created by Daniel Huri on 11/21/17.
+//  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import QuickLayout
 import LoremIpsum
 
-// MARK: UI Example
-class ViewController: UIViewController {
+class ScrollSampleViewController: BaseViewController {
+
+    override var titleString: String {
+        return "QuickLayout Scroll Example"
+    }
     
     // MARK: UI Props
-    private let leftBottomButton = UIButton()
-    private let rightBottomButton = UIButton()
-    private let titleLabel = UILabel()
     private let contentScrollView = UIScrollView()
     private var scrollViewSubviews: [UIView] = []
     
-    // MARK: Setup subviews programmatically
+    // MARK: Setup all subviews programmatically
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBottomButtons()
-        setupTitleLabel()
         setupScrollView()
-    }
-    
-    // MARK: Example of setting a table-view layout
-    private func setupTitleLabel() {
-        titleLabel.textColor = .black
-        titleLabel.text = "QuickLayout Sample"
-        view.addSubview(titleLabel)
-        titleLabel.layoutToSuperview(.top, constant: UIApplication.shared.statusBarFrame.maxY + 10)
-        titleLabel.layoutToSuperview(.centerX)
-    }
-
-    // MARK: Example of setting a button layout
-    private func setupBottomButtons() {
-        
-        let sideMargin: CGFloat = 20
-        let bottomMargin: CGFloat = 30
-        let height: CGFloat = 50
-        
-        leftBottomButton.backgroundColor = .gray
-        leftBottomButton.setTitle("Left Button", for: .normal)
-        view.addSubview(leftBottomButton)
-        
-        rightBottomButton.backgroundColor = .gray
-        rightBottomButton.setTitle("Right Button", for: .normal)
-        view.addSubview(rightBottomButton)
-        
-        // Align leftBottomButton to the left of it's superview
-        leftBottomButton.layoutToSuperview(.left, constant: sideMargin)
-        
-        // Align leftBottomButton's right to centerX of it's superview, with constant distance
-        leftBottomButton.layout(.right, to: .centerX, of: leftBottomButton.superview!, constant: -sideMargin * 0.5)
-        
-        // Align rightBottomButton to the right of it's superview
-        rightBottomButton.layoutToSuperview(.right, constant: -sideMargin)
-        
-        // Align rightBottomButton's left to centerX of it's superview, with constant distance
-        rightBottomButton.layout(.left, to: .centerX, of: rightBottomButton.superview!, constant: sideMargin * 0.5)
-
-        // Example for using an array of views to layout them using a single line
-        
-        // Align both buttons to superview's bottom
-        [leftBottomButton, rightBottomButton].layoutToSuperview(.bottom, constant: -bottomMargin)
-        
-        // Set constant height for both buttons
-        [leftBottomButton, rightBottomButton].setConstant(edges: .height, value: height)
     }
     
     // MARK: Example of setting a scroll-view layout
     private func setupScrollView() {
         view.addSubview(contentScrollView)
         
-        // Align contentScrollView's top to bottom of titleLabel with margin of 20
+        // Align contentScrollView's top to bottom of titleLabel with offset of 20
         contentScrollView.layout(.top, to: .bottom, of: titleLabel, constant: 20)
         
-        // Align contentScrollView bottom to top of rightBottomButton with margin of -20
-        contentScrollView.layout(.bottom, to: .top, of: rightBottomButton, constant: -20)
-        
-        // Stretch contentScrollView horizontally in superview (left and right constraints)
-        contentScrollView.layoutToSuperview(axis: .horizontally)
+        // Align contentScrollView to bottom, left and right of superview simultaniouly
+        contentScrollView.layoutToSuperview(edges: .bottom, .left, .right)
         
         // Setup scroll-view custom subviews
         setupCustomViewsInScrollView()
@@ -117,7 +67,7 @@ class ViewController: UIViewController {
             if let previous = scrollViewSubviews.last {
                 customView.layout(.top, to: .bottom, of: previous, constant: 16)
             }
-
+            
             scrollViewSubviews.append(customView)
         }
     }
@@ -136,7 +86,7 @@ class ViewController: UIViewController {
         labelsContainerView.layoutToSuperview(edges: .left, .right, .width)
         
         scrollViewSubviews.append(labelsContainerView)
-
+        
         var labelArray: [UIView] = []
         for _ in 0...10 {
             let label = UILabel()
@@ -151,17 +101,17 @@ class ViewController: UIViewController {
         let columnView = UIView()
         columnView.backgroundColor = .random
         labelsContainerView.addSubview(columnView)
-
+        
         // Set constant width of 5 to columnView
         columnView.setConstant(.width, value: 5)
-
+        
         // Align columnView to left of superview with 16 margin
         columnView.layoutToSuperview(.left, constant: 16)
         
         // Align top and bottom of columnView with the top of the first, last labels, respectively
         columnView.layout(to: .top, of: labelArray.first!)
         columnView.layout(to: .bottom, of: labelArray.last!)
-
+        
         // Align labels' left to the right of columnView with margin of 8
         labelArray.layout(.left, to: .right, of: columnView, constant: 8)
         
