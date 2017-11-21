@@ -51,40 +51,40 @@ public extension UILayoutPriority {
 
 // MARK: Represents pair of attributes
 public struct QLAttributePair {
-    let first: NSLayoutAttribute
-    let second: NSLayoutAttribute
+    public let first: NSLayoutAttribute
+    public let second: NSLayoutAttribute
 }
 
 // MARK: Represents size constraints
 public struct QLSizeConstraints {
-    let width: NSLayoutConstraint
-    let height: NSLayoutConstraint
+    public let width: NSLayoutConstraint
+    public let height: NSLayoutConstraint
 }
 
 // MARK: Represents axis constraints (might be .top and .bottom, .left and .right, .leading and .trailing)
 public struct QLAxisConstraints {
-    let first: NSLayoutConstraint
-    let second: NSLayoutConstraint
+    public let first: NSLayoutConstraint
+    public let second: NSLayoutConstraint
 }
 
 // MARK: Represents center constraints
 public struct QLCenterConstraints {
-    let x: NSLayoutConstraint
-    let y: NSLayoutConstraint
+    public let x: NSLayoutConstraint
+    public let y: NSLayoutConstraint
 }
 
 // MARK: Represents center and size constraints
 public struct QLFillConstraints {
-    let center: QLCenterConstraints
-    let size: QLSizeConstraints
+    public let center: QLCenterConstraints
+    public let size: QLSizeConstraints
 }
 
 // MARK: Represent pair of priorities
 public struct QLPriorityPair {
-    let horizontal: UILayoutPriority
-    let vertical: UILayoutPriority
+    public let horizontal: UILayoutPriority
+    public let vertical: UILayoutPriority
     
-    static var required: QLPriorityPair {
+    public static var required: QLPriorityPair {
         return QLPriorityPair(horizontal: .required, vertical: .required)
     }
 }
@@ -95,7 +95,7 @@ public typealias QLMultipleConstraints = [NSLayoutAttribute : NSLayoutConstraint
 public enum LayoutAxis {
     case horizontally
     case vertically
-    var attributes: QLAttributePair {
+    public var attributes: QLAttributePair {
         let first: NSLayoutAttribute
         let second: NSLayoutAttribute
         switch self {
