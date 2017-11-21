@@ -7,22 +7,19 @@
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 
-QuickLayout contains a simple extension of UIView (UIView+QuickLayout), that abstracts and simplifies the usage of Auto Layout.
+Harness the power of QuickLayout to align your interface programmatically, without using the Interface Builder.
+QuickLayout offers you a simple and easy way to assign and manage constraints via code.
 
 ## Example
+The example project (xib/storyboard free) demonstrates the power of pragrammatic constraints with QuickLayout using several use cases.
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-Swift4.0 and iOS 9.0 (At least).
+Swift 4.0 and iOS 9.0 (or higher).
 
-## Contributing
-Forks, patches and other feedback are welcome.
+## Usage of `UIView+QuickLayout`
 
-## Installation
-
-## Usage
-
-Simple example:
+Simple use-case:
 
     // Inside your ViewController Create UIView and add it to view hierarchy
     let simpleView = UIView()
@@ -30,7 +27,7 @@ Simple example:
     view.addSubview(simpleView)
     
     // Set constant height for simpleView
-    simpleView.setConstant(edge: .height, value: 50)
+    simpleView.setConstant(.height, value: 50)
     
     // Make simpleView cling to its superview's top
     simpleView.layoutToSuperview(.top)
@@ -41,33 +38,49 @@ Simple example:
     // Make simpleView cling to its superview's width
     simpleView.layoutToSuperview(.width, multiplier: 0.8)
 
-Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it)
+Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it):
 
     let constraint = simpleView.layoutToSuperview(.centerX)
 
-Center view in superview:
+Center view in superview, and retrieve the x, y constraints in `QLCenterConstraints` object:
 
-    simpleView.centerInSuperview()
-
-Size to superview: 
-
-    simpleView.sizeToSuperview()
+    let center = simpleView.centerInSuperview()
     
-Totally fill superview:
+    // Move simpleView 20 dots down and right using x property of `QLCenterConstraints`
+    center?.x.constant = 20
+    center?.y.constant = 20
 
-    simpleView.fillSuperview()
+Size to superview, and retrieve the width, height constraints in `QLSizeConstraints` object:
+
+    let size = simpleView.sizeToSuperview()
+    
+    // Set `width` less 20 dot of it's superview
+    size?.width.constant = -20
+    
+Totally fill superview, and retrieve all constraints via `QLFillConstraints`
+
+    let constraints = simpleView.fillSuperview()
     
 You can layout view in relation to another view, and optionally set constant distance between them:
 
     simpleView.layout(.left, to: .right, of: anotherView, constant: 20)
 
+Use variatic parameter to easiliy install constraints for `simpleView`, simultaniouly.
+    
+    simpleView.layoutToSuperview(edges: .top, .bottom, .left, .right)
+
+## Installation
+    
 #### CocoaPods
 ```
-pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout'
+pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '0.2.0'
 ```
 
 #### Manually
-Add the `UIView+QuickLayout.swift` file to your project.
+Add the source files to your project.
+
+## Contributing
+Forks, patches and other feedback are welcome.
 
 ## Author
 Daniel Huri (huri000@gmail.com)
