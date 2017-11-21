@@ -10,6 +10,9 @@
 Harness the power of QuickLayout to align your interface programmatically, without using the Interface Builder.
 QuickLayout offers you a simple and easy way to assign and manage constraints via code.
 
+![sample](Example/Screenshots/TableScreen_screenshot.png)
+![sample](Example/Screenshots/ScrollScreen_screenshot.png)
+
 ## Example
 The example project (xib/storyboard free) demonstrates the power of pragrammatic constraints with QuickLayout using several use cases.
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
