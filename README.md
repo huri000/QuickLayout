@@ -7,11 +7,11 @@
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 
-![sample](Example/Screenshots/TableScreen_screenshot.png)
-![sample](Example/Screenshots/ScrollScreen_screenshot.png)
-
 Harness the power of QuickLayout to align your interface programmatically, without using the Interface Builder.
 QuickLayout offers you a simple and easy way to assign and manage constraints via code.
+
+![sample](Example/Screenshots/TableScreen_screenshot.png)
+![sample](Example/Screenshots/ScrollScreen_screenshot.png)
 
 ## Example
 The example project (xib/storyboard free) demonstrates the power of pragrammatic constraints with QuickLayout using several use cases.
