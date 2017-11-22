@@ -20,32 +20,34 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 Swift 4.0 and iOS 9.0 (or higher).
 
+## Features
+- Extension to `UIView`, contains functionality that allows you to set constraints directly from the view itself.
+- Extension to `Array of UIView`, contains functionality that allows you to set constraints directly from array of views.
+
 ## Usage of `UIView+QuickLayout`
 
-Simple use case:
-
-    // Create a view and add it to the view hierarchy
+    // Create a view, add it to view hierarchy, and customize it
     let simpleView = UIView()
     simpleView.backgroundColor = .gray
     view.addSubview(simpleView)
     
-    // Set constant height
+#### Set constant height
     simpleView.setConstant(.height, value: 50)
     
-    // Make simpleView cling to the top of it's superview
+#### Make simpleView cling to the top of it's superview
     simpleView.layoutToSuperview(.top)
     
-    // Make simpleView cling to the center of it's superview
+#### Make simpleView cling to the center of it's superview
     simpleView.layoutToSuperview(.centerX)
     
-    // Make simpleView get 80% of the width of it's superview
+#### Make simpleView to stretch to 80% of the width of it's superview
     simpleView.layoutToSuperview(.width, multiplier: 0.8)
 
-Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it):
+#### Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it):
 
     let constraint = simpleView.layoutToSuperview(.centerX)
 
-Center simpleView in superview, and retrieve the x, y constraints in `QLCenterConstraints` object:
+#### Center simpleView in superview, and retrieve the x, y constraints in `QLCenterConstraints` object:
 
     let center = simpleView.centerInSuperview()
     
@@ -53,30 +55,52 @@ Center simpleView in superview, and retrieve the x, y constraints in `QLCenterCo
     center?.x.constant = 20
     center?.y.constant = 20
 
-Size simpleView to it's superview, and retrieve the constraints in `QLSizeConstraints` object:
+#### Size simpleView to it's superview, and retrieve the constraints in `QLSizeConstraints` object:
 
     let size = simpleView.sizeToSuperview()
     
     // Access width and height constraints easily
     size?.width.constant = -20
     
-Make simpleView totally fill superview, and retrieve all constraints via `QLFillConstraints`:
+#### Make simpleView totally fill superview, and retrieve all constraints via `QLFillConstraints`:
 
     let constraints = simpleView.fillSuperview()
     
-You can layout view in relation to another view, and optionally set constant distance between them:
+#### You can layout view in relation to another view, and optionally set constant distance between them:
 
     simpleView.layout(.left, to: .right, of: anotherView, constant: 20)
 
-Use variatic parameter to easiliy install constraints for `simpleView`, simultaniouly.
+#### Use variatic parameter to easiliy install constraints for `simpleView`, simultaniouly.
     
     simpleView.layoutToSuperview(edges: .top, .bottom, .left, .right)
+
+## Usage of `UIViewArray+QuickLayout`
+
+    // Create array of views and customize it
+    var viewsArray: [UIView] = []
+    for _ in 0...4 {
+        let simpleView = UIView()
+        view.addSubview(simpleView)
+        viewsArray.append(simpleView)
+    }
+
+#### Set constant height for each element in `viewsArray`
+
+    viewsArray.setConstant(.height, value: 50)
+
+#### Stretch each element of `viewsArray` horizontally to superview, with 30 margin from each side
+
+    viewsArray.layoutToSuperview(axis: .horizontally, constant: 30)
+
+#### Spread elements vertically in superview with 8 margin between them, laso layout first and last to superview with `stretchEdgesToSuperview`
+
+    viewsArray.spread(.vertically, stretchEdgesToSuperview: true, constant: 8)
 
 ## Installation
     
 #### CocoaPods
 ```
-pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '0.2.1'
+pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '0.2.2'
 ```
 
 #### Manually
