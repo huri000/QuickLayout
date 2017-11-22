@@ -35,12 +35,18 @@ extension Array where Element: UIView {
     
     // MARK: Spread views consecutively according to a given axis. Values might be: .vertically, .horizontally
     @discardableResult
-    public func spread(_ axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+    public func spread(_ axis: LayoutAxis, stretchEdgesToSuperview: Bool = false, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
         guard isValidForQuickLayout else {
             return nil
         }
         let attributes = axis.attributes
         var constraints: [NSLayoutConstraint] = []
+        
+        if stretchEdgesToSuperview {
+            let constraint = first!.layoutToSuperview(attributes.first, constant: constant)!
+            constraints.append(constraint)
+        }
+        
         for (index, view) in enumerated() {
             guard index > 0 else {
                 continue
@@ -49,6 +55,12 @@ extension Array where Element: UIView {
             let constraint = view.layout(attributes.first, to: attributes.second, of: previousView, constant: constant, priority: priority)!
             constraints.append(constraint)
         }
+        
+        if stretchEdgesToSuperview {
+            let constraint = last!.layoutToSuperview(attributes.second, constant: -constant)!
+            constraints.append(constraint)
+        }
+        
         return constraints
     }
     

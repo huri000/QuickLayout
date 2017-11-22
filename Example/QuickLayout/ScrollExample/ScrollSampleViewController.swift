@@ -152,12 +152,8 @@ class ScrollSampleViewController: ModalViewController {
         // Align labels' left to the right of columnView with margin of 8
         labelArray.layout(.left, to: .right, of: columnView, constant: 8)
         
-        // Align labels vertically with spacing of 8 between them
-        labelArray.spread(.vertically, constant: 8)
-        
-        // Align the top, bottom of the first, last labels to the scroll-view, respectively
-        labelArray.first!.layoutToSuperview(.top)
-        labelArray.last!.layoutToSuperview(.bottom)
+        // Align labels vertically with spacing of 8 between them, stretch to superview also
+        labelArray.spread(.vertically, stretchEdgesToSuperview: true, constant: 8)
         
         // Align labels to the right of their superview with margin of 16
         labelArray.layoutToSuperview(.right, constant: -16)
