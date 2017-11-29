@@ -1,6 +1,6 @@
 {
   "name": "QuickLayout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "Written in pure Swift, QuickLayout offers you a simple and easy way to assign and manage constraints via code.",
   "platforms": {
     "ios": "9.0"
@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/huri000@gmail.com/QuickLayout.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "source_files": "QuickLayout/**/*.{swift,h}",
   "frameworks": "UIKit"

@@ -1,6 +1,6 @@
 PODS:
   - LoremIpsum (1.0.0)
-  - QuickLayout (1.0.0)
+  - QuickLayout (1.0.1)
 
 DEPENDENCIES:
   - LoremIpsum (~> 1.0)
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  QuickLayout: eefcb39be1b059c7d091a9efab54b5a7412c77cb
+  QuickLayout: 80da2a3adb3b85278a2d317a6de9032deb60c3a5
 
 PODFILE CHECKSUM: b5150c31e62d810b717e35f23234727801bce54b
 

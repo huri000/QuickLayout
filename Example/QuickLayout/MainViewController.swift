@@ -69,45 +69,4 @@ class MainViewController: BaseViewController {
     @objc func tableViewExampleButtonPressed() {
         present(TableSampleViewController(), animated: true, completion: nil)
     }
-    
-    private func test() {
-        // Create a view, add it to view hierarchy, and customize it
-        let simpleView = UIView()
-        simpleView.backgroundColor = .gray
-        view.addSubview(simpleView)
-        
-        simpleView.set(.height, of: 50)
-        
-        
-        
-        simpleView.layoutToSuperview(.top)
-        simpleView.layoutToSuperview(.centerX)
-        simpleView.layoutToSuperview(.width, ratio: 0.8)
-        let constraint = simpleView.layoutToSuperview(.centerX)
-        let center = simpleView.centerInSuperview()
-        center?.x.constant = 20
-        center?.y.constant = 20
-        
-        let size = simpleView.sizeToSuperview()
-        size?.width.constant = -20
-        
-        let anotherView = UIView()
-        simpleView.layout(.left, to: .right, of: anotherView, offset: 20)
-        simpleView.layoutToSuperview(.top, .bottom, .left, .right)
-        simpleView.layoutToSuperview(.top, .bottom, .left, .right)
-        
-        
-        // Create array of views and customize it
-        var viewsArray: [UIView] = []
-        for _ in 0...4 {
-            let simpleView = UIView()
-            view.addSubview(simpleView)
-            viewsArray.append(simpleView)
-        }
-        
-        viewsArray.set(.height, of: 50)
-        viewsArray.layoutToSuperview(axis: .horizontally, offset: 30)
-        viewsArray.spread(.vertically, stretchEdgesToSuperview: true, offset: 8)
-
-    }
 }
