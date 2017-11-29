@@ -1,22 +1,22 @@
 {
   "name": "QuickLayout",
   "version": "1.0.1",
-  "summary": "Written in pure Swift, QuickLayout offers you a simple and easy way to assign and manage constraints via code.",
+  "summary": "Code based user interface",
   "platforms": {
     "ios": "9.0"
   },
   "requires_arc": true,
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/huri000@gmail.com/QuickLayout",
+  "description": "QuickLayout offers you a simple and easy way to assign and manage your views and constraints in code.",
+  "homepage": "https://github.com/huri000/QuickLayout",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "huri000@gmail.com": "huri000@gmail.com"
+    "Daniel Huri": "huri000@gmail.com"
   },
   "source": {
-    "git": "https://github.com/huri000@gmail.com/QuickLayout.git",
+    "git": "https://github.com/huri000/QuickLayout.git",
     "tag": "1.0.1"
   },
   "source_files": "QuickLayout/**/*.{swift,h}",
