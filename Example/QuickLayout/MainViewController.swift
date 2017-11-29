@@ -41,16 +41,16 @@ class MainViewController: BaseViewController {
         let sideMargin: CGFloat = 20
 
         // Align to the left of it's superview
-        scrollExampleButton.layoutToSuperview(.left, constant: sideMargin)
+        scrollExampleButton.layoutToSuperview(.left, offset: sideMargin)
         
         // Align right to centerX of it's superview, with constant distance
-        scrollExampleButton.layout(.right, to: .centerX, of: scrollExampleButton.superview!, constant: -sideMargin * 0.5)
+        scrollExampleButton.layout(.right, to: .centerX, of: scrollExampleButton.superview!, offset: -sideMargin * 0.5)
         
         // Align to the right of it's superview
-        tableExampleButton.layoutToSuperview(.right, constant: -sideMargin)
+        tableExampleButton.layoutToSuperview(.right, offset: -sideMargin)
         
         // Align left to centerX of it's superview, with constant distance
-        tableExampleButton.layout(.left, to: .centerX, of: tableExampleButton.superview!, constant: sideMargin * 0.5)
+        tableExampleButton.layout(.left, to: .centerX, of: tableExampleButton.superview!, offset: sideMargin * 0.5)
         
         // Example for using an array of views to layout them using a single line
         
@@ -68,5 +68,46 @@ class MainViewController: BaseViewController {
     
     @objc func tableViewExampleButtonPressed() {
         present(TableSampleViewController(), animated: true, completion: nil)
+    }
+    
+    private func test() {
+        // Create a view, add it to view hierarchy, and customize it
+        let simpleView = UIView()
+        simpleView.backgroundColor = .gray
+        view.addSubview(simpleView)
+        
+        simpleView.set(.height, of: 50)
+        
+        
+        
+        simpleView.layoutToSuperview(.top)
+        simpleView.layoutToSuperview(.centerX)
+        simpleView.layoutToSuperview(.width, ratio: 0.8)
+        let constraint = simpleView.layoutToSuperview(.centerX)
+        let center = simpleView.centerInSuperview()
+        center?.x.constant = 20
+        center?.y.constant = 20
+        
+        let size = simpleView.sizeToSuperview()
+        size?.width.constant = -20
+        
+        let anotherView = UIView()
+        simpleView.layout(.left, to: .right, of: anotherView, offset: 20)
+        simpleView.layoutToSuperview(.top, .bottom, .left, .right)
+        simpleView.layoutToSuperview(.top, .bottom, .left, .right)
+        
+        
+        // Create array of views and customize it
+        var viewsArray: [UIView] = []
+        for _ in 0...4 {
+            let simpleView = UIView()
+            view.addSubview(simpleView)
+            viewsArray.append(simpleView)
+        }
+        
+        viewsArray.set(.height, of: 50)
+        viewsArray.layoutToSuperview(axis: .horizontally, offset: 30)
+        viewsArray.spread(.vertically, stretchEdgesToSuperview: true, offset: 8)
+
     }
 }

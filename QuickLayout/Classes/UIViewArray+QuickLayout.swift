@@ -11,31 +11,49 @@ import UIKit
 // MARK: Multiple Views in Array
 extension Array where Element: UIView {
     
-    // MARK: Set constant edge for each and every view in Array
+    /**
+     All elements in the collection recieve constant value for the given edge.
+     - parameter edge: Should be used with *.width* or *.height*.
+     - parameter value: The size of the edge.
+     - parameter priority: Constraint's priority (default is *.required*).
+     - returns: The instance of the constraint that was applied (discardable).
+     */
     @discardableResult
-    public func setConstant(_ edge: NSLayoutAttribute, value: CGFloat, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+    public func set(_ edge: NSLayoutAttribute, of value: CGFloat, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
         var constraints: [NSLayoutConstraint] = []
         for view in self {
-            let constraint = view.setConstant(edge, value: value)
+            let constraint = view.set(edge, of: value)
             constraints.append(constraint)
         }
         return constraints
     }
     
-    // MARK: Set constant edges (plural)
+    /**
+     All elements in the collection recieve constant value for the given edges, using variadic parameter.
+     - parameter edges: Should be used with *.width* or *.height*.
+     - parameter value: The size of the edge.
+     - parameter priority: Constraint's priority (default is *.required*).
+     - returns: The instance of the constraint that was applied (discardable).
+     */
     @discardableResult
-    public func setConstant(edges: NSLayoutAttribute..., value: CGFloat, priority: UILayoutPriority = .required) -> [QLMultipleConstraints] {
+    public func set(_ edges: NSLayoutAttribute..., of value: CGFloat, priority: UILayoutPriority = .required) -> [QLMultipleConstraints] {
         var constraintsArray: [QLMultipleConstraints] = []
         for view in self {
-            let constraints = view.setConstant(edges: edges, value: value, priority: priority)
+            let constraints = view.set(edges, to: value, priority: priority)
             constraintsArray.append(constraints)
         }
         return constraintsArray
     }
     
-    // MARK: Spread views consecutively according to a given axis. Values might be: .vertically, .horizontally
+    /**
+     Spread elements consecutively according to the given axis.
+     - parameter axis: The axis: *.vertically*, *horizontally*
+     - parameter stretchEdgesToSuperview: Decides whether the first and last items in the array must be clipped to their parent edges.
+     - parameter priority: Constraint's priority (default is *.required*).
+     - returns: Array of constraints that were applied (discardable)
+     */
     @discardableResult
-    public func spread(_ axis: LayoutAxis, stretchEdgesToSuperview: Bool = false, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+    public func spread(_ axis: QLAxis, stretchEdgesToSuperview: Bool = false, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
         guard isValidForQuickLayout else {
             return nil
         }
@@ -43,7 +61,7 @@ extension Array where Element: UIView {
         var constraints: [NSLayoutConstraint] = []
         
         if stretchEdgesToSuperview {
-            let constraint = first!.layoutToSuperview(attributes.first, constant: constant)!
+            let constraint = first!.layoutToSuperview(attributes.first, offset: offset)!
             constraints.append(constraint)
         }
         
@@ -52,26 +70,32 @@ extension Array where Element: UIView {
                 continue
             }
             let previousView = self[index-1]
-            let constraint = view.layout(attributes.first, to: attributes.second, of: previousView, constant: constant, priority: priority)!
+            let constraint = view.layout(attributes.first, to: attributes.second, of: previousView, offset: offset, priority: priority)!
             constraints.append(constraint)
         }
         
         if stretchEdgesToSuperview {
-            let constraint = last!.layoutToSuperview(attributes.second, constant: -constant)!
+            let constraint = last!.layoutToSuperview(attributes.second, offset: -offset)!
             constraints.append(constraint)
         }
         
         return constraints
     }
     
-    // MARK: Layout views to superview axis (.vertically, .horizontally)
+    /**
+     Layout elements to superview's axis
+     - parameter axis: The axis: *.vertically*, *horizontally*
+     - parameter offset: Additional side offset that must be applied (identical spacing from each side)
+     - parameter priority: Constraint's priority (default is *.required*).
+     - returns: Array of QLAxisConstraints - see definition (discardable)
+     */
     @discardableResult
-    public func layoutToSuperview(axis: LayoutAxis, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [QLAxisConstraints]? {
+    public func layoutToSuperview(axis: QLAxis, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> [QLAxisConstraints]? {
         let attributes = axis.attributes
-        guard let firstConstraints = layoutToSuperview(attributes.first, constant: constant, priority: priority) else {
+        guard let firstConstraints = layoutToSuperview(attributes.first, offset: offset, priority: priority) else {
             return nil
         }
-        guard let secondConstraints = layoutToSuperview(attributes.second, constant: -constant, priority: priority) else {
+        guard let secondConstraints = layoutToSuperview(attributes.second, offset: -offset, priority: priority) else {
             return nil
         }
         var constraints: [QLAxisConstraints] = []
@@ -81,18 +105,34 @@ extension Array where Element: UIView {
         return constraints
     }
     
-    // MARK: Layout UIView elements edge to superview
+    /**
+     Layout elements' edges to superview's edge (The same edge - top to top, bottom to bottom, etc...)
+     - parameter edge: The edge of the view / superview
+     - parameter ratio: The ratio of the edge in relation to the superview's (default is 1).
+     - parameter offset: Additional offset from that must be applied to the constraint (default is 0).
+     - parameter priority: Constraint's priority (default is *.required*).
+     - returns: Array of applied constraints - see definition (discardable)
+     */
     @discardableResult
-    public func layoutToSuperview(_ edge: NSLayoutAttribute, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+    public func layoutToSuperview(_ edge: NSLayoutAttribute, ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
         guard isValidForQuickLayout else {
             return nil
         }
-        return layout(to: edge, of: first!.superview!, multiplier: multiplier, constant: constant, priority: priority)
+        return layout(to: edge, of: first!.superview!, ratio: ratio, offset: offset, priority: priority)
     }
     
-    // MARK: Layout UIView elements edge to anchorView edge
+    /**
+     Layout elements' edges to to anchorView edge
+     - parameter firstEdge: The edge of the elements in the array
+     - parameter anchorEdge: The edge of the anchor view
+     - parameter anchorView: The anchor view
+     - parameter ratio: The ratio of the edge in relative to the superview edge (default is 1).
+     - parameter offset: Additional offset from that can be applied to the constraints (default is 0).
+     - parameter priority: Constraints' priority (default is *.required*).
+     - returns: Array of applied constraints - see definition (discardable)
+     */
     @discardableResult
-    public func layout(_ firstEdge: NSLayoutAttribute? = nil, to anchorEdge: NSLayoutAttribute, of anchorView: UIView, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
+    public func layout(_ firstEdge: NSLayoutAttribute? = nil, to anchorEdge: NSLayoutAttribute, of anchorView: UIView, ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> [NSLayoutConstraint]? {
         guard isValidForQuickLayout else {
             return nil
         }
@@ -106,15 +146,23 @@ extension Array where Element: UIView {
         
         var result: [NSLayoutConstraint] = []
         for view in self {
-            let constraint = view.layout(edge, to: anchorEdge, of: anchorView, multiplier: multiplier, constant: constant, priority: priority)!
+            let constraint = view.layout(edge, to: anchorEdge, of: anchorView, ratio: ratio, offset: offset, priority: priority)!
             result.append(constraint)
         }
         return result
     }
     
-    // MARK: Layout elements edges to anchorView's edge
+    /**
+     Layout elements' multiple edges to to anchorView's same edges (top to top, bottom to bottom, etc...)
+     - parameter edges: The edges of the view - variadic parameter
+     - parameter anchorView: The anchor view
+     - parameter ratio: The ratio of the edge in relative to the superview edge (default is 1).
+     - parameter offset: Additional offset from that can be applied to the constraints (default is 0).
+     - parameter priority: Constraints' priority (default is *.required*).
+     - returns: Array of applied constraints, each element is of type QLMultipleConstraints - see definition (discardable)
+     */
     @discardableResult
-    public func layout(_ edges: NSLayoutAttribute..., to anchorView: UIView, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .required) -> [QLMultipleConstraints]? {
+    public func layout(_ edges: NSLayoutAttribute..., to anchorView: UIView, ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> [QLMultipleConstraints]? {
         guard !edges.isEmpty && isValidForQuickLayout else {
             return nil
         }
@@ -124,7 +172,7 @@ extension Array where Element: UIView {
         for view in self {
             var multipleConstraints: QLMultipleConstraints = [:]
             for edge in uniqueEdges {
-                let constraint = view.layout(to: edge, of: anchorView, multiplier: multiplier, constant: constant, priority: priority)!
+                let constraint = view.layout(to: edge, of: anchorView, ratio: ratio, offset: offset, priority: priority)!
                 multipleConstraints[edge] = constraint
             }
             result.append(multipleConstraints)
@@ -132,7 +180,7 @@ extension Array where Element: UIView {
         return result
     }
     
-    // MARK: Test for validity
+    /** **PRIVATELY USED** to test for validation*/
     private var isValidForQuickLayout: Bool {
         guard !isEmpty else {
             print("\(String(describing: self)) Error in func: \(#function), Views collection is empty!")

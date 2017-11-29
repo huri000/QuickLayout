@@ -29,7 +29,7 @@ class BaseViewController: UIViewController {
         titleLabel.textColor = .black
         titleLabel.text = titleString
         view.addSubview(titleLabel)
-        titleLabel.layoutToSuperview(.top, constant: UIApplication.shared.statusBarFrame.maxY + 10)
+        titleLabel.layoutToSuperview(.top, offset: UIApplication.shared.statusBarFrame.maxY + 10)
         titleLabel.layoutToSuperview(.centerX)
     }
 }

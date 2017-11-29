@@ -42,16 +42,16 @@ class ContactTableViewCell: UITableViewCell {
     
     private func setupThumbView() {
         contentView.addSubview(thumbView)
-        thumbView.layoutToSuperview(axis: .vertically, constant: 20, priority: .must)
+        thumbView.layoutToSuperview(axis: .vertically, offset: 20, priority: .must)
         thumbView.layoutToSuperview(.centerY)
-        thumbView.layoutToSuperview(.left, constant: 16)
-        thumbView.setConstant(edges: .width, .height, value: 50)
+        thumbView.layoutToSuperview(.left, offset: 16)
+        thumbView.set(.width, .height, of: 50)
     }
     
     private func setupNameLabel() {
         contentView.addSubview(nameLabel)
-        nameLabel.layout(.left, to: .right, of: thumbView, constant: 10)
+        nameLabel.layout(.left, to: .right, of: thumbView, offset: 10)
         nameLabel.layout(to: .centerY, of: thumbView)
-        nameLabel.layoutToSuperview(.right, constant: -20)
+        nameLabel.layoutToSuperview(.right, offset: -20)
     }
 }

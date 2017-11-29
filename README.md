@@ -21,8 +21,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Swift 4.0 and iOS 9.0 (or higher).
 
 ## Features
-- Extension to `UIView`, contains functionality that allows you to set constraints directly from the view itself.
-- Extension to `Array of UIView`, contains functionality that allows you to set constraints directly from array of views.
+- Extension to `UIView`: Contains functionality that allows you to set constraints directly from the view itself.
+- Extension to `Array of UIView`: Contains functionality that allows you to set constraints directly from array of views.
 
 ## Usage of `UIView+QuickLayout`
 
@@ -32,7 +32,7 @@ Swift 4.0 and iOS 9.0 (or higher).
     view.addSubview(simpleView)
     
 #### Set constant height
-    simpleView.setConstant(.height, value: 50)
+    simpleView.set(.height, of: 50)
     
 #### Make simpleView cling to the top of it's superview
     simpleView.layoutToSuperview(.top)
@@ -41,7 +41,7 @@ Swift 4.0 and iOS 9.0 (or higher).
     simpleView.layoutToSuperview(.centerX)
     
 #### Make simpleView to stretch to 80% of the width of it's superview
-    simpleView.layoutToSuperview(.width, multiplier: 0.8)
+    simpleView.layoutToSuperview(.width, ratio: 0.8)
 
 #### Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it):
 
@@ -68,11 +68,11 @@ Swift 4.0 and iOS 9.0 (or higher).
     
 #### You can layout view in relation to another view, and optionally set constant distance between them:
 
-    simpleView.layout(.left, to: .right, of: anotherView, constant: 20)
+    simpleView.layout(.left, to: .right, of: anotherView, offset: 20)
 
 #### Use variatic parameter to easiliy install constraints for `simpleView`, simultaniouly.
     
-    simpleView.layoutToSuperview(edges: .top, .bottom, .left, .right)
+    simpleView.layoutToSuperview(.top, .bottom, .left, .right)
 
 ## Usage of `UIViewArray+QuickLayout`
 
@@ -86,21 +86,21 @@ Swift 4.0 and iOS 9.0 (or higher).
 
 #### Set constant height for each element in `viewsArray`
 
-    viewsArray.setConstant(.height, value: 50)
+    viewsArray.set(.height, of: 50)
 
 #### Stretch each element of `viewsArray` horizontally to superview, with 30 margin from each side
 
-    viewsArray.layoutToSuperview(axis: .horizontally, constant: 30)
+    viewsArray.layoutToSuperview(axis: .horizontally, offset: 30)
 
 #### Spread elements vertically in superview with 8 margin between them, laso layout first and last to superview with `stretchEdgesToSuperview`
 
-    viewsArray.spread(.vertically, stretchEdgesToSuperview: true, constant: 8)
+    viewsArray.spread(.vertically, stretchEdgesToSuperview: true, offset: 8)
 
 ## Installation
     
 #### CocoaPods
 ```
-pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '0.2.2'
+pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '1.0.0'
 ```
 
 #### Manually

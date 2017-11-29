@@ -8,91 +8,74 @@
 import Foundation
 import UIKit
 
-// MARK: WIP
-private enum QLConstraintIdentifier: String {
-    
-    case constantWidth
-    case constantHeight
-    
-    case centerXInSuperview
-    case centerYInSuperview
-    
-    case widthToSuperview
-    case heightToSuperview
-    case leftToSuperview
-    case rightToSuperview
-    case topToSuperview
-    case bottomToSuperview
-    case leadingToSuperview
-    case trailingToSuperview
-    
-    case leftToRightOfView
-    case rightToLeftOfView
-    case topToBottomOfView
-    case bottomToTopOfView
-    
-    case centerXToLeftOfView
-    case centerXToRightOfView
-    case centerXToLeadingOfView
-    case centerXToTrailingOfView
-    
-    case centerYToTopOfView
-    case centerYToBottomOfView
-    
-    var value: String {
-        return "ql_\(rawValue)"
-    }
-}
-// MARK: Layout priorities which are mostly used
+/**
+ Typealias for dictionary that contains multiple constraints
+ */
+public typealias QLMultipleConstraints = [NSLayoutAttribute : NSLayoutConstraint]
+
+/**
+ Extends layout priority to other readable types
+ */
 public extension UILayoutPriority {
     public static let must = UILayoutPriority(rawValue: 999)
     public static let zero = UILayoutPriority(rawValue: 0)
 }
 
-// MARK: Represents pair of attributes
+/**
+ Represents pair of attributes
+ */
 public struct QLAttributePair {
     public let first: NSLayoutAttribute
     public let second: NSLayoutAttribute
 }
 
-// MARK: Represents size constraints
+/**
+ Represents size constraints
+ */
 public struct QLSizeConstraints {
     public let width: NSLayoutConstraint
     public let height: NSLayoutConstraint
 }
 
-// MARK: Represents axis constraints (might be .top and .bottom, .left and .right, .leading and .trailing)
-public struct QLAxisConstraints {
-    public let first: NSLayoutConstraint
-    public let second: NSLayoutConstraint
-}
-
-// MARK: Represents center constraints
+/**
+ Represents center constraints
+ */
 public struct QLCenterConstraints {
     public let x: NSLayoutConstraint
     public let y: NSLayoutConstraint
 }
 
-// MARK: Represents center and size constraints
+/**
+ Represents axis constraints (might be .top and .bottom, .left and .right, .leading and .trailing)
+ */
+public struct QLAxisConstraints {
+    public let first: NSLayoutConstraint
+    public let second: NSLayoutConstraint
+}
+
+/**
+ Represents center and size constraints
+ */
 public struct QLFillConstraints {
     public let center: QLCenterConstraints
     public let size: QLSizeConstraints
 }
 
-// MARK: Represent pair of priorities
+/**
+ Represents pair of priorities
+ */
 public struct QLPriorityPair {
     public let horizontal: UILayoutPriority
     public let vertical: UILayoutPriority
-    
     public static var required: QLPriorityPair {
         return QLPriorityPair(horizontal: .required, vertical: .required)
     }
 }
 
-public typealias QLMultipleConstraints = [NSLayoutAttribute : NSLayoutConstraint]
-
-// MARK: Represents axis
-public enum LayoutAxis {
+/**
+ Represents axis description
+ */
+public enum QLAxis {
     case horizontally
     case vertically
     public var attributes: QLAttributePair {

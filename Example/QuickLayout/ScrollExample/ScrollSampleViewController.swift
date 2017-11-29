@@ -31,10 +31,10 @@ class ScrollSampleViewController: ModalViewController {
         view.addSubview(contentScrollView)
         
         // Align contentScrollView's top to bottom of titleLabel with offset of 20
-        contentScrollView.layout(.top, to: .bottom, of: titleLabel, constant: 20)
+        contentScrollView.layout(.top, to: .bottom, of: titleLabel, offset: 20)
         
         // Align contentScrollView to bottom, left and right of superview simultaniouly
-        contentScrollView.layoutToSuperview(edges: .bottom, .left, .right)
+        contentScrollView.layoutToSuperview(.bottom, .left, .right)
         
         // Setup scroll-view custom subviews
         setupMultipleLabelsInScrollView()
@@ -53,7 +53,7 @@ class ScrollSampleViewController: ModalViewController {
         contentScrollView.addSubview(customViewsContainer)
         
         // Align top with the bottom of scroll-view's last subview
-        customViewsContainer.layout(.top, to: .bottom, of: scrollViewSubviews.last!, constant: 16)
+        customViewsContainer.layout(.top, to: .bottom, of: scrollViewSubviews.last!, offset: 16)
         
         // Align customView to superview's left and right (horizontally stretching)
         customViewsContainer.layoutToSuperview(axis: .horizontally)
@@ -83,7 +83,7 @@ class ScrollSampleViewController: ModalViewController {
                     customView.layoutToSuperview(.trailing)
                 }
                 customView.layoutToSuperview(axis: .vertically)
-                customView.layoutToSuperview(.width, multiplier: 1.0/CGFloat(customViewsCount))
+                customView.layoutToSuperview(.width, ratio: 1.0/CGFloat(customViewsCount))
                 
                 customViews.append(customView)
             }
@@ -92,8 +92,8 @@ class ScrollSampleViewController: ModalViewController {
             rowView.layoutToSuperview(axis: .horizontally)
 
             // Set constant height for customView (Randomize it for fun)
-            rowView.setConstant(.height, value: .random(min: 40, max: 120))
-            
+            rowView.set(.height, of: .random(min: 40, max: 120))
+
             // Not first item - Align top to previous's bottom, with margin of 16
             if let previous = rowViews.last {
                 rowView.layout(.top, to: .bottom, of: previous)
@@ -119,7 +119,7 @@ class ScrollSampleViewController: ModalViewController {
         
         /* Example for aligning labelsContainerView to superview's
          left, right, width simultaniously using variadic parameters */
-        labelsContainerView.layoutToSuperview(edges: .left, .right, .width)
+        labelsContainerView.layoutToSuperview(.left, .right, .width)
         
         scrollViewSubviews.append(labelsContainerView)
         
@@ -140,22 +140,22 @@ class ScrollSampleViewController: ModalViewController {
         labelsContainerView.addSubview(columnView)
         
         // Set constant width of 5 to columnView
-        columnView.setConstant(.width, value: 5)
+        columnView.set(.width, of: 5)
         
         // Align columnView to left of superview with 16 margin
-        columnView.layoutToSuperview(.left, constant: 16)
+        columnView.layoutToSuperview(.left, offset: 16)
         
         // Align top and bottom of columnView with the top of the first, last labels, respectively
         columnView.layout(to: .top, of: labelArray.first!)
         columnView.layout(to: .bottom, of: labelArray.last!)
         
         // Align labels' left to the right of columnView with margin of 8
-        labelArray.layout(.left, to: .right, of: columnView, constant: 8)
+        labelArray.layout(.left, to: .right, of: columnView, offset: 8)
         
         // Align labels vertically with spacing of 8 between them, stretch to superview also
-        labelArray.spread(.vertically, stretchEdgesToSuperview: true, constant: 8)
+        labelArray.spread(.vertically, stretchEdgesToSuperview: true, offset: 8)
         
         // Align labels to the right of their superview with margin of 16
-        labelArray.layoutToSuperview(.right, constant: -16)
+        labelArray.layoutToSuperview(.right, offset: -16)
     }
 }

@@ -10,8 +10,11 @@ import Foundation
 // MARK: Content Compression Resistance & Content Hugging Priority
 public extension UIView {
 
-    // MARK: Content wrap by axis
-    public func forceContentWrap(_ axes: LayoutAxis...) {
+    /**
+     Force hugging and compression resistance for the given axes, using variadic parameter.
+     - parameter axes: The axes
+     */
+    public func forceContentWrap(_ axes: QLAxis...) {
         if axes.contains(.vertically) {
             verticalHuggingPriority = .required
             verticalCompressionResistancePriority = .required
@@ -22,13 +25,17 @@ public extension UIView {
         }
     }
     
-    // MARK: Full content wrap
+    /**
+     Force hugging and compression resistance vertically and horizontally.
+     */
     public func forceContentWrap() {
         contentHuggingPriority = .required
         contentCompressionResistancePriority = .required
     }
     
-    // MARK: Content Hugging Priority
+    /**
+     Vertical hugging priority
+     */
     public var verticalHuggingPriority: UILayoutPriority {
         set {
             setContentHuggingPriority(newValue, for: .vertical)
@@ -38,6 +45,9 @@ public extension UIView {
         }
     }
     
+    /**
+     Horizontal hugging priority
+     */
     public var horizontalHuggingPriority: UILayoutPriority {
         set {
             setContentHuggingPriority(newValue, for: .horizontal)
@@ -47,6 +57,9 @@ public extension UIView {
         }
     }
     
+    /**
+     Content hugging priority (Vertical & Horizontal)
+     */
     public var contentHuggingPriority: QLPriorityPair {
         set {
             horizontalHuggingPriority = newValue.horizontal
@@ -57,7 +70,9 @@ public extension UIView {
         }
     }
     
-    // MARK: Content Compression Resistance
+    /**
+     Vertical content compression resistance priority
+     */
     public var verticalCompressionResistancePriority: UILayoutPriority {
         set {
             setContentCompressionResistancePriority(newValue, for: .vertical)
@@ -67,6 +82,9 @@ public extension UIView {
         }
     }
     
+    /**
+     Horizontal content compression resistance priority
+     */
     public var horizontalCompressionResistancePriority: UILayoutPriority {
         set {
             setContentCompressionResistancePriority(newValue, for: .horizontal)
@@ -76,6 +94,9 @@ public extension UIView {
         }
     }
     
+    /**
+    Content compression resistance priority (Vertical & Horizontal)
+     */
     public var contentCompressionResistancePriority: QLPriorityPair {
         set {
             horizontalCompressionResistancePriority = newValue.horizontal

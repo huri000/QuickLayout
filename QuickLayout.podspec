@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLayout'
-  s.version          = '0.2.2'
-  s.summary          = 'A short description of QuickLayout.'
+  s.version          = '1.0.0'
+  s.summary          = 'Written in pure Swift, QuickLayout offers you a simple and easy way to assign and manage constraints via code.'
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.requires_arc = true

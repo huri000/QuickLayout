@@ -40,8 +40,8 @@ class TableSampleViewController: ModalViewController {
         contentTableView.dataSource = self
         view.addSubview(contentTableView)
         contentTableView.register(ContactTableViewCell.self, forCellReuseIdentifier: String(describing: ContactTableViewCell.self))
-        contentTableView.layout(.top, to: .bottom, of: titleLabel, constant: 20)
-        contentTableView.layoutToSuperview(edges: .left, .right, .bottom)
+        contentTableView.layout(.top, to: .bottom, of: titleLabel, offset: 20)
+        contentTableView.layoutToSuperview(.left, .right, .bottom)
     }
 }
 
