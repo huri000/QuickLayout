@@ -100,7 +100,7 @@ Swift 4.0 and iOS 9.0 (or higher).
     
 #### CocoaPods
 ```
-pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '1.0.4'
+pod 'QuickLayout', :git => 'https://github.com/huri000/QuickLayout', :tag => '1.0.5'
 ```
 
 #### Manually
