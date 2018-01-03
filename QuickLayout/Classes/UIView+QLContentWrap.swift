@@ -66,7 +66,7 @@ public extension UIView {
             verticalHuggingPriority = newValue.vertical
         }
         get {
-            return QLPriorityPair(horizontal: horizontalHuggingPriority, vertical: verticalHuggingPriority)
+            return QLPriorityPair(horizontalHuggingPriority, verticalHuggingPriority)
         }
     }
     
@@ -103,7 +103,7 @@ public extension UIView {
             verticalCompressionResistancePriority = newValue.vertical
         }
         get {
-            return QLPriorityPair(horizontal: horizontalCompressionResistancePriority, vertical: verticalCompressionResistancePriority)
+            return QLPriorityPair(horizontalCompressionResistancePriority, verticalCompressionResistancePriority)
         }
     }
 }

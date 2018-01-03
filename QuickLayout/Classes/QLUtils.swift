@@ -68,7 +68,14 @@ public struct QLPriorityPair {
     public let horizontal: UILayoutPriority
     public let vertical: UILayoutPriority
     public static var required: QLPriorityPair {
-        return QLPriorityPair(horizontal: .required, vertical: .required)
+        return QLPriorityPair(.required, .required)
+    }
+    public static var must: QLPriorityPair {
+        return QLPriorityPair(.must, .must)
+    }
+    public init(_ horizontal: UILayoutPriority, _ vertical: UILayoutPriority) {
+        self.horizontal = horizontal
+        self.vertical = vertical
     }
 }
 
