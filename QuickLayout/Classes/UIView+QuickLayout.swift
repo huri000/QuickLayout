@@ -75,7 +75,7 @@ public extension UIView {
             print("\(String(describing: self)) Error in func: \(#function)")
             return nil
         }
-        let constraint = NSLayoutConstraint(item: self, attribute: edge ?? otherEdge, relatedBy: .equal, toItem: view, attribute: otherEdge, multiplier: ratio, constant: offset)
+        let constraint = NSLayoutConstraint(item: self, attribute: edge ?? otherEdge, relatedBy: relation, toItem: view, attribute: otherEdge, multiplier: ratio, constant: offset)
         constraint.priority = priority
         superview!.addConstraint(constraint)
         return constraint
