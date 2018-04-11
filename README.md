@@ -100,7 +100,7 @@ Swift 4.0 and iOS 9.0 (or higher).
     
 #### CocoaPods
 ```
-pod 'QuickLayout', '1.0.8'
+pod 'QuickLayout', '1.0.10'
 ```
 
 #### Manually

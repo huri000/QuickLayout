@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLayout'
-  s.version          = '1.0.9'
+  s.version          = '1.0.10'
   s.summary          = 'Code based user interface'
   s.platform = :ios
   s.ios.deployment_target = '9.0'
