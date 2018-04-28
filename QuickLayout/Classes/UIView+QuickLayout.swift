@@ -15,15 +15,17 @@ public extension UIView {
      Should be used with *width* or *height*
      - parameter edge: Edge type.
      - parameter value: Edge size.
+     - parameter relation: Relation to the given constant value (default is *.equal*).
+     - parameter ratio: Ratio of the cconstant constraint to actual given value (default is *1*)
      - parameter priority: Constraint's priority (default is *.required*).
      - returns: The applied constraint (discardable).
      */
     @discardableResult
-    public func set(_ edge: NSLayoutAttribute, of value: CGFloat, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
+    public func set(_ edge: NSLayoutAttribute, of value: CGFloat, relation: NSLayoutRelation = .equal, ratio: CGFloat = 1.0, priority: UILayoutPriority = .required) -> NSLayoutConstraint {
         if translatesAutoresizingMaskIntoConstraints {
             translatesAutoresizingMaskIntoConstraints = false
         }
-        let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: value)
+        let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: relation, toItem: nil, attribute: .notAnAttribute, multiplier: ratio, constant: value)
         constraint.priority = priority
         addConstraint(constraint)
         return constraint
@@ -38,13 +40,13 @@ public extension UIView {
      - returns: The applied constraints in QLMultipleConstraints - see definition (discardable).
      */
     @discardableResult
-    public func set(_ edges: NSLayoutAttribute..., of value: CGFloat, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
-        return set(edges, to: value, priority: priority)
+    public func set(_ edges: NSLayoutAttribute..., of value: CGFloat, relation: NSLayoutRelation = .equal, ratio: CGFloat = 1.0, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
+        return set(edges, to: value, relation: relation, ratio: ratio, priority: priority)
     }
     
     /** **PRIVATELY USED** AS A REPLACEMENT for the variadic version for the method*/
     @discardableResult
-    func set(_ edges: [NSLayoutAttribute], to value: CGFloat, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
+    func set(_ edges: [NSLayoutAttribute], to value: CGFloat, relation: NSLayoutRelation = .equal, ratio: CGFloat = 1.0, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
         var constraints: QLMultipleConstraints = [:]
         let uniqueEdges = Set(edges)
         for edge in uniqueEdges {
