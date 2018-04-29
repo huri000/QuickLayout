@@ -1,12 +1,10 @@
 # QuickLayout
-
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
-)](http://mit-license.org)
+[![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Total Downloads](https://img.shields.io/cocoapods/dt/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 [![Monthly Downloads](https://img.shields.io/cocoapods/dm/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 [![Weekly Downloads](https://img.shields.io/cocoapods/dw/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
