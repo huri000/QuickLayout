@@ -6,8 +6,6 @@
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Total Downloads](https://img.shields.io/cocoapods/dt/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
-[![Monthly Downloads](https://img.shields.io/cocoapods/dm/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
-[![Weekly Downloads](https://img.shields.io/cocoapods/dw/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 
 Harness the power of QuickLayout to align your interface programmatically, without using the Interface Builder.
 QuickLayout offers you a simple and easy way to assign and manage constraints via code.
