@@ -1,9 +1,19 @@
 language: objective-c
-osx_image: xcode9.3
-#podfile: Example/Podfile
-#xcode_workspace: Example/QuickLayout.xcworkspace
-#xcode_scheme: QuickLayoutDemoApp
-#xcode_sdk: iphonesimulator9.3
+
+env:
+  global:
+    - PROJECT_PATH=Example
+    - WORKSPACE=QuickLayout.xcworkspace
+    - SCHEME=QuickLayoutDemoApp
+    - TEST_SDK=iphonesimulator
+
+matrix:
+  include:
+      os: osx
+      osx_image: xcode9.3
+      env:
+         - BUILD="xcodebuild"
+         - TEST_DEST="platform=iOS Simulator,OS=11.3,name=iPhone 8"
 
 script:
-  - xcodebuild clean build -sdk iphonesimulator -workspace Example/QuickLayout.xcworkspace -scheme QuickLayoutDemoApp
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$TEST_DEST" -sdk "$TEST_SDK" -enableCodeCoverage YES
