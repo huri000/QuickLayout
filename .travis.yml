@@ -2,8 +2,7 @@ language: objective-c
 
 env:
   global:
-    - PROJECT_PATH=Example
-    - WORKSPACE=QuickLayout.xcworkspace
+    - WORKSPACE=Example/QuickLayout.xcworkspace
     - SCHEME=QuickLayoutDemoApp
     - TEST_SDK=iphonesimulator
 
