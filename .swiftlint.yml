@@ -1,0 +1,227 @@
+included:
+  - Sources
+  - Tests
+
+excluded:
+  - Scripts
+  - Documentation
+
+disabled_rules:
+  - comma       # Note: we replaced this with a custom comma rule that allows flexible_right_space
+  - empty_count
+  - todo
+  - conditional_returns_on_newline
+  - switch_case_on_newline
+  - overridden_super_call
+  - line_length
+  - type_body_length # Until swiftlint allows overriding rules in sub swiftlint.yml files, we're disabling this rule for tests
+  - file_length      # Until swiftlint allows overriding rules in sub swiftlint.yml files, we're disabling this rule for tests
+  - type_name        # Until swiftlint allows overriding rules in sub swiftlint.yml files, we're disabling this rule for tests
+  - missing_docs     # Development time only, remove when we get closer to production.  Also make this rule an error and not warning.
+
+opt_in_rules:
+  - closure_spacing
+  - explicit_init
+  - force_unwrapping
+  - private_outlet
+  - redundant_nil_coalescing
+
+closing_brace:
+  severity: error
+
+closure_spacing:
+  severity: error
+
+colon:
+  flexible_right_spacing: true
+  severity: error
+
+control_statement:
+  severity: error
+
+cyclomatic_complexity:
+  warning: 30
+  error: 50
+
+file_length:
+  warning: 700
+  error: 1000
+
+function_body_length:
+  warning: 400
+  error: 100
+
+function_parameter_count:
+  warning: 5
+  error: 8
+
+leading_whitespace:
+  severity: error
+
+legacy_cggeometry_functions:
+  severity: error
+
+legacy_constant:
+  severity: error
+
+legacy_constructor:
+  severity: error
+
+legacy_nsgeometry_functions:
+  severity: error
+
+line_length:
+  warning: 100
+  error: 200
+
+mark:
+  severity: error
+
+nesting:
+  severity: error
+
+opening_brace:
+  severity: error
+
+operator_whitespace:
+  severity: error
+
+private_outlet:
+  severity: error
+
+private_unit_test:
+  severity:
+    error: XCTestCase
+
+redundant_nil_coalescing:
+  severity: error
+
+return_arrow_whitespace:
+  severity: error
+
+statement_position:
+  severity: error
+
+todo:
+  severity: warning
+
+trailing_newline:
+  severity: error
+
+trailing_semicolon:
+  severity: error
+
+trailing_whitespace:
+  severity:
+    warning:
+      ignores_empty_lines: false
+      ignores_comments: true
+
+type_body_length:
+  warning: 300
+  error: 450
+
+type_name:
+  min_length:
+    warning: 3
+    error: 0
+  max_length:
+    warning: 40
+    error: 1000
+
+valid_docs:
+  severity: error
+
+variable_name:
+  min_length: # Note: it important that we allow variable names like x, y, z, m so our min length for error is 0
+    warning: 0
+    error: 0
+  max_length:
+    warning: 40
+    error: 60
+
+vertical_whitespace:
+  severity: error
+
+custom_rules:
+  func_where_on_newline:
+    regex: "\)[ \t]*(?:->[ \t]*[a-zA-Z0-9]*[ \t]*)?[^\r\n][ \t]*where[ \t]"
+    message: "func definitions must have their where clause on a new line."
+    severity: error # violation severity. optional.
+
+  space_after_comment_mark:
+    regex: "(\/\/\/?[^\s\/:])|(\/\/:[^\s\/])"
+    match_kinds:
+      - comment
+    message: "There must be a space after /// or // comments and before the text."
+    severity: error
+
+  identifier_colon:
+    regex: "(?<!swiftlint|HH|mm|h|\"H|'H|\sH):([^\-\)\s\\\/\]])"
+    match_kinds:
+      - identifier
+    message: "Colons must be next to the identifier when specifying a type."
+    severity: error
+
+  comma_after_identifier:
+    regex: "(\s+,\s+)|([^\s]+,[^\s'\"]+)"
+    match_kinds:
+      - argument
+      - attribute.builtin
+      - attribute.id
+      - buildconfig.id
+      - buildconfig.keyword
+      - identifier
+      - keyword
+      - number
+      - objectliteral
+      - parameter
+      - placeholder
+      - string
+      - string_interpolation_anchor
+      - typeidentifier
+    message: "There should be no space before any comma and at least 1 space after."
+    severity: error
+
+  comma_after_identifier_Comment:
+    regex: "(\/\/\/?[^\r\n]+[a-zA-Z]+,[a-zA-Z]+)"
+    match_kinds:
+      - comment
+      - comment.mark
+      - comment.url
+      - doccomment
+      - doccomment.field
+    message: "There should be no space before any comma and at least 1 space after."
+    severity: error
+
+  bracket:
+    regex: "(\}\n{2,}\}|\{\n{2,}\{)"
+    message: "No empty line between two open or close brackets."
+    severity: error
+
+  empty_brackets:
+    regex: "(\{\s{1,}\})"
+    message: "Empty brackets must not have white space, use {} instead."
+    severity: error
+
+  triple_line_comments:
+    regex: "(\*(?>(?:(?>[^*]+)|\*(?!\/))*)\*)|(^[ \t]*\/\/[ \t]+(?i)(?!mark|swiftlint|swift-tools-version)[a-z0-9:]+)|(^[ \t]*\/\/$)"
+    message: "Comments must be in Quick Help triple line style (i.e. ///)."
+    severity: error
+
+  declaration_attributes_on_newline:
+    regex: "(@(discardableResults|inline[ \t]*\(\S*\)|available[ \t]*(\S*\)))[^\r\n]+)"
+    message: "Declaration attributes must be on their own line."
+    severity: error
+
+  access_control_on_same_line:
+    regex: "(open|public|private|fileprivate|internal)[ \t]*[\r\n]"
+    message: "Access control modifiers must be on the same line as the type declaration."
+    severity: error
+
+  empty_first_line:
+    regex: "(^[ a-zA-Z ]*(?:protocol|extension|class|struct) (?!(?:var|let))[ a-zA-Z:]*\{\n *\S+)"
+    message: "There should be an empty line after a declaration."
+    severity: error
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "QuickLayout_Example.app"
-               BlueprintName = "QuickLayout_Example"
+               BuildableName = "DemoApp.app"
+               BlueprintName = "DemoApp"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,7 +40,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -53,13 +52,23 @@
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "14D20A02209F7426009436E4"
+               BuildableName = "DemoAppTests.xctest"
+               BlueprintName = "DemoAppTests"
+               ReferencedContainer = "container:QuickLayout.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "QuickLayout_Example.app"
-            BlueprintName = "QuickLayout_Example"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,7 +79,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -82,8 +90,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "QuickLayout_Example.app"
-            BlueprintName = "QuickLayout_Example"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -101,8 +109,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "QuickLayout_Example.app"
-            BlueprintName = "QuickLayout_Example"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
