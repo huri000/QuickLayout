@@ -1,5 +1,6 @@
 language: objective-c
 osx_image: xcode9.3
+podfile: Example/Podfile
 xcode_workspace: Example/QuickLayout.xcworkspace
 xcode_scheme: QuickLayoutDemoApp
 xcode_sdk: iphonesimulator9.3
