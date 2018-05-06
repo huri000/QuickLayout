@@ -17,3 +17,6 @@ matrix:
 
 script:
   - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$TEST_DEST" -sdk "$TEST_SDK" -enableCodeCoverage YES build-for-testing
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
