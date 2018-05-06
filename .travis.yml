@@ -8,6 +8,7 @@ env:
 
 matrix:
   include:
+    -
       os: osx
       osx_image: xcode9.3
       env:
@@ -15,4 +16,4 @@ matrix:
          - TEST_DEST="platform=iOS Simulator,OS=11.3,name=iPhone 8"
 
 script:
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$TEST_DEST" -sdk "$TEST_SDK" -enableCodeCoverage YES
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$TEST_DEST" -sdk "$TEST_SDK" -enableCodeCoverage YES build-for-testing
