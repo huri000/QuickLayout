@@ -1,4 +1,5 @@
 language: objective-c
+podfile: Example/Podfile
 
 env:
   global:
