@@ -2,8 +2,16 @@ platform :ios, '9.0'
 
 use_frameworks!
 
-target 'QuickLayout_Example' do
-  pod 'QuickLayout', :path => '../'
-  pod 'LoremIpsum', '~> 1.0'
-  
+target 'DemoApp' do
+  	pod 'QuickLayout', :path => '../'
+	pod 'LoremIpsum', '~> 1.0'
+	
+	target 'DemoAppTests' do
+		inherit! :search_paths
+
+		pod 'Quick', '~> 1.2.0'
+		pod 'Nimble', '~> 7.0.2'
+		pod 'FBSnapshotTestCase' , '~> 2.1.4'
+		pod 'Nimble-Snapshots' , '~> 6.3.0'
+	end
 end

@@ -1,6 +1,0 @@
-framework module Pods_QuickLayout_Example {
-  umbrella header "Pods-QuickLayout_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

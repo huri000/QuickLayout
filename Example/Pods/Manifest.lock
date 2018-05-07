@@ -1,23 +1,47 @@
 PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
   - LoremIpsum (1.0.0)
-  - QuickLayout (1.0.10)
+  - Nimble (7.0.3)
+  - Nimble-Snapshots (6.3.0):
+    - Nimble-Snapshots/Core (= 6.3.0)
+  - Nimble-Snapshots/Core (6.3.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble (~> 7.0)
+  - Quick (1.2.0)
+  - QuickLayout (1.0.12)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
   - LoremIpsum (~> 1.0)
+  - Nimble (~> 7.0.2)
+  - Nimble-Snapshots (~> 6.3.0)
+  - Quick (~> 1.2.0)
   - QuickLayout (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
     - LoremIpsum
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
 
 EXTERNAL SOURCES:
   QuickLayout:
     :path: "../"
 
 SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  QuickLayout: a04d3ce1758b2d85300f086de3fdb1281d5e5485
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  QuickLayout: 064cd8ce1a19ed868437196d5a0ca70f110529ab
 
-PODFILE CHECKSUM: b5150c31e62d810b717e35f23234727801bce54b
+PODFILE CHECKSUM: a9b10b5e73a15b5f327fef6ee6330122fd993bc5
 
 COCOAPODS: 1.5.0
