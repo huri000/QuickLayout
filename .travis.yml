@@ -3,7 +3,7 @@ language: objective-c
 env:
   global:
     - WORKSPACE=Example/QuickLayout.xcworkspace
-    - SCHEME=QuickLayoutDemoApp
+    - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
 
 matrix:
