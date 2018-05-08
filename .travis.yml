@@ -1,4 +1,5 @@
 language: objective-c
+cache: cocoapods
 podfile: Example/Podfile
 
 env:
@@ -6,6 +7,11 @@ env:
     - WORKSPACE=Example/QuickLayout.xcworkspace
     - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
+
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods
+# - pod install --project-directory=Example
 
 matrix:
   include:
