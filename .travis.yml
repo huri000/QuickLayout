@@ -8,6 +8,10 @@ env:
     - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
 
+# public repository on Travis CI
+install:
+  - pip install --user codecov
+
 matrix:
   include:
     -
@@ -20,5 +24,7 @@ matrix:
 script:
   - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$TEST_DEST" -sdk "$TEST_SDK" -enableCodeCoverage YES build-for-testing
 
+
 after_success:
-  - bash <(curl -s https://codecov.io/bash) || echo 'Codecov failed to upload'
+  - codecov
+  # - bash <(curl -s https://codecov.io/bash) || echo 'Codecov failed to upload'
