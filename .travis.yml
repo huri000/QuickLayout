@@ -8,11 +8,6 @@ env:
     - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
 
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods
-# - pod install --project-directory=Example
-
 matrix:
   include:
     -
