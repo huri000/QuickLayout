@@ -8,8 +8,8 @@ env:
     - WORKSPACE=Example/QuickLayout.xcworkspace
     - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
-    - TEST_DEST="platform=iOS Simulator,OS=11.3,name=iPhone 8"
-    - BUILD="xcodebuild"
+    - TEST_DEST=platform=iOS Simulator,OS=11.3,name=iPhone 8
+    - BUILD=xcodebuild
 
 
 script:
@@ -17,3 +17,4 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
