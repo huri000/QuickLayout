@@ -1,24 +1,19 @@
 language: swift
 cache: cocoapods
 podfile: Example/Podfile
+osx_image: xcode9.3
 
 env:
   global:
     - WORKSPACE=Example/QuickLayout.xcworkspace
     - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
+    - TEST_DEST="platform=iOS Simulator,OS=11.3,name=iPhone 8"
+    - BUILD="xcodebuild"
 
-matrix:
-  include:
-    -
-      os: osx
-      osx_image: xcode9.3
-      env:
-         - BUILD="xcodebuild"
-         - TEST_DEST="platform=iOS Simulator,OS=11.3,name=iPhone 8"
 
 script:
-  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$TEST_SDK" -enableCodeCoverage YES build-for-testing
+  - "$BUILD" -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$TEST_SDK" -enableCodeCoverage YES build-for-testing
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
