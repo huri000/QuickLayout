@@ -5,13 +5,10 @@ use_frameworks!
 target 'DemoApp' do
   	pod 'QuickLayout', :path => '../'
 	pod 'LoremIpsum', '~> 1.0'
-	
-	target 'DemoAppTests' do
-		inherit! :search_paths
+end
 
-		pod 'Quick', '~> 1.2.0'
-		pod 'Nimble', '~> 7.0.2'
-		pod 'FBSnapshotTestCase' , '~> 2.1.4'
-		pod 'Nimble-Snapshots' , '~> 6.3.0'
-	end
+target 'DemoAppTests' do
+  	pod 'QuickLayout', :path => '../'
+	pod 'Quick', '1.2.0'
+    pod 'Nimble', '7.0.2'
 end

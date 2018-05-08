@@ -1,9 +1,11 @@
 language: objective-c
+cache: cocoapods
+podfile: Example/Podfile
 
 env:
   global:
     - WORKSPACE=Example/QuickLayout.xcworkspace
-    - SCHEME=QuickLayoutDemoApp
+    - SCHEME=DemoApp
     - TEST_SDK=iphonesimulator
 
 matrix:
