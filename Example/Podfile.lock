@@ -2,7 +2,7 @@ PODS:
   - LoremIpsum (1.0.0)
   - Nimble (7.0.2)
   - Quick (1.2.0)
-  - QuickLayout (1.0.12)
+  - QuickLayout (1.0.13)
 
 DEPENDENCIES:
   - LoremIpsum (~> 1.0)
@@ -24,7 +24,7 @@ SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  QuickLayout: 064cd8ce1a19ed868437196d5a0ca70f110529ab
+  QuickLayout: 695acc6b2bcfdd3f72c63b0c84ccd2c001ccd26c
 
 PODFILE CHECKSUM: b2a1aaebea37b64555719a9af92405234ac54471
 

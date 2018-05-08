@@ -13,5 +13,5 @@ env:
 
 script:
 - set -o pipefail
-- xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7' -configuration Debug | xcpretty
+- xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$TEST_SDK" -destination "$TEST_DEST" -configuration Debug | xcpretty
 - bash <(curl -s https://codecov.io/bash)
