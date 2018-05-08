@@ -5,6 +5,7 @@
 )](https://developer.apple.com/swift)
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 ![](https://travis-ci.org/huri000/QuickLayout.svg?branch=master)
+[![codecov](https://codecov.io/gh/huri000/QuickLayout/branch/master/graph/badge.svg)](https://codecov.io/gh/huri000/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Total Downloads](https://img.shields.io/cocoapods/dt/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 
@@ -101,7 +102,7 @@ Swift 4.0 and iOS 9.0 (or higher).
     
 #### CocoaPods
 ```
-pod 'QuickLayout', '1.0.12'
+pod 'QuickLayout', '1.0.13'
 ```
 
 #### Manually
