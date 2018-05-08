@@ -181,7 +181,7 @@ extension Array where Element: UIView {
     }
     
     /** **PRIVATELY USED** to test for validation*/
-    private var isValidForQuickLayout: Bool {
+    var isValidForQuickLayout: Bool {
         guard !isEmpty else {
             print("\(String(describing: self)) Error in func: \(#function), Views collection is empty!")
             return false

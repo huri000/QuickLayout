@@ -1,14 +1,20 @@
 PODS:
   - LoremIpsum (1.0.0)
-  - QuickLayout (1.0.10)
+  - Nimble (7.0.2)
+  - Quick (1.2.0)
+  - QuickLayout (1.0.12)
 
 DEPENDENCIES:
   - LoremIpsum (~> 1.0)
+  - Nimble (= 7.0.2)
+  - Quick (= 1.2.0)
   - QuickLayout (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - LoremIpsum
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   QuickLayout:
@@ -16,8 +22,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
-  QuickLayout: a04d3ce1758b2d85300f086de3fdb1281d5e5485
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  QuickLayout: 064cd8ce1a19ed868437196d5a0ca70f110529ab
 
-PODFILE CHECKSUM: b5150c31e62d810b717e35f23234727801bce54b
+PODFILE CHECKSUM: b2a1aaebea37b64555719a9af92405234ac54471
 
 COCOAPODS: 1.5.0
