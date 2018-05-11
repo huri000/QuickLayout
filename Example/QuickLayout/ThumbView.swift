@@ -9,7 +9,7 @@
 import UIKit
 
 class ThumbView: UIView {
-    
+        
     private let initialsLabel = UILabel()
     var name: String = "" {
         didSet {
@@ -20,7 +20,8 @@ class ThumbView: UIView {
     init() {
         super.init(frame: .zero)
         clipsToBounds = true
-        backgroundColor = .random
+        backgroundColor = QLColor.BlueGray.random
+        initialsLabel.font = Font.HelveticaNeue.light.with(size: 20)
         initialsLabel.textColor = .white
         addSubview(initialsLabel)
         initialsLabel.centerInSuperview()

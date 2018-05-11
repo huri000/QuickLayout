@@ -10,38 +10,36 @@ import UIKit
 import LoremIpsum
 import QuickLayout
 
-class TableSampleViewController: ModalViewController {
+class TableSampleViewController: UIViewController {
 
-    override var titleString: String {
-        return "QuickLayout Table Example"
-    }
-    
     // MARK: Data Source
-    private var contacts: [String] = []
+    private let dataSource = DataSource<Contact>()
     
     // MARK: UI Props
-    private let contentTableView = UITableView()
+    private let tableView = UITableView()
     
     // MARK: Setup
     override func loadView() {
         super.loadView()
+        view.backgroundColor = .white
+        navigationItem.title = "Table View"
         setupDataSource()
         setupContentTableView()
     }
     
     private func setupDataSource() {
-        for _ in 0...49 {
-            contacts.append(LoremIpsum.name())
+        dataSource.setup(from: .contacts) {
+            self.tableView.reloadData()
         }
     }
     
     private func setupContentTableView() {
-        contentTableView.delegate = self
-        contentTableView.dataSource = self
-        view.addSubview(contentTableView)
-        contentTableView.register(ContactTableViewCell.self, forCellReuseIdentifier: String(describing: ContactTableViewCell.self))
-        contentTableView.layout(.top, to: .bottom, of: titleLabel, offset: 20)
-        contentTableView.layoutToSuperview(.left, .right, .bottom)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        view.addSubview(tableView)
+        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: ContactTableViewCell.className)
+        tableView.layoutToSuperview(.left, .right, .bottom, .top)
     }
 }
 
@@ -56,12 +54,12 @@ extension TableSampleViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ContactTableViewCell.self), for: indexPath) as! ContactTableViewCell
-        cell.name = contacts[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.className, for: indexPath) as! ContactTableViewCell
+        cell.contact = dataSource[indexPath.row]
         return cell
     }
 }

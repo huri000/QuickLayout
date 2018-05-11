@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1410C80920A59BD500F83E0B /* VertigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80820A59BD500F83E0B /* VertigoViewController.swift */; };
+		1410C80B20A59C8F00F83E0B /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */; };
+		1410C80D20A5A58A00F83E0B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80C20A5A58A00F83E0B /* NavigationController.swift */; };
+		1410C80F20A5C00600F83E0B /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1410C80E20A5C00600F83E0B /* contacts.json */; };
+		1410C81320A5C40D00F83E0B /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81220A5C40D00F83E0B /* Object+ClassName.swift */; };
+		1410C81520A5C52900F83E0B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81420A5C52900F83E0B /* Font.swift */; };
+		1410C81920A5D45D00F83E0B /* sentences.json in Resources */ = {isa = PBXBuildFile; fileRef = 1410C81820A5D45D00F83E0B /* sentences.json */; };
+		1410C81B20A5D49C00F83E0B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81A20A5D49C00F83E0B /* DataSource.swift */; };
 		148448B11FC4567C00DB72E8 /* ScrollSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */; };
-		148448B31FC459A400DB72E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448B21FC459A400DB72E8 /* BaseViewController.swift */; };
-		148448B51FC4614C00DB72E8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448B41FC4614C00DB72E8 /* ModalViewController.swift */; };
 		148448B71FC46DC200DB72E8 /* TableSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448B61FC46DC200DB72E8 /* TableSampleViewController.swift */; };
 		148448B91FC46E4200DB72E8 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448B81FC46E4200DB72E8 /* ContactTableViewCell.swift */; };
 		148448BB1FC46EE800DB72E8 /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448BA1FC46EE800DB72E8 /* ThumbView.swift */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1410C80820A59BD500F83E0B /* VertigoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoViewController.swift; sourceTree = "<group>"; };
+		1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		1410C80C20A5A58A00F83E0B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		1410C80E20A5C00600F83E0B /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		1410C81220A5C40D00F83E0B /* Object+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
+		1410C81420A5C52900F83E0B /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1410C81820A5D45D00F83E0B /* sentences.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sentences.json; sourceTree = "<group>"; };
+		1410C81A20A5D49C00F83E0B /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSampleViewController.swift; sourceTree = "<group>"; };
-		148448B21FC459A400DB72E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		148448B41FC4614C00DB72E8 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		148448B61FC46DC200DB72E8 /* TableSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSampleViewController.swift; sourceTree = "<group>"; };
 		148448B81FC46E4200DB72E8 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		148448BA1FC46EE800DB72E8 /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
@@ -82,28 +94,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		148448BD1FC47C3F00DB72E8 /* ScrollExample */ = {
+		1410C80720A59BBB00F83E0B /* Vertigo */ = {
 			isa = PBXGroup;
 			children = (
-				148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */,
+				1410C80820A59BD500F83E0B /* VertigoViewController.swift */,
 			);
-			path = ScrollExample;
+			path = Vertigo;
 			sourceTree = "<group>";
 		};
-		148448BF1FC47C5800DB72E8 /* TableExample */ = {
+		148448BD1FC47C3F00DB72E8 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				1410C81820A5D45D00F83E0B /* sentences.json */,
+				148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		148448BF1FC47C5800DB72E8 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				1410C80E20A5C00600F83E0B /* contacts.json */,
 				148448B61FC46DC200DB72E8 /* TableSampleViewController.swift */,
 				148448B81FC46E4200DB72E8 /* ContactTableViewCell.swift */,
 				148448BA1FC46EE800DB72E8 /* ThumbView.swift */,
 			);
-			name = TableExample;
+			name = TableView;
 			sourceTree = "<group>";
 		};
 		148448C01FC47C6E00DB72E8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1410C81420A5C52900F83E0B /* Font.swift */,
+				1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */,
 				149C80351FC222C1003BF76B /* Utils.swift */,
+				1410C81220A5C40D00F83E0B /* Object+ClassName.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -151,11 +176,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				148448B21FC459A400DB72E8 /* BaseViewController.swift */,
-				148448B41FC4614C00DB72E8 /* ModalViewController.swift */,
+				1410C80C20A5A58A00F83E0B /* NavigationController.swift */,
 				607FACD71AFB9204008FA782 /* MainViewController.swift */,
-				148448BD1FC47C3F00DB72E8 /* ScrollExample */,
-				148448BF1FC47C5800DB72E8 /* TableExample */,
+				1410C81A20A5D49C00F83E0B /* DataSource.swift */,
+				1410C80720A59BBB00F83E0B /* Vertigo */,
+				148448BD1FC47C3F00DB72E8 /* ScrollView */,
+				148448BF1FC47C5800DB72E8 /* TableView */,
 				148448C01FC47C6E00DB72E8 /* Utils */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -291,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				1410C80F20A5C00600F83E0B /* contacts.json in Resources */,
+				1410C81920A5D45D00F83E0B /* sentences.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,14 +419,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148448B31FC459A400DB72E8 /* BaseViewController.swift in Sources */,
+				1410C80D20A5A58A00F83E0B /* NavigationController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
+				1410C81320A5C40D00F83E0B /* Object+ClassName.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1410C80920A59BD500F83E0B /* VertigoViewController.swift in Sources */,
 				148448B11FC4567C00DB72E8 /* ScrollSampleViewController.swift in Sources */,
 				148448BB1FC46EE800DB72E8 /* ThumbView.swift in Sources */,
+				1410C81B20A5D49C00F83E0B /* DataSource.swift in Sources */,
+				1410C81520A5C52900F83E0B /* Font.swift in Sources */,
+				1410C80B20A59C8F00F83E0B /* UIColor+Utils.swift in Sources */,
 				148448B91FC46E4200DB72E8 /* ContactTableViewCell.swift in Sources */,
 				148448B71FC46DC200DB72E8 /* TableSampleViewController.swift in Sources */,
-				148448B51FC4614C00DB72E8 /* ModalViewController.swift in Sources */,
 				149C80361FC222C1003BF76B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

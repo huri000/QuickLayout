@@ -12,19 +12,18 @@ class ContactTableViewCell: UITableViewCell {
 
     // MARK: UI Props
     private let thumbView = ThumbView()
-    private let nameLabel = UILabel()
+    private let emailLabel = UILabel()
+    private let fullNameLabel = UILabel()
+    private let userNameLabel = UILabel()
     
-    var name: String {
-        set {
-            var value = newValue
-            if value.isEmpty {
-                value = "Anonymous"
-            }
-            nameLabel.text = value
-            thumbView.name = value
-        }
-        get {
-            return nameLabel.text ?? "Anonymous"
+    var contact: Contact! {
+        didSet {
+            userNameLabel.text = contact.userName
+            emailLabel.text = contact.email
+            
+            let name = "\(contact.firstName) \(contact.lastName)"
+            fullNameLabel.text = name
+            thumbView.name = name
         }
     }
     
@@ -33,7 +32,9 @@ class ContactTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         setupThumbView()
-        setupNameLabel()
+        setupUserNameLabel()
+        setupFullNameLabel()
+        setupEmailLabel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,16 +43,33 @@ class ContactTableViewCell: UITableViewCell {
     
     private func setupThumbView() {
         contentView.addSubview(thumbView)
-        thumbView.layoutToSuperview(axis: .vertically, offset: 20, priority: .must)
-        thumbView.layoutToSuperview(.centerY)
+        thumbView.layoutToSuperview(.top, offset: 16, priority: .must)
         thumbView.layoutToSuperview(.left, offset: 16)
-        thumbView.set(.width, .height, of: 50)
+        thumbView.set(.width, .height, of: 45)
     }
     
-    private func setupNameLabel() {
-        contentView.addSubview(nameLabel)
-        nameLabel.layout(.left, to: .right, of: thumbView, offset: 10)
-        nameLabel.layout(to: .centerY, of: thumbView)
-        nameLabel.layoutToSuperview(.right, offset: -20)
+    private func setupUserNameLabel() {
+        contentView.addSubview(userNameLabel)
+        userNameLabel.font = Font.HelveticaNeue.medium.with(size: 14)
+        userNameLabel.layout(.left, to: .right, of: thumbView, offset: 10)
+        userNameLabel.layout(to: .top, of: thumbView)
+        userNameLabel.layoutToSuperview(.right, offset: -16)
+    }
+    
+    private func setupFullNameLabel() {
+        contentView.addSubview(fullNameLabel)
+        fullNameLabel.font = Font.HelveticaNeue.light.with(size: 14)
+        fullNameLabel.layout(to: .left, of: userNameLabel)
+        fullNameLabel.layout(to: .right, of: userNameLabel)
+        fullNameLabel.layout(.top, to: .bottom, of: userNameLabel, offset: 5)
+    }
+    
+    private func setupEmailLabel() {
+        contentView.addSubview(emailLabel)
+        emailLabel.font = Font.HelveticaNeue.light.with(size: 12)
+        emailLabel.layout(to: .left, of: userNameLabel)
+        emailLabel.layout(to: .right, of: userNameLabel)
+        emailLabel.layout(.top, to: .bottom, of: fullNameLabel, offset: 5)
+        emailLabel.layoutToSuperview(.bottom, offset: -16, priority: .must)
     }
 }

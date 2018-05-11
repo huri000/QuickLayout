@@ -4,7 +4,6 @@ use_frameworks!
 
 target 'DemoApp' do
   	pod 'QuickLayout', :path => '../'
-	pod 'LoremIpsum', '~> 1.0'
 end
 
 target 'DemoAppTests' do

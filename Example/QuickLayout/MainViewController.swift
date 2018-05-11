@@ -9,11 +9,7 @@
 import UIKit
 
 // MARK: UI Example
-class MainViewController: BaseViewController {
-    
-    override var titleString: String {
-        return "QuickLayout Examples"
-    }
+class MainViewController: UIViewController {
     
     // MARK: UI Props
     private let scrollExampleButton = UIButton()
@@ -22,51 +18,54 @@ class MainViewController: BaseViewController {
     // MARK: Lifecycle
     override func loadView() {
         super.loadView()
+        view.backgroundColor = .white
+        navigationItem.title = "Samples"
         setupBottomButtons()
     }
         
     // MARK: Example of setting a buttons layout
     private func setupBottomButtons() {
         
-        scrollExampleButton.backgroundColor = .satPink
-        scrollExampleButton.setTitle("Scroll View", for: .normal)
-        scrollExampleButton.addTarget(self, action: #selector(scrollViewExampleButtonPressed), for: .touchUpInside)
-        view.addSubview(scrollExampleButton)
+        let contentView = UIView()
+        view.addSubview(contentView)
         
-        tableExampleButton.backgroundColor = .satBlue
-        tableExampleButton.setTitle("Table View", for: .normal)
-        tableExampleButton.addTarget(self, action: #selector(tableViewExampleButtonPressed), for: .touchUpInside)
-        view.addSubview(tableExampleButton)
+        let buttonsAttributes = [(color: QLColor.BlueGray.c300, title: "Scroll View", action: #selector(scrollButtonPressed)),
+                                 (color: QLColor.BlueGray.c400, title: "Table View", action: #selector(tableButtonPressed)),
+                                 (color: QLColor.BlueGray.c500, title: "Vertigo", action: #selector(vertigoButtonPressed))]
+        let buttons = buttonsAttributes.map { attributes -> UIButton in
+            let (color, title, action) = attributes
+            let button = UIButton()
+            button.backgroundColor = color
+            button.setTitle(title, for: .normal)
+            button.addTarget(self, action: action, for: .touchUpInside)
+            contentView.addSubview(button)
+            return button
+        }
         
-        let sideMargin: CGFloat = 20
-
-        // Align to the left of it's superview
-        scrollExampleButton.layoutToSuperview(.left, offset: sideMargin)
+        // MARK: Quick Layout Part Goes Here! - Only 4 lines of code to spread any array of child views within a parent view
         
-        // Align right to centerX of it's superview, with constant distance
-        scrollExampleButton.layout(.right, to: .centerX, of: scrollExampleButton.superview!, offset: -sideMargin * 0.5)
+        // Layout contentView to superview horizontally with 20pts offset from each side
+        contentView.layoutToSuperview(axis: .horizontally, offset: 20)
+        contentView.layoutToSuperview(.centerY)
         
-        // Align to the right of it's superview
-        tableExampleButton.layoutToSuperview(.right, offset: -sideMargin)
+        // Align each to the left of it's superview
+        buttons.layoutToSuperview(axis: .horizontally)
         
-        // Align left to centerX of it's superview, with constant distance
-        tableExampleButton.layout(.left, to: .centerX, of: tableExampleButton.superview!, offset: sideMargin * 0.5)
-        
-        // Example for using an array of views to layout them using a single line
-        
-        // Align both buttons to superview's centerY
-        [scrollExampleButton, tableExampleButton].layoutToSuperview(.centerY)
-        
-        // Set constant height for both buttons
-        scrollExampleButton.layout(.height, to: .width, of: scrollExampleButton)
-        tableExampleButton.layout(.height, to: .width, of: tableExampleButton)
+        // Align all vertically (equal distribution)
+        buttons.spread(.vertically, stretchEdgesToSuperview: true, offset: 5)
     }
     
-    @objc func scrollViewExampleButtonPressed() {
-        present(ScrollSampleViewController(), animated: true, completion: nil)
+    // MARK: Actions
+    
+    @objc func vertigoButtonPressed() {
+        navigationController!.pushViewController(VertigoViewController(), animated: true)
     }
     
-    @objc func tableViewExampleButtonPressed() {
-        present(TableSampleViewController(), animated: true, completion: nil)
+    @objc func scrollButtonPressed() {
+        navigationController!.pushViewController(ScrollSampleViewController(), animated: true)
+    }
+    
+    @objc func tableButtonPressed() {
+        navigationController!.pushViewController(TableSampleViewController(), animated: true)
     }
 }
