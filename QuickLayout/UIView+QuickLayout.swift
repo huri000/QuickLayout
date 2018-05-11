@@ -84,23 +84,55 @@ public extension UIView {
     }
     
     /**
+     Layout multiple edges of the view to the corresonding edges of another given view.
+     - You can optionally define relation, ratio, constant and priority (each gets a default value)
+     - For example - Can be used to align self *left* and *right* edges the same edge of another given view.
+     - *self* and *view* must be directly connected (siblings / child-parent) in the view hierarchy.
+     - *superview* must not be *nil*.
+     - parameter edges: The view edges
+     - parameter view: Another view that self must be aligned with.
+     - parameter relation: The relation of the edges. Can be applied to *.width* or *height* for example. (default is *.equal*).
+     - parameter ratio: The ratio of the edges to the other view edges (default is 1).
+     - parameter offset: Additional offset which is applied to each of the constraints (default is 0).
+     - parameter priority: Constraints' priority (default is *.required*).
+     - returns: The instance of the constraint that was applied (discardable). *nil* if the method failed to apply the constraint.
+     */
+    @discardableResult
+    public func layout(_ edges: NSLayoutAttribute..., to view: UIView, relation: NSLayoutRelation = .equal, ratio: CGFloat = 1.0, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
+        var constraints: QLMultipleConstraints = [:]
+        guard isValidForQuickLayout else {
+            print("\(String(describing: self)) Error in func: \(#function)")
+            return constraints
+        }
+        let uniqueEdges = Set(edges)
+        for edge in uniqueEdges {
+            let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: relation, toItem: view, attribute: edge, multiplier: ratio, constant: offset)
+            constraint.priority = priority
+            superview!.addConstraint(constraint)
+            constraints[edge] = constraint
+        }
+        return constraints
+    }
+    
+    /**
      Layout edge to the same edge of superview.
      - Example of usage: *view.layoutToSuperview(.top)* makes *view* cling to the *top* of it's *superview*.
      - You can optionally define ratio, constant and priority (each gets a default value)
      - *superview* must not be *nil*.
      - parameter edge: The edge (.width, .height, .left, .right, .leading, .trailing, etc...)
+     - parameter relation: The relation of the edge to the superview's corresponding edge (default is *.equal*)
      - parameter ratio: The ratio of the edge in relative to the superview edge (default is 1).
      - parameter offset: Additional offset from that can be applied to the constraint (default is 0).
      - parameter priority: Constraint's priority (default is *.required*).
      - returns: The instance of the constraint that was applied (discardable). Nil if method failed to apply constraint.
      */
     @discardableResult
-    public func layoutToSuperview(_ edge: NSLayoutAttribute, ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> NSLayoutConstraint? {
+    public func layoutToSuperview(_ edge: NSLayoutAttribute, relation: NSLayoutRelation = .equal, ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> NSLayoutConstraint? {
         guard isValidForQuickLayout else {
             print("\(String(describing: self)) Error in func: \(#function)")
             return nil
         }
-        let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: NSLayoutRelation.equal, toItem: superview, attribute: edge, multiplier: ratio, constant: offset)
+        let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: relation, toItem: superview, attribute: edge, multiplier: ratio, constant: offset)
         constraint.priority = priority
         superview!.addConstraint(constraint)
         return constraint
@@ -112,21 +144,21 @@ public extension UIView {
      - You can optionally define ratio, constant and priority (each gets a default value)
      - *superview* must not be *nil*.
      - parameter edges: The edges (.width, .height, .left, .right, .leading, .trailing, etc...)
+     - parameter relation: The relation of the edges to the superview's corresponding edges (default is *.equal*)
      - parameter ratio: The ratio of the edges in relative to the superview edge (default is 1).
      - parameter offset: Additional offset from that can be applied to the constraints (default is 0).
      - parameter priority: Constraints' priority (default is *.required*).
      - returns: The instance of QLMultipleConstraints - see type definition (discardable).
      */
     @discardableResult
-    public func layoutToSuperview(_ edges: NSLayoutAttribute..., ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> QLMultipleConstraints? {
-        guard !edges.isEmpty && isValidForQuickLayout else {
-            return nil
-        }
+    public func layoutToSuperview(_ edges: NSLayoutAttribute..., relation: NSLayoutRelation = .equal, ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> QLMultipleConstraints {
         var constraints: QLMultipleConstraints = [:]
+        guard !edges.isEmpty && isValidForQuickLayout else {
+            return constraints
+        }
         let uniqueEdges = Set(edges)
-        
         for edge in uniqueEdges {
-            let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: .equal, toItem: superview, attribute: edge, multiplier: ratio, constant: offset)
+            let constraint = NSLayoutConstraint(item: self, attribute: edge, relatedBy: relation, toItem: superview, attribute: edge, multiplier: ratio, constant: offset)
             constraint.priority = priority
             superview!.addConstraint(constraint)
             constraints[edge] = constraint
@@ -165,7 +197,8 @@ public extension UIView {
      */
     @discardableResult
     public func sizeToSuperview(withRatio ratio: CGFloat = 1, offset: CGFloat = 0, priority: UILayoutPriority = .required) -> QLSizeConstraints? {
-        guard let size = layoutToSuperview(.width, .height, ratio: ratio, offset: offset, priority: priority) else {
+        let size = layoutToSuperview(.width, .height, ratio: ratio, offset: offset, priority: priority)
+        guard !size.isEmpty else {
             return nil
         }
         return QLSizeConstraints(width: size[.width]!, height: size[.height]!)
@@ -180,7 +213,8 @@ public extension UIView {
      */
     @discardableResult
     public func centerInSuperview(offset: CGFloat = 0, priority: UILayoutPriority = .required) -> QLCenterConstraints? {
-        guard let center = layoutToSuperview(.centerX, .centerY, offset: offset) else {
+        let center = layoutToSuperview(.centerX, .centerY, offset: offset)
+        guard !center.isEmpty else {
             return nil
         }
         return QLCenterConstraints(x: center[.centerX]!, y: center[.centerY]!)

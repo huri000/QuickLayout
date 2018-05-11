@@ -3,18 +3,12 @@
 //  DemoApp
 //
 //  Created by Daniel Huri on 5/11/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
 import Foundation
 
-struct Contact: Codable {
-    var firstName: String
-    var lastName: String
-    var userName: String
-    var email: String
-}
-
+// Generic data source - setups decodable struct resource
 class DataSource<T: Decodable> {
     
     enum ResourceName: String {

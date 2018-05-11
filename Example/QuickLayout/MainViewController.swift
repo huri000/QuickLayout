@@ -38,6 +38,7 @@ class MainViewController: UIViewController {
             button.backgroundColor = color
             button.setTitle(title, for: .normal)
             button.addTarget(self, action: action, for: .touchUpInside)
+            button.contentEdgeInsets = UIEdgeInsets(top: 15, left: 0, bottom: 15, right: 0)
             contentView.addSubview(button)
             return button
         }
@@ -52,7 +53,7 @@ class MainViewController: UIViewController {
         buttons.layoutToSuperview(axis: .horizontally)
         
         // Align all vertically (equal distribution)
-        buttons.spread(.vertically, stretchEdgesToSuperview: true, offset: 5)
+        buttons.spread(.vertically, stretchEdgesToSuperview: true, offset: 8)
     }
     
     // MARK: Actions

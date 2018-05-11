@@ -3,7 +3,7 @@
 //  DemoApp
 //
 //  Created by Daniel Huri on 5/11/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
 import UIKit
@@ -11,21 +11,22 @@ import QuickLayout
 
 class VertigoViewController: UIViewController {
 
-    var size: QLSizeConstraints!
+    private var anchorView: UIView!
     
+    // MARK: Lifecycle
     override func loadView() {
         view = UIView()
         view.backgroundColor = QLColor.BlueGray.c25
+        navigationItem.title = "Vertigo"
         edgesForExtendedLayout = []
         setupSquares()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
-            self.size.height.constant += 50
-            self.size.width.constant += 50
-            self.view.layoutIfNeeded()
+            self.anchorView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            self.anchorView.layoutIfNeeded()
         }, completion: nil)
     }
     
@@ -43,7 +44,7 @@ class VertigoViewController: UIViewController {
                       QLColor.BlueGray.c900]
         
         var array = [view!]
-        for _ in 0..<colors.count {
+        for _ in 0..<colors.dropLast().count {
             array.append(UIView())
         }
         
@@ -53,12 +54,16 @@ class VertigoViewController: UIViewController {
             prev.addSubview(cur)
             
             // Only 1 line of code to layout child view in releation to it's parent
-            let size = cur.fillSuperview(withSizeRatio: 0.8, priority: .must)?.size
-            
-            if self.size == nil {
-                self.size = size
-            }
+            cur.fillSuperview(withSizeRatio: 0.85, priority: .must)
         }
+        
+        let label = UILabel()
+        label.text = "🤘"
+        label.font = Font.HelveticaNeue.medium.with(size: 50)
+        label.textAlignment = .center
+        array.last!.addSubview(label)
+        label.fillSuperview()
+        anchorView = array[1]
     }
 }
 
