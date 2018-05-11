@@ -9,72 +9,189 @@
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Total Downloads](https://img.shields.io/cocoapods/dt/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 
-Harness the power of QuickLayout to align your interface programmatically, without using the Interface Builder.
-QuickLayout offers you a simple and easy way to assign and manage constraints via code.
+## Overview
 
+QuickLayout offers an additional way, to easily assign and manage the layout constraints with code.
+You can harness the power of QuickLayout to align your interface programmatically without even creating constraint explicitly.
+
+### Benefits
+- QuickLayout  drastically shortens the amount of code in case you ever need to write your view hierarchy programmatically.  
+- The QuickLayout method declarations are very descriptive.
+- Layout a UIView using the view itself, without even creating a single NSLayoutConstraint object.
+
+### Features
+- Extension to `UIView` that contains functionality that allows you to set constraints directly from the view itself.
+- Extension to `Array of UIView` that contains functionality that allows you to set constraints directly from an array of views.
+
+## Example Project
+The example project (xib/storyboard free) demonstrates the benefits of using QuickLayout with several use cases:
+
+Table View | Scroll View | Vertigo (Artistic Demonstration)
 ![sample](Example/Screenshots/TableScreen_screenshot.png)
 ![sample](Example/Screenshots/ScrollScreen_screenshot.png)
+![sample](Example/Screenshots/ScrollScreen_screenshot.png)
 
-## Example
-The example project (xib/storyboard free) demonstrates the power of pragrammatic constraints with QuickLayout using several use cases.
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-Swift 4.0 and iOS 9.0 (or higher).
+- Swift 4.0 or any higher version.
 
-## Features
-- Extension to `UIView`: Contains functionality that allows you to set constraints directly from the view itself.
-- Extension to `Array of UIView`: Contains functionality that allows you to set constraints directly from array of views.
+## Usage
 
-## Usage of `UIView+QuickLayout`
+### Layout to Superview
 
-    // Create a view, add it to view hierarchy, and customize it
-    let simpleView = UIView()
-    simpleView.backgroundColor = .gray
-    view.addSubview(simpleView)
-    
-#### Set constant height
-    simpleView.set(.height, of: 50)
-    
-#### Make simpleView cling to the top of it's superview
-    simpleView.layoutToSuperview(.top)
-    
-#### Make simpleView cling to the center of it's superview
-    simpleView.layoutToSuperview(.centerX)
-    
-#### Make simpleView to stretch to 80% of the width of it's superview
-    simpleView.layoutToSuperview(.width, ratio: 0.8)
+You can easily layout a view directly to its superview as long as it has one.
 
-#### Example for retrieving back constraint after setting it (Method's result is discardable, but you can access the constraint value after using invoking it):
+```Swift
+// Create a view, add it to view hierarchy, and customize it
+let simpleView = UIView()
+simpleView.backgroundColor = .gray
+view.addSubview(simpleView)
+```
 
-    let constraint = simpleView.layoutToSuperview(.centerX)
+#### Constant Edge
 
-#### Center simpleView in superview, and retrieve the x, y constraints in `QLCenterConstraints` object:
+Easily set a constant edge to a view
 
-    let center = simpleView.centerInSuperview()
-    
-    // Move simpleView 20 dots down and right using x property of `QLCenterConstraints`
-    center?.x.constant = 20
-    center?.y.constant = 20
+```Swift
+simpleView.set(.height, of: 50)
+```
 
-#### Size simpleView to it's superview, and retrieve the constraints in `QLSizeConstraints` object:
+You can set multiple constant edges likewise:
 
-    let size = simpleView.sizeToSuperview()
-    
-    // Access width and height constraints easily
-    size?.width.constant = -20
-    
-#### Make simpleView totally fill superview, and retrieve all constraints via `QLFillConstraints`:
+```Swift
+// edges is a variadic parameter 
+simpleView.set(.width, .height, of: 100)
+```
 
-    let constraints = simpleView.fillSuperview()
-    
-#### You can layout view in relation to another view, and optionally set constant distance between them:
+#### Top to superview
 
-    simpleView.layout(.left, to: .right, of: anotherView, offset: 20)
+Easily layout the top of a view to the top of the parent
 
-#### Use variatic parameter to easiliy install constraints for `simpleView`, simultaniouly.
-    
-    simpleView.layoutToSuperview(.top, .bottom, .left, .right)
+```Swift
+simpleView.layoutToSuperview(.top)
+```
+
+#### Center X to superview
+
+You can center a view horizontally in its superview
+
+```Swift    
+simpleView.layoutToSuperview(.centerX)
+```
+
+#### 80% out of superview width
+
+You can layout a view to 80% its superview's width
+
+```Swift    
+simpleView.layoutToSuperview(.width, ratio: 0.8)
+```
+
+All QuickLayout methods return the applied constraints, but the returned values are discardable so you can simply ignore them if you don't need them.
+
+```Swift    
+let topConstraint = simpleView.layoutToSuperview(.top, offset: 10)
+
+// Change the offset value by subtracting 10pts from it
+topConstraint.constant -= 10
+```
+
+#### Center in superview
+
+```Swift    
+let center = simpleView.centerInSuperview()
+```
+
+You can optionally retreive the returned `QLCenterConstraints` instance.
+
+```Swift
+center?.y.constant = 20
+```
+
+#### Size to superview
+
+Size to superview with optional ratio - It means that `simpleView` is 80% its superview size. 
+```Swift    
+let size = simpleView.sizeToSuperview(withRatio: 0.8)
+```
+
+You can optionally retreive the returned `QLSizeConstraints`  instance.
+
+```Swift    
+size?.width.constant = -20
+```
+
+#### Fill superview
+
+```Swift    
+let fillConstraints = simpleView.fillSuperview()
+```
+
+You can optionally retreive the returned `QLFillConstraints`  instance.
+
+```Swift
+fillConstraints?.center.y.constant = 5
+```
+
+### Layout to axis:
+
+You can layout view to a certain axis, for example:
+
+Horizontally:
+
+```Swift
+simpleView.layoutToSuperview(axis: .horizontally)
+```
+
+Vertically:
+
+```Swift
+simpleView.layoutToSuperview(axis: .vertically)
+```
+
+You can reteive the `QLAxisConstraints` instance as well.
+
+#### Customization
+
+You can layout view to multiple superview edges, likewise:
+
+```Swift
+simpleView.layoutToSuperview(.leading, .trailing, .top, .bottom)
+```
+
+Or: 
+
+```Swift
+simpleView.layoutToSuperview(.centerX, .centerY)
+```
+
+#### Layout edge-x to edge-y of another view
+
+You can layout an edge of a view to another. For example: 
+
+Layout `simpleView`'s `left` edge to the `right` edge of  `anotherView`, with `20pts right offset`.
+
+```Swift
+simpleView.layout(.left, to: .right, of: anotherView, offset: 20)
+```
+
+#### Sugar coat I: edge-x to edge-x of another view
+
+Layout `simpleView`'s `top` edge to the `top` edge of  `anotherView`
+
+```Swift
+simpleView.layout(to: .top, of: anotherView)
+```
+
+####  Sugar coat II: multiple edges
+
+Layout `simpleView`'s left, right and centerY to `anotherView`'s left, right and centerY, respectively.
+
+```Swift
+simpleView.layout(.left, .right, .centerY, to: anotherView)
+```
 
 ## Usage of `UIViewArray+QuickLayout`
 
