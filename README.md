@@ -27,10 +27,6 @@ You can harness the power of QuickLayout to align your interface programmaticall
 The example project (xib/storyboard free) demonstrates the benefits of using QuickLayout with several use cases:
 
 Table View | Scroll View | Vertigo (Artistic Demonstration)
-![sample](Example/Screenshots/TableScreen_screenshot.png)
-![sample](Example/Screenshots/ScrollScreen_screenshot.png)
-![sample](Example/Screenshots/ScrollScreen_screenshot.png)
-
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -47,10 +43,10 @@ You can easily layout a view directly to its superview as long as it has one.
 // Create a view, add it to view hierarchy, and customize it
 let simpleView = UIView()
 simpleView.backgroundColor = .gray
-view.addSubview(simpleView)
+parentView.addSubview(simpleView)
 ```
 
-#### Constant Edge
+#### Constant edge
 
 Easily set a constant edge to a view
 
@@ -73,7 +69,7 @@ Easily layout the top of a view to the top of the parent
 simpleView.layoutToSuperview(.top)
 ```
 
-#### Center X to superview
+#### Center x to superview
 
 You can center a view horizontally in its superview
 
@@ -135,7 +131,7 @@ You can optionally retreive the returned `QLFillConstraints`  instance.
 fillConstraints?.center.y.constant = 5
 ```
 
-### Layout to axis:
+#### Layout to axis:
 
 You can layout view to a certain axis, for example:
 
@@ -167,6 +163,10 @@ Or:
 simpleView.layoutToSuperview(.centerX, .centerY)
 ```
 
+### Layout to View
+
+It is possible to layout one view to another inside the view hierarchy.
+
 #### Layout edge-x to edge-y of another view
 
 You can layout an edge of a view to another. For example: 
@@ -193,42 +193,121 @@ Layout `simpleView`'s left, right and centerY to `anotherView`'s left, right and
 simpleView.layout(.left, .right, .centerY, to: anotherView)
 ```
 
-## Usage of `UIViewArray+QuickLayout`
+### Array of UIView
 
-    // Create array of views and customize it
-    var viewsArray: [UIView] = []
-    for _ in 0...4 {
-        let simpleView = UIView()
-        view.addSubview(simpleView)
-        viewsArray.append(simpleView)
-    }
+You can generate an array of views and apply constraints on them all in one shot.
 
-#### Set constant height for each element in `viewsArray`
+```Swift
+// Create array of views and customize it
+var viewsArray: [UIView] = []
+for _ in 0...4 {
+    let simpleView = UIView()
+    view.addSubview(simpleView)
+    viewsArray.append(simpleView)
+}
+```
 
-    viewsArray.set(.height, of: 50)
+#### Set constant edge
 
-#### Stretch each element of `viewsArray` horizontally to superview, with 30 margin from each side
+Each element gets height of 50pts, using this single line of code.
 
-    viewsArray.layoutToSuperview(axis: .horizontally, offset: 30)
+```Swift
+viewsArray.set(.height, of: 50)
+```
 
-#### Spread elements vertically in superview with 8 margin between them, laso layout first and last to superview with `stretchEdgesToSuperview`
 
-    viewsArray.spread(.vertically, stretchEdgesToSuperview: true, offset: 8)
+#### Layout to axis:
+
+Each element cling to left and right of its superview.
+
+```Swift
+viewsArray.layoutToSuperview(axis: .horizontally, offset: 30)
+```
+
+#### Layout multiple edges
+
+Each element left, right, top, bottom edges is exactly fits another view.
+
+```Swift
+viewsArray.layout(.left, .right, .top, .bottom, to: parentView)
+```
+
+#### Spread views
+
+You can spread the elements one below the other (vertically), the first stretches to the top of the superview and the last stretchs to the bottom of the superview. There is an offset of 1pt between each element. 
+
+```Swift
+viewsArray.spread(.vertically, stretchEdgesToSuperview: true, offset: 1)
+```
+
+### Others
+
+All of QuickLayout methods are fully documented and very descriptive in naming.
+Every layout method has several optional parameters - see below:
+
+####  Priority
+
+- The priority of the applied constraint. 
+- Included by all the layout methods.
+- Default value: `.required`.
+
+Other than the default system priorities,  QuickLayout offers one more - it has 999 value and it's called  `.must`.
+
+You can tweak the priorities as you like in order to deal with breakage and redundancies.
+
+Example for setting the constraints priority:
+
+```Swift
+let width = simpleView.set(.width, of: 100, priority: .must)
+```
+
+#### Relation
+
+- The relation of a view to another view. 
+- Included by most of the layout methods.
+- Default value: `.equal`
+
+#### Ratio
+
+- The ratio of a view to another view. 
+- Included by most of the layout methods.
+- Default value: 1.0
 
 ## Installation
     
-#### CocoaPods
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
 ```
-pod 'QuickLayout', '1.0.14'
+
+To integrate QuickLayout into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'SwiftEntryKit', '1.0.14'
 ```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Carthage
+
 
 #### Manually
-Add the source files to your project.
+
+Add the source files into your project.
 
 ## Contributing
+
 Forks, patches and other feedback are welcome.
 
 ## Author
+
 Daniel Huri (huri000@gmail.com)
 
 ## License
