@@ -1,13 +1,17 @@
-platform :ios, '9.0'
-
 use_frameworks!
 
-target 'QuickLayoutDemo' do
-  	pod 'QuickLayout', :path => '../'
+pod 'QuickLayout', :path => '../'
+
+target 'QuickLayoutiOSDemo' do
+	platform :ios, '9.0'
+end
+
+target 'QuickLayoutTvOSDemo' do
+	platform :tvos, '9.0'
 end
 
 target 'QuickLayoutTests' do
-  	pod 'QuickLayout', :path => '../'
+	platform :ios, '9.0'
 	pod 'Quick', '1.2.0'
     pod 'Nimble', '7.0.2'
 end

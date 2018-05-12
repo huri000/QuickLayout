@@ -1,6 +1,5 @@
 # QuickLayout
-[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat
-)](https://developer.apple.com/iphone/index.action)
+[![Platform](http://img.shields.io/badge/platform-iOS|tvOS-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 ![](https://travis-ci.org/huri000/QuickLayout.svg?branch=master)
@@ -81,7 +80,7 @@ $ gem install cocoapods
 To integrate QuickLayout into your Xcode project using CocoaPods, specify the following in your `Podfile`:
 
 ```ruby
-pod 'QuickLayout', '1.0.14'
+pod 'QuickLayout', '1.0.15'
 ```
 
 Then, run the following command:
@@ -104,7 +103,7 @@ $ brew install carthage
 To integrate QuickLayout into your Xcode project using Carthage, specify the following in your `Cartfile`:
 
 ```ogdl
-github "huri000/QuickLayout" ~> 1.0.14
+github "huri000/QuickLayout" ~> 1.0.15
 ```
 
 #### Manually

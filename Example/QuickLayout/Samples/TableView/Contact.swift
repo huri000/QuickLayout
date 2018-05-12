@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Contact: Codable {
     var firstName: String
     var lastName: String

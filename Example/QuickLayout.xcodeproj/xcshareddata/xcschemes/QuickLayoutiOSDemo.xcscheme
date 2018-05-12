@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "904F1F0951237BCC7EEE8795555592B5"
+               BlueprintIdentifier = "50256AD413666C4087979BC388E706D1"
                BuildableName = "Quick.framework"
                BlueprintName = "Quick"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -44,7 +44,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
                BuildableName = "Quick Layout.app"
-               BlueprintName = "QuickLayoutDemo"
+               BlueprintName = "QuickLayoutiOSDemo"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -73,7 +73,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "Quick Layout.app"
-            BlueprintName = "QuickLayoutDemo"
+            BlueprintName = "QuickLayoutiOSDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,7 +96,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "Quick Layout.app"
-            BlueprintName = "QuickLayoutDemo"
+            BlueprintName = "QuickLayoutiOSDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -115,7 +115,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "Quick Layout.app"
-            BlueprintName = "QuickLayoutDemo"
+            BlueprintName = "QuickLayoutiOSDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

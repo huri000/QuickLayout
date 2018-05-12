@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_QuickLayoutDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_QuickLayoutDemoVersionString[];
+FOUNDATION_EXPORT double QuickLayoutVersionNumber;
+FOUNDATION_EXPORT const unsigned char QuickLayoutVersionString[];
 
