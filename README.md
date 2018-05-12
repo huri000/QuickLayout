@@ -7,7 +7,6 @@
 ![](https://travis-ci.org/huri000/QuickLayout.svg?branch=master)
 [![codecov](https://codecov.io/gh/huri000/QuickLayout/branch/master/graph/badge.svg)](https://codecov.io/gh/huri000/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
-[![Total Downloads](https://img.shields.io/cocoapods/dt/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 
 ![image](https://github.com/huri000/assets/blob/master/quick-layout/logo.png)
 
