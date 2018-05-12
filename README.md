@@ -62,9 +62,8 @@ You can harness the power of QuickLayout to align your interface programmaticall
 - Extension to `Array of UIView` that contains functionality that allows you to set constraints directly from an array of views.
 
 ## Example Project
-The example project (xib/storyboard free) demonstrates the benefits of using QuickLayout with several use cases:
-
-Table View | Scroll View | Vertigo (Artistic Demonstration)
+The example project is xib / storyboard free and demonstrates the benefits of using QuickLayout with several common use cases.
+Have a look! 😎
 
 ## Requirements
 

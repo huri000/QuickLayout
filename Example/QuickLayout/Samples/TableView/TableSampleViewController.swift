@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LoremIpsum
 import QuickLayout
 
 class TableSampleViewController: UIViewController {

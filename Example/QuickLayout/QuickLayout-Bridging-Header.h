@@ -9,6 +9,4 @@
 #ifndef QuickLayout_Bridging_Header_h
 #define QuickLayout_Bridging_Header_h
 
-#import <LoremIpsum/LoremIpsum.h>
-
 #endif /* QuickLayout_Bridging_Header_h */

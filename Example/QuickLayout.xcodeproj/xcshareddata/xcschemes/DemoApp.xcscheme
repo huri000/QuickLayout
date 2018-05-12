@@ -57,8 +57,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "DemoApp.app"
-               BlueprintName = "DemoApp"
+               BuildableName = "Quick Layout.app"
+               BlueprintName = "QuickLayoutDemo"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -76,8 +76,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14D20A02209F7426009436E4"
-               BuildableName = "DemoAppTests.xctest"
-               BlueprintName = "DemoAppTests"
+               BuildableName = "QuickLayoutTests.xctest"
+               BlueprintName = "QuickLayoutTests"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -86,8 +86,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
+            BuildableName = "Quick Layout.app"
+            BlueprintName = "QuickLayoutDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -109,8 +109,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
+            BuildableName = "Quick Layout.app"
+            BlueprintName = "QuickLayoutDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -128,8 +128,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
+            BuildableName = "Quick Layout.app"
+            BlueprintName = "QuickLayoutDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
