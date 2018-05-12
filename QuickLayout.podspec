@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QuickLayout'
-  s.version          = '1.0.13'
-  s.summary          = 'Code based user interface'
+  s.version          = '1.0.14'
+  s.summary          = 'Written in pure Swift, QuickLayout offers a neat way to manage constraints in code.'
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
 s.description      = <<-DESC
-QuickLayout offers a simple and easy way to manage UIViews and NSLayoutConstraints in code.
+QuickLayout offers an additional way to easily assign and manage the layout constraints with code. You can harness the power of QuickLayout to align your interface programmatically without even creating any constraints explicitly.
 DESC
 
   s.homepage         = 'https://github.com/huri000/QuickLayout'
@@ -24,5 +24,5 @@ DESC
   s.source           = { :git => 'https://github.com/huri000/QuickLayout.git', :tag => s.version.to_s }
   s.source_files = 'QuickLayout/**/*.{swift,h}'
   s.frameworks = 'UIKit'
-
+  
 end

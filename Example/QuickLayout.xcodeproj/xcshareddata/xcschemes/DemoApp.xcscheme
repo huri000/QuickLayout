@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79223D53A9B733A6BC58A4DF9974A81C"
+               BlueprintIdentifier = "904F1F0951237BCC7EEE8795555592B5"
                BuildableName = "Quick.framework"
                BlueprintName = "Quick"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -42,23 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91710B7DF90241FB3857CCDA4E28AFE6"
-               BuildableName = "LoremIpsum.framework"
-               BlueprintName = "LoremIpsum"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "DemoApp.app"
-               BlueprintName = "DemoApp"
+               BuildableName = "Quick Layout.app"
+               BlueprintName = "QuickLayoutDemo"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -76,8 +62,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14D20A02209F7426009436E4"
-               BuildableName = "DemoAppTests.xctest"
-               BlueprintName = "DemoAppTests"
+               BuildableName = "QuickLayoutTests.xctest"
+               BlueprintName = "QuickLayoutTests"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -86,8 +72,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
+            BuildableName = "Quick Layout.app"
+            BlueprintName = "QuickLayoutDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -109,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
+            BuildableName = "Quick Layout.app"
+            BlueprintName = "QuickLayoutDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -128,8 +114,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
+            BuildableName = "Quick Layout.app"
+            BlueprintName = "QuickLayoutDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
