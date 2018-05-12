@@ -5,6 +5,7 @@
 )](https://developer.apple.com/swift)
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 ![](https://travis-ci.org/huri000/QuickLayout.svg?branch=master)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![codecov](https://codecov.io/gh/huri000/QuickLayout/branch/master/graph/badge.svg)](https://codecov.io/gh/huri000/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 
@@ -49,7 +50,7 @@ You can harness the power of QuickLayout to align your interface programmaticall
   * [Explicit Layout](#explicit-layout)
 
 ## The **WHY**
-Why should use QuickLayout?
+Why should you use QuickLayout?
 - QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy.
 - The QuickLayout methods declarations are very descriptive and clear.
 - QuickLayout is fully documented, and contains most of the Auto Layout constructs an iOS App requires.
