@@ -109,7 +109,7 @@ github "huri000/QuickLayout" "master"
 
 #### Manually
 
-Add the [source files](https://github.com/huri000/QuickLayout/tree/wip/sample-project/QuickLayout) to your project.
+Add the [source files](https://github.com/huri000/QuickLayout/tree/master/QuickLayout) to your project.
 
 
 ## Usage
