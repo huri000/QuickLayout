@@ -1,6 +1,6 @@
 //
-//  DemoAppTests.swift
-//  DemoAppTests
+//  SingleViewTests.swift
+//  QuickLayoutTests
 //
 //  Created by Daniel Huri on 5/6/18.
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
