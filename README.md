@@ -104,7 +104,7 @@ $ brew install carthage
 To integrate QuickLayout into your Xcode project using Carthage, specify the following in your `Cartfile`:
 
 ```ogdl
-github "huri000/QuickLayout" "master"
+github "huri000/QuickLayout" ~> 1.0.14
 ```
 
 #### Manually
