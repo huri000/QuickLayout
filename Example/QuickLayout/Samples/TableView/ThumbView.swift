@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThumbView: UIView {
+class ThumbView: QLView {
         
     private let initialsLabel = UILabel()
     var name: String = "" {

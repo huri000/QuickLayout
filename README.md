@@ -36,7 +36,7 @@ You can harness the power of QuickLayout to align your interface programmaticall
     * [Edge-x to edge-x of another view](#edge-x-to-edge-x-of-another-view)
     * [Multiple edges](#multiple-edges)
   * [Content Wrap](#content-wrap)
-  * [Array of UIView Elements](#array-of-uiview-elements)
+  * [Array of QLView Elements](#array-of-uiview-elements)
     * [Constant edges](#constant-edges)
     * [Axis](#axis)
     * [Multiple edges](#multiple-edges)
@@ -53,11 +53,11 @@ Why should you use QuickLayout?
 - QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy.
 - The QuickLayout methods declarations are very descriptive and clear.
 - QuickLayout is fully documented, and contains most of the Auto Layout constructs an iOS App requires.
-- Layout a `UIView` or a `[UIView]` using the view itself, without even creating a single NSLayoutConstraint.
+- Layout a `QLView` or a `[QLView]` using the view itself, without even creating a single NSLayoutConstraint.
 
 ## Features
-- Extension to `UIView` that contains functionality that allows you to set constraints directly from the view itself.
-- Extension to `Array of UIView` that contains functionality that allows you to set constraints directly from an array of views.
+- Extension to `QLView` that contains functionality that allows you to set constraints directly from the view itself.
+- Extension to `Array of QLView` that contains functionality that allows you to set constraints directly from an array of views.
 
 ## Example Project
 The example project is xib / storyboard free and demonstrates the benefits of using QuickLayout with several common use cases.
@@ -114,13 +114,13 @@ Add the [source files](https://github.com/huri000/QuickLayout/tree/master/QuickL
 ## Usage
 
 Using QuickLayout is easy. No setup or preparation is required.
-All the necessary methods are already available in any of the `UIView` instances, and are fully documented and highly descriptive.
+All the necessary methods are already available in any of the `QLView` instances, and are fully documented and highly descriptive.
 
-**First, some boilerplate code**: Define `simpleView` of type `UIView` and add it to the view hierarchy.
+**First, some boilerplate code**: Define `simpleView` of type `QLView` and add it to the view hierarchy.
 
 ```Swift
 // Create a view, add it to view hierarchy, and customize it
-let simpleView = UIView()
+let simpleView = QLView()
 simpleView.backgroundColor = .gray
 parentView.addSubview(simpleView)
 ```
@@ -313,15 +313,15 @@ You can force content wrap a specific axis:
 label.forceContentWrap(.vertically)
 ```
 
-### Array of `UIView` Elements
+### Array of `QLView` Elements
 
 You can generate an array of views and apply constraints on them all in one shot.
 
 ```Swift
 // Create array of views and customize it
-var viewsArray: [UIView] = []
+var viewsArray: [QLView] = []
 for _ in 0...4 {
-    let simpleView = UIView()
+    let simpleView = QLView()
     view.addSubview(simpleView)
     viewsArray.append(simpleView)
 }

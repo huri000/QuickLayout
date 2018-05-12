@@ -17,13 +17,13 @@ class ContentWrapTests: QuickSpec {
         describe("content wrap tests") {
             
             var parentSize: CGSize!
-            var parent: UIView!
-            var child: UIView!
+            var parent: QLView!
+            var child: QLView!
             
             beforeEach {
                 parentSize = CGSize(width: 100, height: 100)
-                parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                child = UIView()
+                parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                child = QLView()
                 parent.addSubview(child)
             }
             

@@ -9,13 +9,13 @@
 import UIKit
 import QuickLayout
 
-class VertigoViewController: UIViewController {
+class VertigoViewController: QLViewController {
 
-    private var anchorView: UIView!
+    private var anchorView: QLView!
     
     // MARK: Lifecycle
     override func loadView() {
-        view = UIView()
+        view = QLView()
         view.backgroundColor = QLColor.BlueGray.c25
         navigationItem.title = "Vertigo"
         edgesForExtendedLayout = []
@@ -24,7 +24,7 @@ class VertigoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
+        QLView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
             self.anchorView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             self.anchorView.layoutIfNeeded()
         }, completion: nil)
@@ -45,7 +45,7 @@ class VertigoViewController: UIViewController {
         
         var array = [view!]
         for _ in 0..<colors.dropLast().count {
-            array.append(UIView())
+            array.append(QLView())
         }
         
         for (index, cur) in array.enumerated().dropFirst() {

@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: UI Example
-class MainViewController: UIViewController {
+class MainViewController: QLViewController {
     
     // MARK: Lifecycle
     override func loadView() {
@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
     // MARK: Example of setting a buttons layout
     private func setupBottomButtons() {
         
-        let contentView = UIView()
+        let contentView = QLView()
         view.addSubview(contentView)
         
         let buttonsAttributes = [(color: QLColor.BlueGray.c400, title: "Scroll View", action: #selector(scrollButtonPressed)),

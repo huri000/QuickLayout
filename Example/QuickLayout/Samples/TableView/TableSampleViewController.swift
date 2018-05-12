@@ -9,7 +9,7 @@
 import UIKit
 import QuickLayout
 
-class TableSampleViewController: UIViewController {
+class TableSampleViewController: QLViewController {
 
     // MARK: Data Source
     private let dataSource = DataSource<Contact>()

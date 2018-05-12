@@ -10,6 +10,10 @@ target 'QuickLayoutTvOSDemo' do
 	platform :tvos, '9.0'
 end
 
+target 'QuickLayoutMacOSDemo' do
+    platform :osx, '10.10'
+end
+
 target 'QuickLayoutTests' do
 	platform :ios, '9.0'
 	pod 'Quick', '1.2.0'

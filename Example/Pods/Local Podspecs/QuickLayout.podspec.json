@@ -4,7 +4,8 @@
   "summary": "Written in pure Swift, QuickLayout offers a neat way to manage constraints in code.",
   "platforms": {
     "ios": "9.0",
-    "tvos": "9.0"
+    "tvos": "9.0",
+    "osx": "10.10"
   },
   "requires_arc": true,
   "description": "QuickLayout offers an additional way to easily assign and manage the layout constraints with code. You can harness the power of QuickLayout to align your interface programmatically without even creating any constraints explicitly.",
@@ -20,6 +21,5 @@
     "git": "https://github.com/huri000/QuickLayout.git",
     "tag": "1.0.15"
   },
-  "source_files": "QuickLayout/**/*.{swift,h}",
-  "frameworks": "UIKit"
+  "source_files": "QuickLayout/**/*.{swift,h}"
 }

@@ -17,13 +17,13 @@ class ViewArrayTests: QuickSpec {
         describe("views-array tests") {
             
             var parentSize: CGSize!
-            var parent: UIView!
-            var children: [UIView]!
+            var parent: QLView!
+            var children: [QLView]!
             
             beforeEach {
                 parentSize = CGSize(width: 100, height: 100)
-                parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                children = [UIView](repeating: UIView(), count: 10)
+                parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                children = [QLView](repeating: QLView(), count: 10)
                 children.forEach { parent.addSubview($0) }
             }
             

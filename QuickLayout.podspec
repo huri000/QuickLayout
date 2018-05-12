@@ -10,9 +10,10 @@ Pod::Spec.new do |s|
   s.name             = 'QuickLayout'
   s.version          = '1.0.15'
   s.summary          = 'Written in pure Swift, QuickLayout offers a neat way to manage constraints in code.'
-  s.platforms = { :ios => '9.0', :tvos => '9.0' }
+  s.platforms = { :ios => '9.0', :tvos => '9.0', :osx => '10.10' }
   s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
+  s.osx.deployment_target = '10.10'
   s.requires_arc = true
 
 s.description      = <<-DESC
@@ -23,7 +24,5 @@ DESC
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Daniel Huri' => 'huri000@gmail.com' }
   s.source           = { :git => 'https://github.com/huri000/QuickLayout.git', :tag => s.version.to_s }
-  s.source_files = 'QuickLayout/**/*.{swift,h}'
-  s.frameworks = 'UIKit'
-  
+  s.source_files = 'QuickLayout/**/*.{swift,h}'  
 end

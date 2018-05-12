@@ -9,12 +9,12 @@
 import UIKit
 import QuickLayout
 
-class ScrollSampleViewController: UIViewController {
+class ScrollSampleViewController: QLViewController {
 
     // MARK: UI Props
     private let contentScrollView = UIScrollView()
     private let dataSource = DataSource<String>()
-    private var scrollViewSubviews: [UIView] = []
+    private var scrollViewSubviews: [QLView] = []
     
     // MARK: Setup all subviews programmatically
     override func loadView() {
@@ -48,10 +48,10 @@ class ScrollSampleViewController: UIViewController {
         scrollViewSubviews.last!.layoutToSuperview(.bottom)
     }
     
-    // MARK: Example of using [UIView]'s extension  to layout consecutively
+    // MARK: Example of using [QLView]'s extension  to layout consecutively
     private func setupMultipleLabelsInScrollView() {
         
-        let labelsContainerView = UIView()
+        let labelsContainerView = QLView()
         contentScrollView.addSubview(labelsContainerView)
         
         /* Example for aligning labelsContainerView to superview's
@@ -60,7 +60,7 @@ class ScrollSampleViewController: UIViewController {
         
         scrollViewSubviews.append(labelsContainerView)
         
-        var labelArray: [UIView] = []
+        var labelArray: [QLView] = []
         for index in 0..<dataSource.count {
             let label = UILabel()
             label.backgroundColor = QLColor.BlueGray.random
@@ -73,7 +73,7 @@ class ScrollSampleViewController: UIViewController {
         }
         
         // MARK: Create a colored column view to the left
-        let columnView = UIView()
+        let columnView = QLView()
         columnView.backgroundColor = QLColor.BlueGray.random
         labelsContainerView.addSubview(columnView)
         

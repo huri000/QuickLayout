@@ -20,14 +20,14 @@ class SingleViewTests: QuickSpec {
                 
                 var parentSize: CGSize!
                 var childSize: CGSize!
-                var parent: UIView!
-                var child: UIView!
+                var parent: QLView!
+                var child: QLView!
                 
                 beforeEach {
                     parentSize = CGSize(width: 100, height: 100)
                     childSize = CGSize(width: parentSize.width * 0.5, height: parentSize.height * 0.5)
-                    parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                    child = UIView()
+                    parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                    child = QLView()
                     parent.addSubview(child)
                 }
                 
@@ -180,15 +180,15 @@ class SingleViewTests: QuickSpec {
             context("child-child relationship, within a parent view") {
                 
                 var parentSize: CGSize!
-                var parent: UIView!
-                var child1: UIView!
-                var child2: UIView!
+                var parent: QLView!
+                var child1: QLView!
+                var child2: QLView!
                 
                 beforeEach {
                     parentSize = CGSize(width: 100, height: 100)
-                    parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                    child1 = UIView()
-                    child2 = UIView()
+                    parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                    child1 = QLView()
+                    child2 = QLView()
                     parent.addSubview(child1)
                     parent.addSubview(child2)
                 }
