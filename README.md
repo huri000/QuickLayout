@@ -9,6 +9,8 @@
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Total Downloads](https://img.shields.io/cocoapods/dt/QuickLayout.svg?style=social)](https://cocoapods.org/pods/QuickLayout)
 
+![image](https://github.com/huri000/assets/blob/master/quick-layout/logo.png)
+
 * [Overview](#overview)
   * [Benefits](#benefits)
   * [Features](#features)
@@ -30,10 +32,10 @@
     * [Fill](#fill)
     * [Axis](#axis)
   * [Layout to View](#layout-to-view)
-    * [Sugar coat I: edge-x to edge-x of another view](#sugar-coat-I:-edge-x-to-edge-x-of-another-view)
-    * [Sugar coat II: multiple edges](#sugar-coat-II:-multiple-edges)
+    * [Edge-x to edge-x of another view](#edge-x-to-edge-x-of-another-view)
+    * [Multiple edges](#multiple-edges)
   * [Content Wrap](#content-wrap)
-  * [Array of `UIView` Elements](#array-of-`UIView`-elements)
+  * [Array of UIView Elements](#array-of-uiview-elements)
     * [Constant edges](#constant-edges)
     * [Axis](#axis)
     * [Multiple edges](#multiple-edges)
@@ -167,7 +169,7 @@ simpleView.layoutToSuperview(.width, ratio: 0.8)
 
 #### Offset
 
-You can layout a view to it's superview width minus 10 offset:
+You can layout a view to it's superview width minus 10pts offset:
 ```Swift    
 simpleView.layoutToSuperview(.width, offset: -10)
 ```
@@ -261,7 +263,7 @@ Layout `simpleView`'s `left` edge to the `right` edge of  `anotherView`, with `2
 simpleView.layout(.left, to: .right, of: anotherView, offset: 20)
 ```
 
-#### Sugar coat I: edge-x to edge-x of another view
+#### Edge-x to edge-x of another view
 
 Layout `simpleView`'s `top` edge to the `top` edge of  `anotherView`
 
@@ -269,7 +271,7 @@ Layout `simpleView`'s `top` edge to the `top` edge of  `anotherView`
 simpleView.layout(to: .top, of: anotherView)
 ```
 
-####  Sugar coat II: multiple edges
+####  Multiple edges
 
 Layout `simpleView`'s left, right and centerY to `anotherView`'s left, right and centerY, respectively.
 
