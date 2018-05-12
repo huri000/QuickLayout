@@ -509,7 +509,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Layout.app/Quick Layout";
 			};
 			name = Debug;
 		};
@@ -537,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoApp.app/DemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Layout.app/Quick Layout";
 			};
 			name = Release;
 		};
