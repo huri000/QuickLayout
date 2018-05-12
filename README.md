@@ -11,9 +11,11 @@
 
 ![image](https://github.com/huri000/assets/blob/master/quick-layout/logo.png)
 
-* [Overview](#overview)
-  * [Benefits](#benefits)
-  * [Features](#features)
+QuickLayout offers an additional way, to easily assign and manage the layout constraints with code.
+You can harness the power of QuickLayout to align your interface programmatically without even creating constraints explicitly.
+
+* [The WHY](#the-why)
+* [Features](#features)
 * [Example Project](#example-project)
 * [Requirements](#requirements)
 * [Installation](#installation)
@@ -47,17 +49,14 @@
     * [Offset](#offset)
   * [Explicit Layout](#explicit-layout)
 
-## Overview
+## The **WHY**
+Why should use QuickLayout?
+- QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy.
+- The QuickLayout methods declarations are very descriptive and clear.
+- QuickLayout is fully documented, and contains most of the Auto Layout constructs an iOS App requires.
+- Layout a `UIView` or a `[UIView]` using the view itself, without even creating a single NSLayoutConstraint.
 
-QuickLayout offers an additional way, to easily assign and manage the layout constraints with code.
-You can harness the power of QuickLayout to align your interface programmatically without even creating constraints explicitly.
-
-### Benefits
-- QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy. 
-- The QuickLayout method declarations are very descriptive.
-- Layout a UIView using the view itself, without even creating a single NSLayoutConstraint object.
-
-### Features
+## Features
 - Extension to `UIView` that contains functionality that allows you to set constraints directly from the view itself.
 - Extension to `Array of UIView` that contains functionality that allows you to set constraints directly from an array of views.
 
@@ -79,10 +78,10 @@ Swift 4.0 or any higher version.
 $ gem install cocoapods
 ```
 
-To integrate QuickLayout into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate QuickLayout into your Xcode project using CocoaPods, specify the following in your `Podfile`:
 
 ```ruby
-pod 'SwiftEntryKit', '1.0.14'
+pod 'QuickLayout', '1.0.14'
 ```
 
 Then, run the following command:
@@ -93,6 +92,20 @@ $ pod install
 
 ### Carthage
 
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate QuickLayout into your Xcode project using Carthage, specify the following in your `Cartfile`:
+
+```ogdl
+github "huri000/QuickLayout" "master"
+```
 
 #### Manually
 
