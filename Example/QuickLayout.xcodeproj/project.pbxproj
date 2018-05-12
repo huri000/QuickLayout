@@ -61,6 +61,7 @@
 		1410C82920A6393E00F83E0B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		1410C82A20A6393E00F83E0B /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
 		1410C82B20A6393E00F83E0B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		1410C83120A7057200F83E0B /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		142A2AD8A33C92183A64E96D /* Pods-QuickLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTests/Pods-QuickLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
 		148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSampleViewController.swift; sourceTree = "<group>"; };
 		149879B71FC3866E00AA0B51 /* QuickLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickLayout-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				CF744FE52C7CD43181AC1BE0 /* QuickLayout.podspec */,
+				1410C83120A7057200F83E0B /* CHANGELOG.md */,
 				79D0E436E838A2B960D27763 /* README.md */,
 				3FA85A2223F313FD65DA89B2 /* LICENSE */,
 			);

@@ -96,7 +96,7 @@ $ pod install
 
 #### Manually
 
-Add the source files into your project.
+Add the [source files](https://github.com/huri000/QuickLayout/tree/wip/sample-project/QuickLayout) to your project.
 
 
 ## Usage
