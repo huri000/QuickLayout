@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuickLayout
 
 class ContactTableViewCell: UITableViewCell {
 

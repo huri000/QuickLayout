@@ -57,8 +57,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14D20A02209F7426009436E4"
-               BuildableName = "QuickLayoutTests.xctest"
-               BlueprintName = "QuickLayoutTests"
+               BuildableName = "QuickLayoutiOSTests.xctest"
+               BlueprintName = "QuickLayoutiOSTests"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -71,6 +71,16 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "14CAF60420A8DF5C00E89417"
+               BuildableName = "QuickLayoutTvOSTests.xctest"
+               BlueprintName = "QuickLayoutTvOSTests"
+               ReferencedContainer = "container:QuickLayout.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

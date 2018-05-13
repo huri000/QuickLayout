@@ -2,20 +2,31 @@ use_frameworks!
 
 pod 'QuickLayout', :path => '../'
 
+def testing_pods
+	pod 'Quick', '1.2.0'
+	pod 'Nimble', '7.0.2'
+end
+
 target 'QuickLayoutiOSDemo' do
 	platform :ios, '9.0'
+	target 'QuickLayoutiOSTests' do
+	    inherit! :search_paths	
+		testing_pods
+	end
 end
 
 target 'QuickLayoutTvOSDemo' do
 	platform :tvos, '9.0'
+	target 'QuickLayoutTvOSTests' do
+	    inherit! :search_paths	
+		testing_pods
+	end	
 end
 
 target 'QuickLayoutMacOSDemo' do
     platform :osx, '10.10'
-end
-
-target 'QuickLayoutTests' do
-	platform :ios, '9.0'
-	pod 'Quick', '1.2.0'
-    pod 'Nimble', '7.0.2'
+	target 'QuickLayoutMacOSTests' do
+	    inherit! :search_paths	
+		testing_pods
+	end
 end

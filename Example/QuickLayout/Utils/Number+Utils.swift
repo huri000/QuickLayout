@@ -7,11 +7,7 @@
 //
 
 import Foundation
-#if os(iOS)
 import UIKit
-#else
-import AppKit
-#endif
 
 // MARK: Extensions (Used in file scope)
 extension CGFloat {

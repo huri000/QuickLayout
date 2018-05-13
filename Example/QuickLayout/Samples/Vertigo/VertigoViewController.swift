@@ -6,6 +6,7 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
+import UIKit
 import QuickLayout
 
 class VertigoViewController: UIViewController {
@@ -23,11 +24,10 @@ class VertigoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
-//            self.anchorView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-//            self.anchorView.layoutIfNeeded()
-//        }, completion: nil)
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
+            self.anchorView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            self.anchorView.layoutIfNeeded()
+        }, completion: nil)
     }
     
     // Each child view fills it's parent

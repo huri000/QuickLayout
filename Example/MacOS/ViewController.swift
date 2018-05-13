@@ -10,7 +10,6 @@ import Cocoa
 import AppKit
 import QuickLayout
 
-
 class ViewController: NSViewController {
 
     private let view1 = QLView()
