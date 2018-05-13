@@ -1,5 +1,5 @@
 //
-//  Object+ClassName.swift
+//  Object+ClassType.swift
 //  SwiftEntryKit_Example
 //
 //  Created by Daniel Huri on 4/25/18.
@@ -9,11 +9,11 @@
 import Foundation
 
 extension NSObject {
-    var className: String {
+    var classType: String {
         return String(describing: type(of: self))
     }
     
-    class var className: String {
+    class var classType: String {
         return String(describing: self)
     }
 }

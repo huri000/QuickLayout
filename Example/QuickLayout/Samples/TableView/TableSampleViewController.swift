@@ -9,7 +9,7 @@
 import UIKit
 import QuickLayout
 
-class TableSampleViewController: QLViewController {
+class TableSampleViewController: UIViewController {
 
     // MARK: Data Source
     private let dataSource = DataSource<Contact>()
@@ -37,7 +37,7 @@ class TableSampleViewController: QLViewController {
         tableView.dataSource = self
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
         view.addSubview(tableView)
-        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: ContactTableViewCell.className)
+        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: ContactTableViewCell.classType)
         tableView.layoutToSuperview(.left, .right, .bottom, .top)
     }
 }
@@ -57,7 +57,7 @@ extension TableSampleViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.className, for: indexPath) as! ContactTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.classType, for: indexPath) as! ContactTableViewCell
         cell.contact = dataSource[indexPath.row]
         return cell
     }

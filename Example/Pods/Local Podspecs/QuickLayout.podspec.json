@@ -1,6 +1,6 @@
 {
   "name": "QuickLayout",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "summary": "Written in pure Swift, QuickLayout offers a neat way to manage constraints in code.",
   "platforms": {
     "ios": "9.0",
@@ -19,7 +19,7 @@
   },
   "source": {
     "git": "https://github.com/huri000/QuickLayout.git",
-    "tag": "1.0.15"
+    "tag": "1.0.17"
   },
   "source_files": "QuickLayout/**/*.{swift,h}"
 }

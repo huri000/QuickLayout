@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0046E6BB369002B2AD9482FA /* Pods_QuickLayoutiOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC1B8C4AD2DE83A045D873D /* Pods_QuickLayoutiOSDemo.framework */; };
 		1410C80920A59BD500F83E0B /* VertigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80820A59BD500F83E0B /* VertigoViewController.swift */; };
-		1410C80B20A59C8F00F83E0B /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */; };
+		1410C80B20A59C8F00F83E0B /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* Color+Utils.swift */; };
 		1410C80D20A5A58A00F83E0B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80C20A5A58A00F83E0B /* NavigationController.swift */; };
-		1410C81320A5C40D00F83E0B /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81220A5C40D00F83E0B /* Object+ClassName.swift */; };
+		1410C81320A5C40D00F83E0B /* Object+ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81220A5C40D00F83E0B /* Object+ClassType.swift */; };
 		1410C81520A5C52900F83E0B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81420A5C52900F83E0B /* Font.swift */; };
 		1410C81920A5D45D00F83E0B /* sentences.json in Resources */ = {isa = PBXBuildFile; fileRef = 1410C81820A5D45D00F83E0B /* sentences.json */; };
 		1410C81B20A5D49C00F83E0B /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81A20A5D49C00F83E0B /* DataSource.swift */; };
@@ -38,9 +37,9 @@
 		1484F19620A749BC00EA19A8 /* ScrollSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */; };
 		1484F19720A749C000EA19A8 /* VertigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80820A59BD500F83E0B /* VertigoViewController.swift */; };
 		1484F19820A749C700EA19A8 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81420A5C52900F83E0B /* Font.swift */; };
-		1484F19920A749C700EA19A8 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */; };
+		1484F19920A749C700EA19A8 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* Color+Utils.swift */; };
 		1484F19A20A749C700EA19A8 /* Number+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C80351FC222C1003BF76B /* Number+Utils.swift */; };
-		1484F19B20A749C700EA19A8 /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81220A5C40D00F83E0B /* Object+ClassName.swift */; };
+		1484F19B20A749C700EA19A8 /* Object+ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81220A5C40D00F83E0B /* Object+ClassType.swift */; };
 		1484F19D20A7533D00EA19A8 /* FocusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484F19C20A7533D00EA19A8 /* FocusableButton.swift */; };
 		1484F19E20A7533D00EA19A8 /* FocusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484F19C20A7533D00EA19A8 /* FocusableButton.swift */; };
 		149C80361FC222C1003BF76B /* Number+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C80351FC222C1003BF76B /* Number+Utils.swift */; };
@@ -48,6 +47,11 @@
 		14A7002A20A782F5000E2F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7002920A782F5000E2F3A /* ViewController.swift */; };
 		14A7002C20A782F5000E2F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A7002B20A782F5000E2F3A /* Assets.xcassets */; };
 		14A7002F20A782F5000E2F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A7002D20A782F5000E2F3A /* Main.storyboard */; };
+		14CAF5E720A8CDFA00E89417 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* Color+Utils.swift */; };
+		14CAF5E820A8CE0100E89417 /* Object+ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C81220A5C40D00F83E0B /* Object+ClassType.swift */; };
+		14CAF5E920A8CF2C00E89417 /* Number+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C80351FC222C1003BF76B /* Number+Utils.swift */; };
+		14CAF5EB20A8D0F600E89417 /* QLCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAF5EA20A8D0F600E89417 /* QLCompatibility.swift */; };
+		14CAF5ED20A8D1E300E89417 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
 		14D20A06209F7426009436E4 /* SingleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D20A05209F7426009436E4 /* SingleViewTests.swift */; };
 		14F9FB8220A70FC300F37D02 /* QuickLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F9FB8020A70FC300F37D02 /* QuickLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14F9FB8520A70FC300F37D02 /* QuickLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F9FB7E20A70FC300F37D02 /* QuickLayout.framework */; };
@@ -56,13 +60,13 @@
 		14F9FB9420A7109C00F37D02 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9FB8E20A7104800F37D02 /* UIView+QLContentWrap.swift */; };
 		14F9FB9520A7109C00F37D02 /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9FB8D20A7104800F37D02 /* UIView+QuickLayout.swift */; };
 		14F9FB9620A7109C00F37D02 /* UIViewArray+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9FB8B20A7104800F37D02 /* UIViewArray+QuickLayout.swift */; };
+		58392B2A19E3CB5D37864490 /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8211FC5610DC09D8AE4D4195 /* Pods_QuickLayoutTvOSDemo.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		89169FA0F87507C49E4119F6 /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14799FB27EB26BF38443C59A /* Pods_QuickLayoutMacOSDemo.framework */; };
-		C581409679835D4D87D540FA /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475B7FC0D1EE518FCA6C2BFE /* Pods_QuickLayoutTvOSDemo.framework */; };
-		D81410C70ACB1B91C5C673C5 /* Pods_QuickLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE106416013CB03F25BA8949 /* Pods_QuickLayoutTests.framework */; };
+		735C9E0DBFF89C842FD48D72 /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAA5434054993A2B1A7E329 /* Pods_QuickLayoutMacOSDemo.framework */; };
+		7AFCF9511CF3E810DB131D91 /* Pods_QuickLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D480974287DE905E21A5C36 /* Pods_QuickLayoutTests.framework */; };
+		A527398B6EE3E53424286128 /* Pods_QuickLayoutiOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C8D32162B069891417346A /* Pods_QuickLayoutiOSDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,10 +101,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09662AAB5AD91ABA609BA7DC /* Pods-QuickLayoutiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1410C80820A59BD500F83E0B /* VertigoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoViewController.swift; sourceTree = "<group>"; };
-		1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		1410C80A20A59C8F00F83E0B /* Color+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
 		1410C80C20A5A58A00F83E0B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		1410C81220A5C40D00F83E0B /* Object+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
+		1410C81220A5C40D00F83E0B /* Object+ClassType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClassType.swift"; sourceTree = "<group>"; };
 		1410C81420A5C52900F83E0B /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		1410C81820A5D45D00F83E0B /* sentences.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sentences.json; sourceTree = "<group>"; };
 		1410C81A20A5D49C00F83E0B /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -113,7 +118,6 @@
 		1410C82A20A6393E00F83E0B /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
 		1410C82B20A6393E00F83E0B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		1410C83120A7057200F83E0B /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
-		14799FB27EB26BF38443C59A /* Pods_QuickLayoutMacOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutMacOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		148448B01FC4567C00DB72E8 /* ScrollSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSampleViewController.swift; sourceTree = "<group>"; };
 		1484F17D20A7486A00EA19A8 /* QuickLayoutTvOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLayoutTvOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1484F18620A7486C00EA19A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		14A7002E20A782F5000E2F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14A7003020A782F5000E2F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A7003120A782F5000E2F3A /* QuickLayoutMacOSDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickLayoutMacOSDemo.entitlements; sourceTree = "<group>"; };
+		14CAF5EA20A8D0F600E89417 /* QLCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QLCompatibility.swift; path = ../../QuickLayout/QLCompatibility.swift; sourceTree = "<group>"; };
 		14D20A03209F7426009436E4 /* QuickLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D20A05209F7426009436E4 /* SingleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewTests.swift; sourceTree = "<group>"; };
 		14D20A07209F7426009436E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,26 +143,26 @@
 		14F9FB8C20A7104800F37D02 /* QLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QLUtils.swift; path = ../../QuickLayout/QLUtils.swift; sourceTree = "<group>"; };
 		14F9FB8D20A7104800F37D02 /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+QuickLayout.swift"; path = "../../QuickLayout/UIView+QuickLayout.swift"; sourceTree = "<group>"; };
 		14F9FB8E20A7104800F37D02 /* UIView+QLContentWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+QLContentWrap.swift"; path = "../../QuickLayout/UIView+QLContentWrap.swift"; sourceTree = "<group>"; };
-		1C4B772F0C5211CCC8F06B2C /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		31202E88149DBB2B40657C61 /* Pods-QuickLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTests/Pods-QuickLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
-		36AC20EB2C13CD9A053EDE4A /* Pods-QuickLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTests/Pods-QuickLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
-		3D057B06AFCF850B722E8851 /* Pods-QuickLayoutiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		237D879E6D89B4CFF669038E /* Pods-QuickLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTests/Pods-QuickLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		32C8D32162B069891417346A /* Pods_QuickLayoutiOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutiOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B91B5C04DC715DD1930F18 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C8DA89F3B5081AEFBF9FBBF /* Pods-QuickLayoutMacOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3D480974287DE905E21A5C36 /* Pods_QuickLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA85A2223F313FD65DA89B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		475B7FC0D1EE518FCA6C2BFE /* Pods_QuickLayoutTvOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTvOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47894C95FBAA4FC9429044BC /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA2F68B00ECB224C33DBB5B /* Pods-QuickLayoutTvOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Quick Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Layout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6AD06615864843AB51F0692D /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		79D0E436E838A2B960D27763 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8C6D5D46671B25114F2D098E /* Pods-QuickLayoutTvOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8211FC5610DC09D8AE4D4195 /* Pods_QuickLayoutTvOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTvOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5FF00F8895A76176AD0B8F /* Pods-QuickLayoutiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF744FE52C7CD43181AC1BE0 /* QuickLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QuickLayout.podspec; path = ../QuickLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EE106416013CB03F25BA8949 /* Pods_QuickLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F28DF5F3349D00423546DD6C /* Pods-QuickLayoutiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		FB96E1C08E7632F5AF80AE62 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.release.xcconfig"; sourceTree = "<group>"; };
-		FDC1B8C4AD2DE83A045D873D /* Pods_QuickLayoutiOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutiOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7A6CFB8C344A9DCE245692 /* Pods-QuickLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTests/Pods-QuickLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDAA5434054993A2B1A7E329 /* Pods_QuickLayoutMacOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutMacOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C581409679835D4D87D540FA /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */,
+				58392B2A19E3CB5D37864490 /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89169FA0F87507C49E4119F6 /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */,
+				735C9E0DBFF89C842FD48D72 /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81410C70ACB1B91C5C673C5 /* Pods_QuickLayoutTests.framework in Frameworks */,
+				7AFCF9511CF3E810DB131D91 /* Pods_QuickLayoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F9FB8520A70FC300F37D02 /* QuickLayout.framework in Frameworks */,
-				0046E6BB369002B2AD9482FA /* Pods_QuickLayoutiOSDemo.framework in Frameworks */,
+				A527398B6EE3E53424286128 /* Pods_QuickLayoutiOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +253,9 @@
 			isa = PBXGroup;
 			children = (
 				1410C81420A5C52900F83E0B /* Font.swift */,
-				1410C80A20A59C8F00F83E0B /* UIColor+Utils.swift */,
+				1410C80A20A59C8F00F83E0B /* Color+Utils.swift */,
 				149C80351FC222C1003BF76B /* Number+Utils.swift */,
-				1410C81220A5C40D00F83E0B /* Object+ClassName.swift */,
+				1410C81220A5C40D00F83E0B /* Object+ClassType.swift */,
 				1484F19C20A7533D00EA19A8 /* FocusableButton.swift */,
 			);
 			path = Utils;
@@ -286,12 +291,28 @@
 			children = (
 				14F9FB8020A70FC300F37D02 /* QuickLayout.h */,
 				14F9FB8120A70FC300F37D02 /* Info.plist */,
+				14CAF5EA20A8D0F600E89417 /* QLCompatibility.swift */,
 				14F9FB8C20A7104800F37D02 /* QLUtils.swift */,
 				14F9FB8E20A7104800F37D02 /* UIView+QLContentWrap.swift */,
 				14F9FB8D20A7104800F37D02 /* UIView+QuickLayout.swift */,
 				14F9FB8B20A7104800F37D02 /* UIViewArray+QuickLayout.swift */,
 			);
 			path = QuickLayout;
+			sourceTree = "<group>";
+		};
+		1AEB3B2A9ECF70B3667497D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39B91B5C04DC715DD1930F18 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */,
+				3C8DA89F3B5081AEFBF9FBBF /* Pods-QuickLayoutMacOSDemo.release.xcconfig */,
+				FC7A6CFB8C344A9DCE245692 /* Pods-QuickLayoutTests.debug.xcconfig */,
+				237D879E6D89B4CFF669038E /* Pods-QuickLayoutTests.release.xcconfig */,
+				6AD06615864843AB51F0692D /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */,
+				4AA2F68B00ECB224C33DBB5B /* Pods-QuickLayoutTvOSDemo.release.xcconfig */,
+				8A5FF00F8895A76176AD0B8F /* Pods-QuickLayoutiOSDemo.debug.xcconfig */,
+				09662AAB5AD91ABA609BA7DC /* Pods-QuickLayoutiOSDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -303,8 +324,8 @@
 				14D20A04209F7426009436E4 /* QuickLayoutTests */,
 				14F9FB7F20A70FC300F37D02 /* QuickLayout */,
 				607FACD11AFB9204008FA782 /* Products */,
-				EE64935EB68F81C8A25BD6C0 /* Pods */,
-				C81FFEE7B39BB7A201D4CCF4 /* Frameworks */,
+				1AEB3B2A9ECF70B3667497D0 /* Pods */,
+				84E65474E7955FD06F984283 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,30 +379,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C81FFEE7B39BB7A201D4CCF4 /* Frameworks */ = {
+		84E65474E7955FD06F984283 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE106416013CB03F25BA8949 /* Pods_QuickLayoutTests.framework */,
-				475B7FC0D1EE518FCA6C2BFE /* Pods_QuickLayoutTvOSDemo.framework */,
-				FDC1B8C4AD2DE83A045D873D /* Pods_QuickLayoutiOSDemo.framework */,
-				14799FB27EB26BF38443C59A /* Pods_QuickLayoutMacOSDemo.framework */,
+				FDAA5434054993A2B1A7E329 /* Pods_QuickLayoutMacOSDemo.framework */,
+				3D480974287DE905E21A5C36 /* Pods_QuickLayoutTests.framework */,
+				8211FC5610DC09D8AE4D4195 /* Pods_QuickLayoutTvOSDemo.framework */,
+				32C8D32162B069891417346A /* Pods_QuickLayoutiOSDemo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EE64935EB68F81C8A25BD6C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				31202E88149DBB2B40657C61 /* Pods-QuickLayoutTests.debug.xcconfig */,
-				36AC20EB2C13CD9A053EDE4A /* Pods-QuickLayoutTests.release.xcconfig */,
-				1C4B772F0C5211CCC8F06B2C /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */,
-				8C6D5D46671B25114F2D098E /* Pods-QuickLayoutTvOSDemo.release.xcconfig */,
-				F28DF5F3349D00423546DD6C /* Pods-QuickLayoutiOSDemo.debug.xcconfig */,
-				3D057B06AFCF850B722E8851 /* Pods-QuickLayoutiOSDemo.release.xcconfig */,
-				47894C95FBAA4FC9429044BC /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */,
-				FB96E1C08E7632F5AF80AE62 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,11 +408,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1484F18B20A7486C00EA19A8 /* Build configuration list for PBXNativeTarget "QuickLayoutTvOSDemo" */;
 			buildPhases = (
-				2E699B13612BDBAC89253D5F /* [CP] Check Pods Manifest.lock */,
+				97D43A5267BA336B75F8E141 /* [CP] Check Pods Manifest.lock */,
 				1484F17920A7486A00EA19A8 /* Sources */,
 				1484F17A20A7486A00EA19A8 /* Frameworks */,
 				1484F17B20A7486A00EA19A8 /* Resources */,
-				3A8DE76B310F0A236C43A24A /* [CP] Embed Pods Frameworks */,
+				B6BD0972873854083494B098 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,11 +427,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14A7003220A782F5000E2F3A /* Build configuration list for PBXNativeTarget "QuickLayoutMacOSDemo" */;
 			buildPhases = (
-				D4AB5ADB3BA26408E4EFB830 /* [CP] Check Pods Manifest.lock */,
+				BAB7508ADFA58C1F5EE067CE /* [CP] Check Pods Manifest.lock */,
 				14A7002120A782F5000E2F3A /* Sources */,
 				14A7002220A782F5000E2F3A /* Frameworks */,
 				14A7002320A782F5000E2F3A /* Resources */,
-				1DA6ED28C8840F5FB9499555 /* [CP] Embed Pods Frameworks */,
+				8C369D47FCD8AD046093E806 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -440,11 +446,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14D20A0A209F7426009436E4 /* Build configuration list for PBXNativeTarget "QuickLayoutTests" */;
 			buildPhases = (
-				F759CAC3D6B5D47A9DDBDAD1 /* [CP] Check Pods Manifest.lock */,
+				2EAF314E2DBEF0C22AF64D93 /* [CP] Check Pods Manifest.lock */,
 				14D209FF209F7426009436E4 /* Sources */,
 				14D20A00209F7426009436E4 /* Frameworks */,
 				14D20A01209F7426009436E4 /* Resources */,
-				B56332D171CEB08874231F6A /* [CP] Embed Pods Frameworks */,
+				7AC010A32D7E72ABCB691781 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -478,12 +484,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "QuickLayoutiOSDemo" */;
 			buildPhases = (
-				B1D6A7E3BB7DB658F84163CF /* [CP] Check Pods Manifest.lock */,
+				7FADA88A9F6C1342DE3109B4 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				14F9FB8A20A70FC300F37D02 /* Embed Frameworks */,
-				715E12F6F15E95AF2CC9C4D2 /* [CP] Embed Pods Frameworks */,
+				80D05C456C8288AE17DEBA1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -605,25 +611,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DA6ED28C8840F5FB9499555 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QuickLayout-macOS/QuickLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E699B13612BDBAC89253D5F /* [CP] Check Pods Manifest.lock */ = {
+		2EAF314E2DBEF0C22AF64D93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -634,68 +622,14 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutTvOSDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3A8DE76B310F0A236C43A24A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QuickLayout-tvOS/QuickLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		715E12F6F15E95AF2CC9C4D2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QuickLayout-iOS/QuickLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B1D6A7E3BB7DB658F84163CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutiOSDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B56332D171CEB08874231F6A /* [CP] Embed Pods Frameworks */ = {
+		7AC010A32D7E72ABCB691781 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -717,7 +651,97 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTests/Pods-QuickLayoutTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4AB5ADB3BA26408E4EFB830 /* [CP] Check Pods Manifest.lock */ = {
+		7FADA88A9F6C1342DE3109B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutiOSDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D05C456C8288AE17DEBA1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout-iOS/QuickLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C369D47FCD8AD046093E806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout-macOS/QuickLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D43A5267BA336B75F8E141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutTvOSDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BD0972873854083494B098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout-tvOS/QuickLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB7508ADFA58C1F5EE067CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -735,24 +759,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F759CAC3D6B5D47A9DDBDAD1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -763,10 +769,10 @@
 				1484F18E20A749AE00EA19A8 /* MainViewController.swift in Sources */,
 				1484F19820A749C700EA19A8 /* Font.swift in Sources */,
 				1484F19220A749B800EA19A8 /* ThumbView.swift in Sources */,
-				1484F19920A749C700EA19A8 /* UIColor+Utils.swift in Sources */,
+				1484F19920A749C700EA19A8 /* Color+Utils.swift in Sources */,
 				1484F18C20A748AE00EA19A8 /* AppDelegate.swift in Sources */,
 				1484F19420A749B800EA19A8 /* TableSampleViewController.swift in Sources */,
-				1484F19B20A749C700EA19A8 /* Object+ClassName.swift in Sources */,
+				1484F19B20A749C700EA19A8 /* Object+ClassType.swift in Sources */,
 				1484F19120A749B800EA19A8 /* Contact.swift in Sources */,
 				1484F19720A749C000EA19A8 /* VertigoViewController.swift in Sources */,
 				1484F19A20A749C700EA19A8 /* Number+Utils.swift in Sources */,
@@ -782,6 +788,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CAF5E720A8CDFA00E89417 /* Color+Utils.swift in Sources */,
+				14CAF5E920A8CF2C00E89417 /* Number+Utils.swift in Sources */,
+				14CAF5E820A8CE0100E89417 /* Object+ClassType.swift in Sources */,
 				14A7002A20A782F5000E2F3A /* ViewController.swift in Sources */,
 				14A7002820A782F5000E2F3A /* AppDelegate.swift in Sources */,
 			);
@@ -802,6 +811,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CAF5EB20A8D0F600E89417 /* QLCompatibility.swift in Sources */,
 				14F9FB9320A7109C00F37D02 /* QLUtils.swift in Sources */,
 				14F9FB9420A7109C00F37D02 /* UIView+QLContentWrap.swift in Sources */,
 				14F9FB9520A7109C00F37D02 /* UIView+QuickLayout.swift in Sources */,
@@ -816,15 +826,15 @@
 				1410C82E20A6393E00F83E0B /* ContactTableViewCell.swift in Sources */,
 				1410C80D20A5A58A00F83E0B /* NavigationController.swift in Sources */,
 				1410C82D20A6393E00F83E0B /* ThumbView.swift in Sources */,
-				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
-				1410C81320A5C40D00F83E0B /* Object+ClassName.swift in Sources */,
+				1410C81320A5C40D00F83E0B /* Object+ClassType.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1410C83020A6393E00F83E0B /* Contact.swift in Sources */,
 				1410C80920A59BD500F83E0B /* VertigoViewController.swift in Sources */,
 				148448B11FC4567C00DB72E8 /* ScrollSampleViewController.swift in Sources */,
 				1410C81B20A5D49C00F83E0B /* DataSource.swift in Sources */,
+				14CAF5ED20A8D1E300E89417 /* MainViewController.swift in Sources */,
 				1410C81520A5C52900F83E0B /* Font.swift in Sources */,
-				1410C80B20A59C8F00F83E0B /* UIColor+Utils.swift in Sources */,
+				1410C80B20A59C8F00F83E0B /* Color+Utils.swift in Sources */,
 				149C80361FC222C1003BF76B /* Number+Utils.swift in Sources */,
 				1410C82C20A6393E00F83E0B /* TableSampleViewController.swift in Sources */,
 				1484F19D20A7533D00EA19A8 /* FocusableButton.swift in Sources */,
@@ -868,7 +878,7 @@
 /* Begin XCBuildConfiguration section */
 		1484F18920A7486C00EA19A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C4B772F0C5211CCC8F06B2C /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */;
+			baseConfigurationReference = 6AD06615864843AB51F0692D /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -898,7 +908,7 @@
 		};
 		1484F18A20A7486C00EA19A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C6D5D46671B25114F2D098E /* Pods-QuickLayoutTvOSDemo.release.xcconfig */;
+			baseConfigurationReference = 4AA2F68B00ECB224C33DBB5B /* Pods-QuickLayoutTvOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -926,7 +936,7 @@
 		};
 		14A7003320A782F5000E2F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47894C95FBAA4FC9429044BC /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
+			baseConfigurationReference = 39B91B5C04DC715DD1930F18 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -958,7 +968,7 @@
 		};
 		14A7003420A782F5000E2F3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB96E1C08E7632F5AF80AE62 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */;
+			baseConfigurationReference = 3C8DA89F3B5081AEFBF9FBBF /* Pods-QuickLayoutMacOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -988,7 +998,7 @@
 		};
 		14D20A0B209F7426009436E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31202E88149DBB2B40657C61 /* Pods-QuickLayoutTests.debug.xcconfig */;
+			baseConfigurationReference = FC7A6CFB8C344A9DCE245692 /* Pods-QuickLayoutTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1018,7 +1028,7 @@
 		};
 		14D20A0C209F7426009436E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36AC20EB2C13CD9A053EDE4A /* Pods-QuickLayoutTests.release.xcconfig */;
+			baseConfigurationReference = 237D879E6D89B4CFF669038E /* Pods-QuickLayoutTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1220,7 +1230,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F28DF5F3349D00423546DD6C /* Pods-QuickLayoutiOSDemo.debug.xcconfig */;
+			baseConfigurationReference = 8A5FF00F8895A76176AD0B8F /* Pods-QuickLayoutiOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1243,7 +1253,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D057B06AFCF850B722E8851 /* Pods-QuickLayoutiOSDemo.release.xcconfig */;
+			baseConfigurationReference = 09662AAB5AD91ABA609BA7DC /* Pods-QuickLayoutiOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import QuickLayout
 
 // MARK: UI Example
-class MainViewController: QLViewController {
+class MainViewController: UIViewController {
     
     // MARK: Lifecycle
     override func loadView() {
@@ -22,7 +23,7 @@ class MainViewController: QLViewController {
     // MARK: Example of setting a buttons layout
     private func setupBottomButtons() {
         
-        let contentView = QLView()
+        let contentView = UIView()
         view.addSubview(contentView)
         
         let buttonsAttributes = [(color: QLColor.BlueGray.c400, title: "Scroll View", action: #selector(scrollButtonPressed)),

@@ -6,16 +6,15 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
-import UIKit
 import QuickLayout
 
-class VertigoViewController: QLViewController {
+class VertigoViewController: UIViewController {
 
-    private var anchorView: QLView!
+    private var anchorView: UIView!
     
     // MARK: Lifecycle
     override func loadView() {
-        view = QLView()
+        view = UIView()
         view.backgroundColor = QLColor.BlueGray.c25
         navigationItem.title = "Vertigo"
         edgesForExtendedLayout = []
@@ -24,10 +23,11 @@ class VertigoViewController: QLViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        QLView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
-            self.anchorView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            self.anchorView.layoutIfNeeded()
-        }, completion: nil)
+        
+//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: [.repeat, .autoreverse], animations: {
+//            self.anchorView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+//            self.anchorView.layoutIfNeeded()
+//        }, completion: nil)
     }
     
     // Each child view fills it's parent
@@ -45,7 +45,7 @@ class VertigoViewController: QLViewController {
         
         var array = [view!]
         for _ in 0..<colors.dropLast().count {
-            array.append(QLView())
+            array.append(UIView())
         }
         
         for (index, cur) in array.enumerated().dropFirst() {
@@ -59,7 +59,7 @@ class VertigoViewController: QLViewController {
         
         let label = UILabel()
         label.text = "🤘"
-        label.font = Font.HelveticaNeue.medium.with(size: 50)
+        label.font = MainFont.medium.with(size: 50)
         label.textAlignment = .center
         array.last!.addSubview(label)
         label.fillSuperview()
