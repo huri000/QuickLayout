@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "QuickLayout.app"
+               BuildableName = "QuickLayoutDemo.app"
                BlueprintName = "QuickLayoutiOSDemo"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "QuickLayout.app"
+            BuildableName = "QuickLayoutDemo.app"
             BlueprintName = "QuickLayoutiOSDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "QuickLayout.app"
+            BuildableName = "QuickLayoutDemo.app"
             BlueprintName = "QuickLayoutiOSDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
@@ -114,7 +114,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "QuickLayout.app"
+            BuildableName = "QuickLayoutDemo.app"
             BlueprintName = "QuickLayoutiOSDemo"
             ReferencedContainer = "container:QuickLayout.xcodeproj">
          </BuildableReference>
