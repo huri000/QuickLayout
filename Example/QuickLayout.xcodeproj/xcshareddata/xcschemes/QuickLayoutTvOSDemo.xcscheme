@@ -20,20 +20,6 @@
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14D20A02209F7426009436E4"
-               BuildableName = "QuickLayoutiOSTests.xctest"
-               BlueprintName = "QuickLayoutiOSTests"
-               ReferencedContainer = "container:QuickLayout.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
