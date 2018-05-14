@@ -1,0 +1,19 @@
+ci_service: travis_ci
+coverage_service: cobertura_xml
+workspace: Example/QuickLayout.xcodeworkspace
+xcodeproj: Example/QuickLayout.xcodeproj
+scheme: QuickLayoutiOSDemo
+source_directory: QuickLayout/
+ignore:
+  - cmake-debug-build/*
+  - Example/*
+  - Scripts/*
+  - Documentaion/*
+  - Tests/*
+  - Pods/*
+  - Applications/Xcode.app/*
+  - vendor/*
+  - Carthage/*
+  - build/*
+  - .build/*
+  - .vagrant/*
