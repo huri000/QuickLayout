@@ -10,10 +10,11 @@
 
 ![image](https://github.com/huri000/assets/blob/master/quick-layout/logo.png)
 
-QuickLayout offers an additional way, to easily assign and manage the layout constraints with code.
+QuickLayout offers an additional way, to easily manage the Auto Layout using only code.
 You can harness the power of QuickLayout to align your interface programmatically without even creating constraints explicitly.
 
 * [The WHY](#the-why)
+* [Naming Convension](#naming-convension)
 * [Features](#features)
 * [Example Project](#example-project)
 * [Requirements](#requirements)
@@ -52,15 +53,23 @@ You can harness the power of QuickLayout to align your interface programmaticall
 Why should you use QuickLayout?
 - QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy.
 - The QuickLayout methods declarations are very descriptive and clear.
-- QuickLayout is fully documented, and contains most of the Auto Layout constructs an iOS App requires.
-- Layout a `QLView` or a `[QLView]` using the view itself, without even creating a single NSLayoutConstraint.
+- QuickLayout is fully documented, and contains most of the Auto Layout constructs that an App requires.
+- It supplies a common Auto Layout language for all platforms iOS / macOS / tvOS. 
+- Layout a `UIView` or `NSView` or an array of views using the instances themselves, without even creating a single NSLayoutConstraint.
+
+## Naming Convension
+As of version 2.0.0, QuickLayout supports tvOS and macOS as well as iOS. Therefore, a few adjustments have been made. 
+- `QLView` replaces `UIView` or `NSView`.
+- `QLPriority` replaces `NSLayoutConstraint.Priority` and `UILayoutPriority`
+- `QLAttribute` replaces `NSLayoutConstraint.Attribute` and `NSLayoutAttribute`
+- `QLRelation` replaces `NSLayoutConstraint.Relation` and `NSLayoutRelation`
 
 ## Features
 - Extension to `QLView` that contains functionality that allows you to set constraints directly from the view itself.
 - Extension to `Array of QLView` that contains functionality that allows you to set constraints directly from an array of views.
 
 ## Example Project
-The example project is xib / storyboard free and demonstrates the benefits of using QuickLayout with several common use cases.
+The example project demonstrates the benefits of using QuickLayout with several common use cases.
 Have a look! 😎
 
 ## Requirements
@@ -80,7 +89,7 @@ $ gem install cocoapods
 To integrate QuickLayout into your Xcode project using CocoaPods, specify the following in your `Podfile`:
 
 ```ruby
-pod 'QuickLayout', '1.0.15'
+pod 'QuickLayout', '2.0.0'
 ```
 
 Then, run the following command:
@@ -103,7 +112,7 @@ $ brew install carthage
 To integrate QuickLayout into your Xcode project using Carthage, specify the following in your `Cartfile`:
 
 ```ogdl
-github "huri000/QuickLayout" ~> 1.0.15
+github "huri000/QuickLayout" ~> 2.0.0
 ```
 
 #### Manually
