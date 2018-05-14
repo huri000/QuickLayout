@@ -1,5 +1,5 @@
 ci_service: travis_ci
-coverage_service: cobertura_xml
+coverage_service: coveralls
 workspace: Example/QuickLayout.xcodeworkspace
 xcodeproj: Example/QuickLayout.xcodeproj
 scheme: QuickLayoutiOSDemo
