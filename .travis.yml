@@ -10,6 +10,6 @@ env:
 script:
 - set -o pipefail
 # - xcodebuild clean build test -workspace "$WORKSPACE" -scheme QuickLayoutiOSDemo -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7' -configuration Debug | xcpretty
-- xcodebuild clean build test -workspace "$WORKSPACE" -scheme QuickLayoutTvOSDemo -sdk iphonesimulator -destination 'platform=tvOS Simulator,name=Apple TV,OS=11.2' -configuration Debug | xcpretty
-# - xcodebuild clean build test -workspace "$WORKSPACE" -scheme QuickLayoutMacOSDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug | xcpretty
+# - xcodebuild clean build test -workspace "$WORKSPACE" -scheme QuickLayoutTvOSDemo -sdk iphonesimulator -destination 'platform=tvOS Simulator,name=Apple TV,OS=11.2' -configuration Debug | xcpretty
+- xcodebuild clean build test -workspace "$WORKSPACE" -scheme QuickLayoutMacOSDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug | xcpretty
 - bash <(curl -s https://codecov.io/bash)
