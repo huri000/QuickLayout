@@ -14,51 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD7C8BF89FE8053D0A2A2D88BB49CF07"
-               BuildableName = "Nimble.framework"
-               BlueprintName = "Nimble"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50256AD413666C4087979BC388E706D1"
-               BuildableName = "Quick.framework"
-               BlueprintName = "Quick"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "14A7002420A782F5000E2F3A"
                BuildableName = "QuickLayoutDemo.app"
                BlueprintName = "QuickLayoutMacOSDemo"
-               ReferencedContainer = "container:QuickLayout.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14D20A02209F7426009436E4"
-               BuildableName = "QuickLayoutiOSTests.xctest"
-               BlueprintName = "QuickLayoutiOSTests"
                ReferencedContainer = "container:QuickLayout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -75,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14CAF5F320A8DF4900E89417"
+               BlueprintIdentifier = "14CAF61A20A8E7CD00E89417"
                BuildableName = "QuickLayoutMacOSTests.xctest"
                BlueprintName = "QuickLayoutMacOSTests"
                ReferencedContainer = "container:QuickLayout.xcodeproj">

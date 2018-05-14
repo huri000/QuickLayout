@@ -10,6 +10,24 @@ import Quick
 import Nimble
 @testable import QuickLayout
 
+extension QLView {
+    func quickLayoutIfNeeded() {
+        #if os(OSX)
+        layoutSubtreeIfNeeded()
+        #else
+        layoutIfNeeded()
+        #endif
+    }
+    
+    func setUpdateConstraints() {
+        #if os(OSX)
+        updateConstraintsForSubtreeIfNeeded()
+        #else
+        setNeedsLayout()
+        #endif
+    }
+}
+
 class UtilsTests: QuickSpec {
     
     override func spec() {
