@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuickLayout
 
 class ThumbView: UIView {
         
@@ -21,7 +22,7 @@ class ThumbView: UIView {
         super.init(frame: .zero)
         clipsToBounds = true
         backgroundColor = QLColor.BlueGray.random
-        initialsLabel.font = Font.HelveticaNeue.light.with(size: 20)
+        initialsLabel.font = MainFont.light.with(size: 20)
         initialsLabel.textColor = .white
         addSubview(initialsLabel)
         initialsLabel.centerInSuperview()

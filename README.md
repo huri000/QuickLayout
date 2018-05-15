@@ -1,20 +1,20 @@
 # QuickLayout
-[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat
-)](https://developer.apple.com/iphone/index.action)
+[![Platform](http://img.shields.io/badge/platform-iOS|tvOS-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 ![](https://travis-ci.org/huri000/QuickLayout.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![codecov](https://codecov.io/gh/huri000/QuickLayout/branch/master/graph/badge.svg)](https://codecov.io/gh/huri000/QuickLayout)
+[![Coverage Status](https://coveralls.io/repos/github/huri000/QuickLayout/badge.svg)](https://coveralls.io/github/huri000/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 
 ![image](https://github.com/huri000/assets/blob/master/quick-layout/logo.png)
 
-QuickLayout offers an additional way, to easily assign and manage the layout constraints with code.
+QuickLayout offers an additional way, to easily manage the Auto Layout using only code.
 You can harness the power of QuickLayout to align your interface programmatically without even creating constraints explicitly.
 
 * [The WHY](#the-why)
+* [Naming Convension](#naming-convension)
 * [Features](#features)
 * [Example Project](#example-project)
 * [Requirements](#requirements)
@@ -37,7 +37,7 @@ You can harness the power of QuickLayout to align your interface programmaticall
     * [Edge-x to edge-x of another view](#edge-x-to-edge-x-of-another-view)
     * [Multiple edges](#multiple-edges)
   * [Content Wrap](#content-wrap)
-  * [Array of UIView Elements](#array-of-uiview-elements)
+  * [Array of QLView Elements](#array-of-uiview-elements)
     * [Constant edges](#constant-edges)
     * [Axis](#axis)
     * [Multiple edges](#multiple-edges)
@@ -53,15 +53,23 @@ You can harness the power of QuickLayout to align your interface programmaticall
 Why should you use QuickLayout?
 - QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy.
 - The QuickLayout methods declarations are very descriptive and clear.
-- QuickLayout is fully documented, and contains most of the Auto Layout constructs an iOS App requires.
-- Layout a `UIView` or a `[UIView]` using the view itself, without even creating a single NSLayoutConstraint.
+- QuickLayout is fully documented, and contains most of the Auto Layout constructs that an App requires.
+- It supplies a common Auto Layout language for all platforms iOS / macOS / tvOS. 
+- Layout a `UIView` or `NSView` or an array of views using the instances themselves, without even creating a single NSLayoutConstraint.
+
+## Naming Convension
+As of version 2.0.0, QuickLayout supports tvOS and macOS as well as iOS. Therefore, a few adjustments have been made. 
+- `QLView` replaces `UIView` or `NSView`.
+- `QLPriority` replaces `NSLayoutConstraint.Priority` and `UILayoutPriority`
+- `QLAttribute` replaces `NSLayoutConstraint.Attribute` and `NSLayoutAttribute`
+- `QLRelation` replaces `NSLayoutConstraint.Relation` and `NSLayoutRelation`
 
 ## Features
-- Extension to `UIView` that contains functionality that allows you to set constraints directly from the view itself.
-- Extension to `Array of UIView` that contains functionality that allows you to set constraints directly from an array of views.
+- Extension to `QLView` that contains functionality that allows you to set constraints directly from the view itself.
+- Extension to `Array of QLView` that contains functionality that allows you to set constraints directly from an array of views.
 
 ## Example Project
-The example project is xib / storyboard free and demonstrates the benefits of using QuickLayout with several common use cases.
+The example project demonstrates the benefits of using QuickLayout with several common use cases.
 Have a look! 😎
 
 ## Requirements
@@ -81,7 +89,7 @@ $ gem install cocoapods
 To integrate QuickLayout into your Xcode project using CocoaPods, specify the following in your `Podfile`:
 
 ```ruby
-pod 'QuickLayout', '1.0.14'
+pod 'QuickLayout', '2.0.0'
 ```
 
 Then, run the following command:
@@ -104,7 +112,7 @@ $ brew install carthage
 To integrate QuickLayout into your Xcode project using Carthage, specify the following in your `Cartfile`:
 
 ```ogdl
-github "huri000/QuickLayout" ~> 1.0.14
+github "huri000/QuickLayout" ~> 2.0.0
 ```
 
 #### Manually
@@ -115,13 +123,13 @@ Add the [source files](https://github.com/huri000/QuickLayout/tree/master/QuickL
 ## Usage
 
 Using QuickLayout is easy. No setup or preparation is required.
-All the necessary methods are already available in any of the `UIView` instances, and are fully documented and highly descriptive.
+All the necessary methods are already available in any of the `QLView` instances, and are fully documented and highly descriptive.
 
-**First, some boilerplate code**: Define `simpleView` of type `UIView` and add it to the view hierarchy.
+**First, some boilerplate code**: Define `simpleView` of type `QLView` and add it to the view hierarchy.
 
 ```Swift
 // Create a view, add it to view hierarchy, and customize it
-let simpleView = UIView()
+let simpleView = QLView()
 simpleView.backgroundColor = .gray
 parentView.addSubview(simpleView)
 ```
@@ -314,15 +322,15 @@ You can force content wrap a specific axis:
 label.forceContentWrap(.vertically)
 ```
 
-### Array of `UIView` Elements
+### Array of `QLView` Elements
 
 You can generate an array of views and apply constraints on them all in one shot.
 
 ```Swift
 // Create array of views and customize it
-var viewsArray: [UIView] = []
+var viewsArray: [QLView] = []
 for _ in 0...4 {
-    let simpleView = UIView()
+    let simpleView = QLView()
     view.addSubview(simpleView)
     viewsArray.append(simpleView)
 }

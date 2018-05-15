@@ -5,13 +5,32 @@ podfile: Example/Podfile
 
 env:
   global:
-    - WORKSPACE=Example/QuickLayout.xcworkspace
-    - SCHEME=DemoApp
-    - TEST_SDK=iphonesimulator
-    - TEST_DEST="platform=iOS Simulator,OS=11.3,name=iPhone 8"
+  - LC_CTYPE=en_US.UTF-8
+  - LANG=en_US.UTF-8
+  - WORKSPACE=Example/QuickLayout.xcworkspace
+  - IOS_FRAMEWORK_SCHEME="QuickLayoutiOSDemo"
+  - MACOS_FRAMEWORK_SCHEME="QuickLayoutMacOSDemo"
+  - TVOS_FRAMEWORK_SCHEME="QuickLayoutTvOSDemo"
+  - IOS_SDK=iphonesimulator11.3
+  - MACOS_SDK=macosx10.13
+  - TVOS_SDK=appletvsimulator11.3
+  matrix:
+    - DESTINATION="OS=11.3,name=iPhone X"           SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES" POD_LINT="NO"
+    - DESTINATION="OS=10.3.1,name=iPhone 7"         SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES" POD_LINT="NO"
+    - DESTINATION="OS=9.3,name=iPhone 6"            SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES" POD_LINT="NO"
 
+    - DESTINATION="arch=x86_64"                     SCHEME="$MACOS_FRAMEWORK_SCHEME"    SDK="$MACOS_SDK"    RUN_TESTS="YES" POD_LINT="NO"
 
-script:
-- set -o pipefail
-- xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7' -configuration Debug | xcpretty
-- bash <(curl -s https://codecov.io/bash)
+    - DESTINATION="OS=11.3,name=Apple TV 4K"        SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    - DESTINATION="OS=10.2,name=Apple TV 1080p"     SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+    - DESTINATION="OS=9.2,name=Apple TV 1080p"      SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+
+before_install:
+- rm -rf /Users/travis/Library/Developer/Xcode/DerivedData/QuickLayout*/
+
+script: 
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=YES VALID_ARCHS=x86_64 ENABLE_TESTABILITY=YES test | xcpretty;
+  - bash <(curl -s https://codecov.io/bash) -J 'QuickLayout'

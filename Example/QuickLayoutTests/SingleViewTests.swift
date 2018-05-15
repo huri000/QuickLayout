@@ -20,14 +20,14 @@ class SingleViewTests: QuickSpec {
                 
                 var parentSize: CGSize!
                 var childSize: CGSize!
-                var parent: UIView!
-                var child: UIView!
+                var parent: QLView!
+                var child: QLView!
                 
                 beforeEach {
                     parentSize = CGSize(width: 100, height: 100)
                     childSize = CGSize(width: parentSize.width * 0.5, height: parentSize.height * 0.5)
-                    parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                    child = UIView()
+                    parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                    child = QLView()
                     parent.addSubview(child)
                 }
                 
@@ -43,7 +43,7 @@ class SingleViewTests: QuickSpec {
                 it("must have a superview in order to quick-layout a single edge") {
                     child.removeFromSuperview()
                     let constraint = child.layoutToSuperview(.centerX)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraint).to(beNil())
                 }
@@ -51,7 +51,7 @@ class SingleViewTests: QuickSpec {
                 it("must have a superview in order to quick-layout multiple edges") {
                     child.removeFromSuperview()
                     let constraints = child.layoutToSuperview(.left, .right)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraints).to(beEmpty())
                 }
@@ -59,7 +59,7 @@ class SingleViewTests: QuickSpec {
                 it("must have a superview in order to quick-layout to a cetrain axis") {
                     child.removeFromSuperview()
                     let constraints = child.layoutToSuperview(axis: .horizontally)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraints).to(beNil())
                 }
@@ -67,7 +67,7 @@ class SingleViewTests: QuickSpec {
                 it("must have a superview in order to center in superview") {
                     child.removeFromSuperview()
                     let constraints = child.centerInSuperview()
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraints).to(beNil())
                 }
@@ -75,7 +75,7 @@ class SingleViewTests: QuickSpec {
                 it("must have a superview in order to size to superview") {
                     child.removeFromSuperview()
                     let constraints = child.sizeToSuperview()
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraints).to(beNil())
                 }
@@ -83,14 +83,14 @@ class SingleViewTests: QuickSpec {
                 it("must have a superview in order to fill it") {
                     child.removeFromSuperview()
                     let constraints = child.fillSuperview()
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraints).to(beNil())
                 }
                 
                 it("must have a edges set in order to quick-layout") {
                     let constraints = child.layoutToSuperview()
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     expect(constraints).to(beEmpty())
                 }
                 
@@ -98,7 +98,7 @@ class SingleViewTests: QuickSpec {
                     child.layoutToSuperview(.centerX, .centerY)
                     child.set(.width, of: childSize.width)
                     child.set(.height, of: childSize.height)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(child.frame.midX).to(equal(parent.bounds.width * 0.5))
                     expect(child.frame.midY).to(equal(parent.bounds.height * 0.5))
@@ -108,14 +108,14 @@ class SingleViewTests: QuickSpec {
                 
                 it("fills its parent") {
                     child.fillSuperview()
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     expect(child.frame).to(equal(parent.bounds))
                 }
                 
                 it("fills its parent with size ratio") {
                     let ratio: CGFloat = 0.5
                     child.fillSuperview(withSizeRatio: ratio)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     let expectedFrame = CGRect(x: parentSize.width * ratio * 0.5, y: parentSize.height * ratio * 0.5, width: parentSize.width * ratio, height: parentSize.height * ratio)
                     expect(child.frame).to(equal(expectedFrame))
                 }
@@ -133,7 +133,7 @@ class SingleViewTests: QuickSpec {
                     expect(vAxis!.first.constant).to(equal(offset))
                     expect(vAxis!.second.constant).to(equal(-offset))
                     
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     expect(child.frame.width).to(equal(parent.bounds.width - offset * 2))
                     expect(child.frame.height).to(equal(parent.bounds.height - offset * 2))
                 }
@@ -142,17 +142,13 @@ class SingleViewTests: QuickSpec {
                     let edge: CGFloat = 10
                     child.layoutToSuperview(.top, .left)
                     child.set(.width, .height, of: edge)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
+
+                    #if os(OSX)
+                    expect(child.frame.origin).to(equal(CGPoint(x: 0, y: parentSize.height - edge)))
+                    #else
                     expect(child.frame.origin).to(equal(.zero))
-                    expect(child.frame.size).to(equal(CGSize(width: edge, height: edge)))
-                }
-                
-                it("layouts to parent's top left edges, and width and height are constant") {
-                    let edge: CGFloat = 10
-                    child.layoutToSuperview(.top, .left)
-                    child.set(.width, .height, of: edge)
-                    parent.layoutIfNeeded()
-                    expect(child.frame.origin).to(equal(.zero))
+                    #endif
                     expect(child.frame.size).to(equal(CGSize(width: edge, height: edge)))
                 }
                 
@@ -166,12 +162,12 @@ class SingleViewTests: QuickSpec {
                     
                     child.layoutToSuperview(.top)
                     child.set(.width, .height, of: 10)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
 
                     leftConstraint!.priority = .defaultLow
                     rightConstraint!.priority = .must
-                    parent.setNeedsLayout()
-                    parent.layoutIfNeeded()
+                    parent.setUpdateConstraints()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(child.frame.maxX).to(equal(parent.bounds.width))
                 }
@@ -180,15 +176,15 @@ class SingleViewTests: QuickSpec {
             context("child-child relationship, within a parent view") {
                 
                 var parentSize: CGSize!
-                var parent: UIView!
-                var child1: UIView!
-                var child2: UIView!
+                var parent: QLView!
+                var child1: QLView!
+                var child2: QLView!
                 
                 beforeEach {
                     parentSize = CGSize(width: 100, height: 100)
-                    parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                    child1 = UIView()
-                    child2 = UIView()
+                    parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                    child1 = QLView()
+                    child2 = QLView()
                     parent.addSubview(child1)
                     parent.addSubview(child2)
                 }
@@ -197,7 +193,7 @@ class SingleViewTests: QuickSpec {
                     child2.layoutToSuperview(.left, .right, .top, .bottom)
                     child1.removeFromSuperview()
                     let constraints = child1.layout(.left, .right, .top, .bottom, to: child2)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraints).to(beEmpty())
                 }
@@ -207,7 +203,7 @@ class SingleViewTests: QuickSpec {
                     child2.layoutToSuperview(.width, ratio: 0.5)
                     child1.removeFromSuperview()
                     let constraint = child1.layout(.left, to: .right, of: child2)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(constraint).to(beNil())
                 }
@@ -215,7 +211,7 @@ class SingleViewTests: QuickSpec {
                 it("can layout to another child and parent") {
                     child2.layoutToSuperview(.left, .right, .top, .bottom)
                     child1.layout(.left, .right, .top, .bottom, to: child2)
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(child1.frame).to(equal(child1.frame))
                     expect(child1.frame).to(equal(parent.bounds))
@@ -229,7 +225,7 @@ class SingleViewTests: QuickSpec {
                     child2.layoutToSuperview(.right, .top, .bottom)
                     child2.layout(.left, to: .centerX, of: parent)
                     
-                    parent.layoutIfNeeded()
+                    parent.quickLayoutIfNeeded()
                     
                     expect(child1.frame.maxX).to(equal(child2.frame.minX))
                     expect(child1.frame.minY).to(equal(child2.frame.minY))

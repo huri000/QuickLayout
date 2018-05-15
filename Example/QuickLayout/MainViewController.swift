@@ -7,13 +7,10 @@
 //
 
 import UIKit
+import QuickLayout
 
 // MARK: UI Example
 class MainViewController: UIViewController {
-    
-    // MARK: UI Props
-    private let scrollExampleButton = UIButton()
-    private let tableExampleButton = UIButton()
     
     // MARK: Lifecycle
     override func loadView() {
@@ -29,15 +26,15 @@ class MainViewController: UIViewController {
         let contentView = UIView()
         view.addSubview(contentView)
         
-        let buttonsAttributes = [(color: QLColor.BlueGray.c300, title: "Scroll View", action: #selector(scrollButtonPressed)),
+        let buttonsAttributes = [(color: QLColor.BlueGray.c400, title: "Scroll View", action: #selector(scrollButtonPressed)),
                                  (color: QLColor.BlueGray.c400, title: "Table View", action: #selector(tableButtonPressed)),
-                                 (color: QLColor.BlueGray.c500, title: "Vertigo", action: #selector(vertigoButtonPressed))]
+                                 (color: QLColor.BlueGray.c400, title: "Vertigo", action: #selector(vertigoButtonPressed))]
         let buttons = buttonsAttributes.map { attributes -> UIButton in
             let (color, title, action) = attributes
-            let button = UIButton()
+            let button = FocusableButton()
             button.backgroundColor = color
             button.setTitle(title, for: .normal)
-            button.addTarget(self, action: action, for: .touchUpInside)
+            button.addTarget(self, action: action, for: .primaryActionTriggered)
             button.contentEdgeInsets = UIEdgeInsets(top: 15, left: 0, bottom: 15, right: 0)
             contentView.addSubview(button)
             return button

@@ -59,7 +59,7 @@ class VertigoViewController: UIViewController {
         
         let label = UILabel()
         label.text = "🤘"
-        label.font = Font.HelveticaNeue.medium.with(size: 50)
+        label.font = MainFont.medium.with(size: 50)
         label.textAlignment = .center
         array.last!.addSubview(label)
         label.fillSuperview()

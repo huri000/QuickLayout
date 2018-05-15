@@ -17,13 +17,13 @@ class ViewArrayTests: QuickSpec {
         describe("views-array tests") {
             
             var parentSize: CGSize!
-            var parent: UIView!
-            var children: [UIView]!
+            var parent: QLView!
+            var children: [QLView]!
             
             beforeEach {
                 parentSize = CGSize(width: 100, height: 100)
-                parent = UIView(frame: CGRect(origin: .zero, size: parentSize))
-                children = [UIView](repeating: UIView(), count: 10)
+                parent = QLView(frame: CGRect(origin: .zero, size: parentSize))
+                children = [QLView](repeating: QLView(), count: 10)
                 children.forEach { parent.addSubview($0) }
             }
             
@@ -68,7 +68,7 @@ class ViewArrayTests: QuickSpec {
                 expect(hAxisConstraints!.count).to(equal(children.count))
                 
                 children.spread(.vertically, stretchEdgesToSuperview: true)
-                parent.layoutIfNeeded()
+                parent.quickLayoutIfNeeded()
                 
                 for child in children {
                     expect(child.frame.width).to(equal(parent.bounds.width))
@@ -83,7 +83,7 @@ class ViewArrayTests: QuickSpec {
                 children.layoutToSuperview(axis: .horizontally)
                 children.set(.height, of: constantHeight)
                 children.layoutToSuperview(.centerY)
-                parent.layoutIfNeeded()
+                parent.quickLayoutIfNeeded()
                 
                 for child in children {
                     expect(child.frame.midY).to(equal(parent.bounds.height / 2))
@@ -98,7 +98,7 @@ class ViewArrayTests: QuickSpec {
                 children.set(.height, .width, of: constantEdge)
                 children.layoutToSuperview(.centerX)
                 children.layoutToSuperview(.centerY)
-                parent.layoutIfNeeded()
+                parent.quickLayoutIfNeeded()
                 
                 for child in children {
                     expect(child.frame.midY).to(equal(parent.bounds.height / 2))
@@ -114,7 +114,7 @@ class ViewArrayTests: QuickSpec {
                 children.set(.height, .width, of: constantEdge)
                 children.layout(.centerX, to: .centerX, of: parent)
                 children.layout(.centerY, to: .centerY, of: parent)
-                parent.layoutIfNeeded()
+                parent.quickLayoutIfNeeded()
                 
                 expect(children.isValidForQuickLayout).to(beTrue())
                 
@@ -132,7 +132,7 @@ class ViewArrayTests: QuickSpec {
                 children.set(.height, of: constantEdge)
                 children.layoutToSuperview(.centerY)
                 children.layout(.left, .right, to: parent)
-                parent.layoutIfNeeded()
+                parent.quickLayoutIfNeeded()
                 
                 expect(children.isValidForQuickLayout).to(beTrue())
                 
