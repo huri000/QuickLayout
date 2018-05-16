@@ -5,7 +5,7 @@
 ![](https://travis-ci.org/huri000/QuickLayout.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Coverage Status](https://coveralls.io/repos/github/huri000/QuickLayout/badge.svg)](https://coveralls.io/github/huri000/QuickLayout)
+[![codecov](https://codecov.io/gh/huri000/QuickLayout/branch/master/graph/badge.svg)](https://codecov.io/gh/huri000/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 
 ![image](https://github.com/huri000/assets/blob/master/quick-layout/logo.png)
