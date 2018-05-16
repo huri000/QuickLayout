@@ -53,10 +53,10 @@ You can harness the power of QuickLayout to align your interface programmaticall
 ## The **WHY**
 Why should you use QuickLayout?
 - QuickLayout  drastically shortens the amount of code in case you ever need to write the view hierarchy.
-- The QuickLayout methods declarations are very descriptive and clear.
-- QuickLayout is fully documented, and contains most of the Auto Layout constructs that an App requires.
-- It supplies a common Auto Layout language for all platforms iOS / macOS / tvOS. 
-- Layout a `UIView` or `NSView` or an array of views using the instances themselves, without even creating a single NSLayoutConstraint.
+- It provides a common Auto Layout API for iOS, tvOS and macOS.
+- QuickLayout contains most of the Auto Layout constructs an iOS App requires.
+- The QuickLayout method declarations are very descriptive and clear. It is fully documented!
+- Layout a `UIView` or `NSView` or an array of views using the instances themselves, without even creating a single NSLayoutConstraint instance.
 
 ## Naming Convension
 As of version 2.0.0, QuickLayout supports tvOS and macOS as well as iOS. Therefore, a few adjustments have been made. 
