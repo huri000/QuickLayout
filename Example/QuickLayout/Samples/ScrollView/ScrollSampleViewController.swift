@@ -66,7 +66,7 @@ class ScrollSampleViewController: UIViewController {
             label.backgroundColor = QLColor.BlueGray.random
             label.text = dataSource[index]
             label.textColor = .white
-            label.font = Font.HelveticaNeue.light.with(size: 14)
+            label.font = MainFont.light.with(size: 14)
             label.numberOfLines = 0
             labelsContainerView.addSubview(label)
             labelArray.append(label)

@@ -1,0 +1,6 @@
+framework module Pods_QuickLayoutMacOSTests {
+  umbrella header "Pods-QuickLayoutMacOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module QuickLayout {
+  umbrella header "QuickLayout-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

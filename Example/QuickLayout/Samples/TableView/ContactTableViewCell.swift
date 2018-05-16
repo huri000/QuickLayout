@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuickLayout
 
 class ContactTableViewCell: UITableViewCell {
 
@@ -50,7 +51,7 @@ class ContactTableViewCell: UITableViewCell {
     
     private func setupUserNameLabel() {
         contentView.addSubview(userNameLabel)
-        userNameLabel.font = Font.HelveticaNeue.medium.with(size: 14)
+        userNameLabel.font = MainFont.medium.with(size: 14)
         userNameLabel.layout(.left, to: .right, of: thumbView, offset: 10)
         userNameLabel.layout(to: .top, of: thumbView)
         userNameLabel.layoutToSuperview(.right, offset: -16)
@@ -58,7 +59,7 @@ class ContactTableViewCell: UITableViewCell {
     
     private func setupFullNameLabel() {
         contentView.addSubview(fullNameLabel)
-        fullNameLabel.font = Font.HelveticaNeue.light.with(size: 14)
+        fullNameLabel.font = MainFont.light.with(size: 14)
         fullNameLabel.layout(to: .left, of: userNameLabel)
         fullNameLabel.layout(to: .right, of: userNameLabel)
         fullNameLabel.layout(.top, to: .bottom, of: userNameLabel, offset: 5)
@@ -66,7 +67,7 @@ class ContactTableViewCell: UITableViewCell {
     
     private func setupEmailLabel() {
         contentView.addSubview(emailLabel)
-        emailLabel.font = Font.HelveticaNeue.light.with(size: 12)
+        emailLabel.font = MainFont.light.with(size: 12)
         emailLabel.layout(to: .left, of: userNameLabel)
         emailLabel.layout(to: .right, of: userNameLabel)
         emailLabel.layout(.top, to: .bottom, of: fullNameLabel, offset: 5)

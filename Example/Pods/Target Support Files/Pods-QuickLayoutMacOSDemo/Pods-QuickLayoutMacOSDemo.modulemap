@@ -1,0 +1,6 @@
+framework module Pods_QuickLayoutMacOSDemo {
+  umbrella header "Pods-QuickLayoutMacOSDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
