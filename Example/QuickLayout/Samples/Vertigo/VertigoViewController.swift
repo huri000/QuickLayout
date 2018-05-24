@@ -66,4 +66,3 @@ class VertigoViewController: UIViewController {
         anchorView = array[1]
     }
 }
-

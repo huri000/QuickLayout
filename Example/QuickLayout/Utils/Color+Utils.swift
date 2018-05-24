@@ -9,9 +9,9 @@
 import UIKit
 
 extension UIColor {
-    static func by(r: Int, g: Int, b: Int, a: CGFloat = 1) -> UIColor {
-        let d = CGFloat(255)
-        return UIColor(red: CGFloat(r) / d, green: CGFloat(g) / d, blue: CGFloat(b) / d, alpha: a)
+    static func by(rVal: Int, gVal: Int, bVal: Int, aVal: CGFloat = 1) -> UIColor {
+        let dVal = CGFloat(255)
+        return UIColor(red: CGFloat(rVal) / dVal, green: CGFloat(gVal) / dVal, blue: CGFloat(bVal) / dVal, alpha: aVal)
     }
     
     convenience init(red: Int, green: Int, blue: Int) {
@@ -55,7 +55,7 @@ struct QLColor {
                           QLColor.BlueGray.c900]
         
         static var random: UIColor {
-            return all[.random(n: all.count)]
+            return all[.random(upTo: all.count)]
         }
     }
 }

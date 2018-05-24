@@ -37,7 +37,9 @@ class UtilsTests: QuickSpec {
             context("QLAttributePair validity") {
                 
                 it("is filled with proper values") {
+                    
                     let pair = QLAttributePair(first: .leading, second: .trailing)
+                    
                     expect(pair.first).to(equal(.leading))
                     expect(pair.second).to(equal(.trailing))
                 }
@@ -54,7 +56,9 @@ class UtilsTests: QuickSpec {
                 }
                 
                 it("is filled with proper custom values") {
+                    
                     let pair = QLPriorityPair(.required, .must)
+                    
                     expect(pair.horizontal).to(equal(.required))
                     expect(pair.vertical).to(equal(.must))
                 }
@@ -63,13 +67,17 @@ class UtilsTests: QuickSpec {
             context("QLAxis validity") {
                 
                 it("has proper horizontal attributes") {
+                    
                     let hAxis = QLAxis.horizontally
+                    
                     expect(hAxis.attributes.first).to(equal(.left))
                     expect(hAxis.attributes.second).to(equal(.right))
                 }
                 
                 it("has proper vertical attributes") {
+                    
                     let vAxis = QLAxis.vertically
+                    
                     expect(vAxis.attributes.first).to(equal(.top))
                     expect(vAxis.attributes.second).to(equal(.bottom))
                 }

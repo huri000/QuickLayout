@@ -1,0 +1,73 @@
+disabled_rules:
+  - trailing_whitespace # A little trust here ;-)
+  - force_cast # Enable force cast - (UITableViewCell casting is necessary sometimes)
+
+opt_in_rules:
+  - empty_count # Prefer checking isEmpty over comparing count to zero.
+  - closure_spacing # Closure expressions should have a single space inside each brace.
+  - private_outlet # IBOutlets should be private to avoid leaking UIKit to higher layers.
+  - private_action # IBActions should be private.
+  - conditional_returns_on_newline # Conditional statements should always return on the next line
+  - operator_usage_whitespace # Operators should be surrounded by a single whitespace when they are being used.
+  - prefixed_toplevel_constant # Top-level constants should be prefixed by k
+  - lower_acl_than_parent # Ensure definitions have a lower access control level than their enclosing parent
+  - let_var_whitespace # Let and var should be separated from other statements by a blank line.
+  - literal_expression_end_indentation # Array and dictionary literal end should have the same indentation as the line that started it.
+  - function_default_parameter_at_end # Prefer to locate parameters with defaults toward the end of the parameter list.
+  - fatal_error_message # A fatalError call should have a message.
+  - first_where # Prefer using .first(where:) over .filter { }.first in collections.
+  - contains_over_first_not_nil # Prefer contains over first(where:) != nil
+  - discouraged_optional_boolean # Prefer non-optional booleans over optional booleans.
+  - discouraged_optional_collection # Prefer empty collection over optional collection.
+  - redundant_nil_coalescing #nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
+  - comma # There should be no space before and one after any comma
+  - control_statement # if,for,while,do,catch statements shouldn't wrap their conditionals or arguments in parentheses  - colon
+  - colon # Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.
+  - redundant_optional_initialization # Initializing an optional variable with nil is redundant.
+  - redundant_set_access_control # Property setter access level shouldn't be explicit if it's the same as the variable access level.
+  - redundant_string_enum_value # String enum values can be omitted when they are equal to the enumcase name.
+  - redundant_void_return # Returning Void in a function declaration is redundant.
+  - return_arrow_whitespace # Return arrow and return type should be separated by a single space or on a separate line.
+  - shorthand_operator # Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning.
+  - sorted_first_last # Prefer using min() or max() over sorted().first or sorted().last
+  - statement_position # Else and catch should be on the same line, one space after the previous declaration.
+  - switch_case_on_newline # Cases inside a switch should always be on a newline
+  - trailing_closure # Trailing closure syntax should be used whenever possible.
+  - unneeded_parentheses_in_closure_argument # Parentheses are not needed when declaring closure arguments.
+  - vertical_parameter_alignment_on_call # Function parameters should be aligned vertically if they're in multiple lines in a method call.
+  - yoda_condition # The variable should be placed on the left, the constant on the right of a comparison operator.
+  - closure_end_indentation # Closure end should have the same indentation as the line that started it.
+  - empty_string # Prefer checking isEmpty over comparing string to an empty string literal.
+
+included: # paths to include during linting. `--path` is ignored if present.
+  - QuickLayout
+  - Example
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Example/Pods
+
+line_length: 180
+
+file_length:
+  warning: 600
+  error: 1200
+
+function_body_length:
+  warning: 200
+  error: 400
+
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+
+identifier_name:
+  min_length: # only min_length
+    error: 3 # only error
+  excluded:
+    - x
+    - y
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)
