@@ -33,4 +33,3 @@ class ViewController: NSViewController {
         view2.layout(.left, to: .centerX, of: view)
     }
 }
-
