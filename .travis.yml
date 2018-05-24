@@ -28,6 +28,9 @@ env:
 # before_install:
 # - rm -rf /Users/travis/Library/Developer/Xcode/DerivedData/QuickLayout-*/
 
+before_install:
+  - pod repo update
+
 install:
   - brew upgrade swiftlint
 
