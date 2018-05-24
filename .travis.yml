@@ -30,7 +30,10 @@ env:
 
 before_install:
   - pod repo update
+
+install:
   - brew upgrade swiftlint
+  - pod install
 
 script: 
   - swiftlint
