@@ -39,29 +39,38 @@ class ViewArrayTests: QuickSpec {
             
             it("must have a superview in order to layout to superview edge") {
                 children.first!.removeFromSuperview()
+                
                 let constraints = children.layoutToSuperview(axis: .vertically)
+                
                 expect(constraints).to(beEmpty())
             }
             
             it("must have a superview in order to spread across an axis") {
                 children.first!.removeFromSuperview()
+                
                 let constraints = children.spread(.vertically)
+                
                 expect(constraints).to(beEmpty())
             }
             
             it("must have a superview in order to layout edge to another view edge") {
                 children.first?.removeFromSuperview()
+                
                 let constraints = children.layout(.centerX, to: .centerX, of: parent)
+                
                 expect(constraints).to(beEmpty())
             }
             
             it("must have a superview in order to layout multiple esges to another view edge") {
                 children.first?.removeFromSuperview()
+                
                 let constraints = children.layout(.centerX, .centerY, to: parent)
+                
                 expect(constraints).to(beEmpty())
             }
             
             it("layouts to parent edges and distributed properly") {
+                
                 let hAxisConstraints = children.layoutToSuperview(axis: .horizontally)
                 
                 expect(hAxisConstraints).toEventuallyNot(beNil())
@@ -74,12 +83,14 @@ class ViewArrayTests: QuickSpec {
                     expect(child.frame.width).to(equal(parent.bounds.width))
                     expect(child.frame.minX).to(equal(parent.bounds.minX))
                     expect(child.frame.maxX).to(equal(parent.bounds.maxX))
-                    //                        expect(child.frame.height).to(equal(parent.bounds.height / CGFloat(children.count)))
+//                        expect(child.frame.height).to(equal(parent.bounds.height / CGFloat(children.count)))
                 }
             }
             
             it("layouts to parent edges and height is constant") {
+                
                 let constantHeight: CGFloat = 10
+                
                 children.layoutToSuperview(axis: .horizontally)
                 children.set(.height, of: constantHeight)
                 children.layoutToSuperview(.centerY)
@@ -94,7 +105,9 @@ class ViewArrayTests: QuickSpec {
             }
             
             it("layouts to parent edges and edges both are constant - indirect way through parent") {
+                
                 let constantEdge: CGFloat = 10
+                
                 children.set(.height, .width, of: constantEdge)
                 children.layoutToSuperview(.centerX)
                 children.layoutToSuperview(.centerY)
@@ -110,7 +123,9 @@ class ViewArrayTests: QuickSpec {
             }
             
             it("layouts to parent edges and edges both are constant - direct way") {
+                
                 let constantEdge: CGFloat = 20
+                
                 children.set(.height, .width, of: constantEdge)
                 children.layout(.centerX, to: .centerX, of: parent)
                 children.layout(.centerY, to: .centerY, of: parent)
@@ -128,7 +143,9 @@ class ViewArrayTests: QuickSpec {
             }
             
             it("layouts multiple edges to parent - direct way") {
+                
                 let constantEdge: CGFloat = 30
+                
                 children.set(.height, of: constantEdge)
                 children.layoutToSuperview(.centerY)
                 children.layout(.left, .right, to: parent)
