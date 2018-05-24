@@ -36,6 +36,8 @@ env:
 
 script: 
   - set -o pipefail
+  - git config --global --unset http.proxy 
+  - git config --global --unset https.proxy
   - xcodebuild -version
   - xcodebuild -showsdks
   - travis_retry xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES test | xcpretty
