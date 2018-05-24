@@ -40,32 +40,32 @@ class ViewArrayTests: QuickSpec {
             it("must have a superview in order to layout to superview edge") {
                 children.first!.removeFromSuperview()
                 let constraints = children.layoutToSuperview(axis: .vertically)
-                expect(constraints).to(beNil())
+                expect(constraints).to(beEmpty())
             }
             
             it("must have a superview in order to spread across an axis") {
                 children.first!.removeFromSuperview()
                 let constraints = children.spread(.vertically)
-                expect(constraints).to(beNil())
+                expect(constraints).to(beEmpty())
             }
             
             it("must have a superview in order to layout edge to another view edge") {
                 children.first?.removeFromSuperview()
                 let constraints = children.layout(.centerX, to: .centerX, of: parent)
-                expect(constraints).to(beNil())
+                expect(constraints).to(beEmpty())
             }
             
             it("must have a superview in order to layout multiple esges to another view edge") {
                 children.first?.removeFromSuperview()
                 let constraints = children.layout(.centerX, .centerY, to: parent)
-                expect(constraints).to(beNil())
+                expect(constraints).to(beEmpty())
             }
             
             it("layouts to parent edges and distributed properly") {
                 let hAxisConstraints = children.layoutToSuperview(axis: .horizontally)
                 
                 expect(hAxisConstraints).toEventuallyNot(beNil())
-                expect(hAxisConstraints!.count).to(equal(children.count))
+                expect(hAxisConstraints.count).to(equal(children.count))
                 
                 children.spread(.vertically, stretchEdgesToSuperview: true)
                 parent.quickLayoutIfNeeded()
