@@ -29,7 +29,7 @@ env:
 # - rm -rf /Users/travis/Library/Developer/Xcode/DerivedData/QuickLayout-*/
 
 install:
-  - brew install swiftlint
+  - brew upgrade swiftlint
 
 script: 
   - swiftlint
