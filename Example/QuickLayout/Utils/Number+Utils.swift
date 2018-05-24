@@ -22,14 +22,14 @@ extension CGFloat {
 
 extension Int {
     static var random: Int {
-        return Int.random(n: Int.max)
+        return Int.random(upTo: Int.max)
     }
     
-    static func random(n: Int) -> Int {
-        return Int(arc4random_uniform(UInt32(n)))
+    static func random(upTo num: Int) -> Int {
+        return Int(arc4random_uniform(UInt32(num)))
     }
     
     static func random(min: Int, max: Int) -> Int {
-        return Int.random(n: max - min + 1) + min
+        return Int.random(upTo: max - min + 1) + min
     }
 }

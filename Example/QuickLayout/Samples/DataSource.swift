@@ -16,7 +16,7 @@ class DataSource<T: Decodable> {
         case sentences
     }
     
-    typealias SetupCompletion = () -> ()
+    typealias SetupCompletion = () -> Void
     
     var data: [T] = []
     

@@ -10,7 +10,7 @@ import UIKit
 
 class FocusableButton: UIButton {
 
-    override open func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         coordinator.addCoordinatedAnimations({
             self.setFocusState()
         }, completion: nil)

@@ -116,7 +116,9 @@ class SingleViewTests: QuickSpec {
                     let ratio: CGFloat = 0.5
                     child.fillSuperview(withSizeRatio: ratio)
                     parent.quickLayoutIfNeeded()
-                    let expectedFrame = CGRect(x: parentSize.width * ratio * 0.5, y: parentSize.height * ratio * 0.5, width: parentSize.width * ratio, height: parentSize.height * ratio)
+                    let origin = CGPoint(x: parentSize.width * ratio * 0.5, y: parentSize.height * ratio * 0.5)
+                    let size = CGSize(width: parentSize.width * ratio, height: parentSize.height * ratio)
+                    let expectedFrame = CGRect(origin: origin, size: size)
                     expect(child.frame).to(equal(expectedFrame))
                 }
                 
