@@ -11,7 +11,7 @@ env:
   - IOS_FRAMEWORK_SCHEME="QuickLayoutiOSDemo"
   - MACOS_FRAMEWORK_SCHEME="QuickLayoutMacOSDemo"
   - TVOS_FRAMEWORK_SCHEME="QuickLayoutTvOSDemo"
-  - IOS_SDK=iphonesimulator12
+  - IOS_SDK=iphonesimulator12.0
   - MACOS_SDK=macosx10.13
   - TVOS_SDK=appletvsimulator11.3
   matrix:
