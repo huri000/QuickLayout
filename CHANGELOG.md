@@ -1,6 +1,10 @@
 # Change Log
 Any notable changes to this project will be documented in this file.
 
+## 2.0.3
+
+Adjustments for Xcode 10 - Example project compilation.
+
 ## 2.0.2
 
 ### Features
