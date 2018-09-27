@@ -1,7 +1,7 @@
 # Change Log
 Any notable changes to this project will be documented in this file.
 
-## 2.0.3
+## 2.0.4
 
 Adjustments for Xcode 10.
 
