@@ -11,9 +11,6 @@ env:
 
 # travis cache isn't kept between builds
 before_install:
-  - cd Example
-  - pod deintegrate
-  - cd ..
   - pod cache clean --all
   - pod repo update
 
