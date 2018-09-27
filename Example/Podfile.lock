@@ -1,11 +1,11 @@
 PODS:
-  - Nimble (7.3.0)
-  - Quick (1.3.1)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
   - QuickLayout (2.0.3)
 
 DEPENDENCIES:
-  - Nimble (= 7.3.0)
-  - Quick (= 1.3.1)
+  - Nimble (= 7.3.1)
+  - Quick (= 1.3.2)
   - QuickLayout (from `../`)
 
 SPEC REPOS:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: c8d6a1f463701921c46de965c673e13cafa09196
-  Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   QuickLayout: f0cf4cb971bbb1f15cd211263a329883b676fd11
 
-PODFILE CHECKSUM: 42377ee4bf3c9495f45cfd4deaa561e92f884331
+PODFILE CHECKSUM: aa9bb351a0b9d457309b32514dd8742855e1ef78
 
 COCOAPODS: 1.5.3
