@@ -90,7 +90,7 @@ $ gem install cocoapods
 To integrate QuickLayout into your Xcode project using CocoaPods, specify the following in your `Podfile`:
 
 ```ruby
-pod 'QuickLayout', '2.0.3'
+pod 'QuickLayout', '2.1.0'
 ```
 
 Then, run the following command:
