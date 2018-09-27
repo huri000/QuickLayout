@@ -11,12 +11,10 @@ env:
 
 # travis cache isn't kept between builds
 before_install:
-  - pod cache clean --all
   - pod repo update
 
 script:
 - set -o pipefail
-- cd Example && pod deintegrate && pod install && cd ..
 - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
 - brew upgrade swiftlint
 - swiftlint
