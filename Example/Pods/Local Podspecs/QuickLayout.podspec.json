@@ -1,6 +1,6 @@
 {
   "name": "QuickLayout",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "summary": "Written in pure Swift, QuickLayout offers a neat way to manage Auto Layout in code.",
   "platforms": {
     "ios": "9.0",
@@ -19,7 +19,7 @@
   },
   "source": {
     "git": "https://github.com/huri000/QuickLayout.git",
-    "tag": "2.0.1"
+    "tag": "2.0.2"
   },
   "source_files": "QuickLayout/**/*.{swift,h}"
 }
