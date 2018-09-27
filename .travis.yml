@@ -7,7 +7,6 @@ env:
   global:
     - WORKSPACE=Example/QuickLayout.xcworkspace
     - SCHEME=QuickLayoutiOSDemo
-    - TEST_SDK=iphonesimulator
 
 # travis cache isn't kept between builds
 before_install:
