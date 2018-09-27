@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode10
+osx_image: xcode9.3
 cache: cocoapods
 podfile: Example/Podfile
 
@@ -7,7 +7,7 @@ env:
   global:
     - WORKSPACE=Example/QuickLayout.xcworkspace
     - SCHEME=QuickLayoutiOSDemo
-    - TEST_SDK=iphonesimulator12.0
+    - TEST_SDK=iphonesimulator
 
 # travis cache isn't kept between builds
 before_install:
