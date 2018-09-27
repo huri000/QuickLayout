@@ -1,11 +1,6 @@
 #import "QuickConfiguration.h"
+#import "World.h"
 #import <objc/runtime.h>
-
-#if __has_include("Quick-Swift.h")
-#import "Quick-Swift.h"
-#else
-#import <Quick/Quick-Swift.h>
-#endif
 
 typedef void (^QCKClassEnumerationBlock)(Class klass);
 

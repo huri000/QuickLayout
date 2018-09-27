@@ -47,10 +47,4 @@
  */
 - (void)spec;
 
-/**
- Returns the currently executing spec. Use in specs that require XCTestCase
- methds, e.g. expectationWithDescription.
-*/
-@property (class, nonatomic, readonly) QuickSpec *current;
-
 @end

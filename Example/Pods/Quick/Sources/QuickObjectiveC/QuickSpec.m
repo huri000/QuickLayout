@@ -1,11 +1,7 @@
 #import "QuickSpec.h"
 #import "QuickConfiguration.h"
-
-#if __has_include("Quick-Swift.h")
-#import "Quick-Swift.h"
-#else
+#import "World.h"
 #import <Quick/Quick-Swift.h>
-#endif
 
 static QuickSpec *currentSpec = nil;
 
@@ -79,10 +75,6 @@ static QuickSpec *currentSpec = nil;
 
 - (void)spec { }
 
-+ (QuickSpec*) current {
-    return currentSpec;
-}
-
 #pragma mark - Internal Methods
 
 /**
@@ -109,8 +101,8 @@ static QuickSpec *currentSpec = nil;
     });
 
     const char *types = [[NSString stringWithFormat:@"%s%s%s", @encode(void), @encode(id), @encode(SEL)] UTF8String];
-
-    NSString *originalName = [QCKObjCStringUtils c99ExtendedIdentifierFrom:example.name];
+    
+    NSString *originalName = example.name.qck_c99ExtendedIdentifier;
     NSString *selectorName = originalName;
     NSUInteger i = 2;
     

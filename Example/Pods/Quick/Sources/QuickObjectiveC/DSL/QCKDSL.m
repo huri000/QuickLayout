@@ -1,10 +1,6 @@
 #import "QCKDSL.h"
-
-#if __has_include("Quick-Swift.h")
-#import "Quick-Swift.h"
-#else
-#import <Quick/Quick-Swift.h>
-#endif
+#import "World.h"
+#import "World+DSL.h"
 
 void qck_beforeSuite(QCKDSLEmptyBlock closure) {
     [[World sharedWorld] beforeSuite:closure];
