@@ -16,7 +16,7 @@ before_install:
 
 script:
 - set -o pipefail
-- brew upgrade carthage
+- cd Example && pod deintegrate && pod install && cd ..
 - xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
 - brew upgrade swiftlint
 - swiftlint
