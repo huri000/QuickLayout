@@ -35,7 +35,7 @@ class TableSampleViewController: UIViewController {
     private func setupContentTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension
         view.addSubview(tableView)
         tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: ContactTableViewCell.classType)
         tableView.layoutToSuperview(.left, .right, .bottom, .top)
