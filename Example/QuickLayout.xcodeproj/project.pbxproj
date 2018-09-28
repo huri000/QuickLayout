@@ -750,7 +750,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
 			);
@@ -763,7 +763,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		14AD5BDB20B6DAA70041C237 /* SwiftLint */ = {
@@ -802,7 +802,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
 			);
@@ -815,7 +815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		35C1DABFBEF221B7DB0E7025 /* [CP] Embed Pods Frameworks */ = {
@@ -826,7 +826,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble-tvOS/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick-tvOS/Quick.framework",
 			);
@@ -839,7 +839,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3BB23A6B9045B176A3775838 /* [CP] Check Pods Manifest.lock */ = {
@@ -872,7 +872,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/QuickLayout-iOS/QuickLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -883,7 +883,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4A31E66D5F94FEA7A09AD273 /* [CP] Check Pods Manifest.lock */ = {
@@ -938,7 +938,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/QuickLayout-macOS/QuickLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -949,7 +949,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6C5EB720CB262F122D800999 /* [CP] Check Pods Manifest.lock */ = {
@@ -982,7 +982,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/QuickLayout-tvOS/QuickLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -993,7 +993,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97847AF36903A9C4BE5366C4 /* [CP] Check Pods Manifest.lock */ = {
