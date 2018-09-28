@@ -1,4 +1,7 @@
 coverage:
+  range: 95..100
+  round: nearest
+  precision: 2
   ignore:
     - cmake-debug-build/*
     - Example/*
@@ -12,4 +15,3 @@ coverage:
     - build/*
     - .build/*
     - .vagrant/*
-
