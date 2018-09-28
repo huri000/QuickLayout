@@ -1,7 +1,9 @@
 coverage:
-  range: 95..100
-  round: nearest
-  precision: 2
+  status:
+    project:
+      default:
+        target: 100%
+        threshold: 2%
   ignore:
     - cmake-debug-build/*
     - Example/*
