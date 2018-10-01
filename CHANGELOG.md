@@ -3,6 +3,10 @@ Any notable changes to this project will be documented in this file.
 
 ## 2.1.0
 
+Updated project swift version to 4.2 as well as run target.
+
+## 2.1.0
+
 Migration to Swift 4.2.
 
 ## 2.0.4

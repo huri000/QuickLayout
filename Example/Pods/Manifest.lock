@@ -1,7 +1,7 @@
 PODS:
   - Nimble (7.3.1)
   - Quick (1.3.2)
-  - QuickLayout (2.1.0)
+  - QuickLayout (2.1.1)
 
 DEPENDENCIES:
   - Nimble (= 7.3.1)
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
-  QuickLayout: c337ec1cd16b2ed1b93e09f686bf81d43a7e16e5
+  QuickLayout: 59d13d4a58377b875f38e07a087dad09930127b3
 
 PODFILE CHECKSUM: d720bdfc32ce7952cb312b2e34d54002821cd3be
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1
