@@ -2688,7 +2688,7 @@
 			};
 			name = Debug;
 		};
-		59AECE5F7EDFA67B6242416DDD1E113A /* Debug */ = {
+		49C2A835E934E13E01459236EED2CD81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B286E567319077FF14E97989C4A205D /* QuickLayout-macOS.xcconfig */;
 			buildSettings = {
@@ -2716,7 +2716,39 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E994AC506A01F4B29807913E97AF174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCF2B3B4B40BE091093192C45A047E0 /* QuickLayout-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -3063,6 +3095,41 @@
 			};
 			name = Release;
 		};
+		98B7B8A6FD257C5B5118ADE45EBDF16E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B286E567319077FF14E97989C4A205D /* QuickLayout-macOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9A248C61105D17B384F32693931CCCC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCE221B61C8AA0CCBA9E8922BFAA1BD8 /* Pods-QuickLayoutiOSTests.release.xcconfig */;
@@ -3201,41 +3268,6 @@
 			};
 			name = Debug;
 		};
-		BC616AC3E48EE3954E590B2BCEE73B9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B286E567319077FF14E97989C4A205D /* QuickLayout-macOS.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C62AC448D9CAD87136D097764E3AD5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0904855B0EF7BC21BB6113A6C0674257 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
@@ -3345,7 +3377,7 @@
 			};
 			name = Release;
 		};
-		D4DC17A09A0F5F74E02EE30867A6F126 /* Debug */ = {
+		E3C92E09F01AE130B6183C8BA4693CF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FCF2B3B4B40BE091093192C45A047E0 /* QuickLayout-tvOS.xcconfig */;
 			buildSettings = {
@@ -3368,14 +3400,16 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		F18246B82054B5257E1A6FC9C23BF6E5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3406,40 +3440,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F38E4A8C076D69114016C495E3B457A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FCF2B3B4B40BE091093192C45A047E0 /* QuickLayout-tvOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-tvOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -3539,8 +3539,8 @@
 		6AAE5C730B3A2B4234430EB2F0257717 /* Build configuration list for PBXNativeTarget "QuickLayout-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4DC17A09A0F5F74E02EE30867A6F126 /* Debug */,
-				F38E4A8C076D69114016C495E3B457A2 /* Release */,
+				5E994AC506A01F4B29807913E97AF174 /* Debug */,
+				E3C92E09F01AE130B6183C8BA4693CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3620,8 +3620,8 @@
 		F95275BFCCA8814B3B15BCF19A703A0D /* Build configuration list for PBXNativeTarget "QuickLayout-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59AECE5F7EDFA67B6242416DDD1E113A /* Debug */,
-				BC616AC3E48EE3954E590B2BCEE73B9F /* Release */,
+				49C2A835E934E13E01459236EED2CD81 /* Debug */,
+				98B7B8A6FD257C5B5118ADE45EBDF16E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
