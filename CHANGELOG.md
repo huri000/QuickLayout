@@ -1,6 +1,10 @@
 # Change Log
 Any notable changes to this project will be documented in this file.
 
+## 3.0.0
+
+Update to Swift 5. 
+
 ## 2.1.0
 
 Updated project swift version to 4.2 as well as run target.

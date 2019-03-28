@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08E4CD44657699854E73DA60 /* Pods_QuickLayoutiOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9B000317FFBE3B631B4A77 /* Pods_QuickLayoutiOSDemo.framework */; };
+		006D0075F756F1CB5ED75014 /* Pods_QuickLayoutiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACED13E371F8667AD7BE526 /* Pods_QuickLayoutiOSTests.framework */; };
+		0B23A7D913D3ED7CDC922F5C /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACADBB83F254133868D80B6 /* Pods_QuickLayoutTvOSDemo.framework */; };
+		0C8163D401F511723246E43B /* Pods_QuickLayoutMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574AE78830638107DF368786 /* Pods_QuickLayoutMacOSTests.framework */; };
 		1410C80920A59BD500F83E0B /* VertigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80820A59BD500F83E0B /* VertigoViewController.swift */; };
 		1410C80B20A59C8F00F83E0B /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80A20A59C8F00F83E0B /* Color+Utils.swift */; };
 		1410C80D20A5A58A00F83E0B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410C80C20A5A58A00F83E0B /* NavigationController.swift */; };
@@ -67,14 +69,12 @@
 		14F9FB9420A7109C00F37D02 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9FB8E20A7104800F37D02 /* UIView+QLContentWrap.swift */; };
 		14F9FB9520A7109C00F37D02 /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9FB8D20A7104800F37D02 /* UIView+QuickLayout.swift */; };
 		14F9FB9620A7109C00F37D02 /* UIViewArray+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9FB8B20A7104800F37D02 /* UIViewArray+QuickLayout.swift */; };
-		44FB5FF26C9F50317405C03D /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68748DEF2ED2C4FA730668AB /* Pods_QuickLayoutMacOSDemo.framework */; };
-		4DBB33F87F62063C611F2CD7 /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BEC781B6038C8485A83780 /* Pods_QuickLayoutTvOSDemo.framework */; };
+		30DB0BA86FBAC303731AB481 /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746E589880166BB41E5869FC /* Pods_QuickLayoutMacOSDemo.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		B2F15AA3DC92740B4A34B998 /* Pods_QuickLayoutTvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF215C95E44BFCA3E101BA3B /* Pods_QuickLayoutTvOSTests.framework */; };
-		D3EB2A54FC7EAB549F63D2ED /* Pods_QuickLayoutiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A46EC9872302940907DF91 /* Pods_QuickLayoutiOSTests.framework */; };
-		D53CF7466A700F079EE846AA /* Pods_QuickLayoutMacOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B534967C21F87938ED9039 /* Pods_QuickLayoutMacOSTests.framework */; };
+		A4DB1CCF4F51E4C623BA9F2D /* Pods_QuickLayoutTvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D92328C1562657328339496 /* Pods_QuickLayoutTvOSTests.framework */; };
+		B24DECA317443D6286054958 /* Pods_QuickLayoutiOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5EAAEB978860389B4472A0 /* Pods_QuickLayoutiOSDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,9 +130,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0402FE9FCC8E2AD6238DDABE /* Pods-QuickLayoutTvOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.release.xcconfig"; sourceTree = "<group>"; };
-		0D162836943976F38B1A7540 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.release.xcconfig"; sourceTree = "<group>"; };
-		1292EBF81511015D55E874E8 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0F5EAAEB978860389B4472A0 /* Pods_QuickLayoutiOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutiOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DDE8252793A2582F04294F /* Pods-QuickLayoutMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1410C80820A59BD500F83E0B /* VertigoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertigoViewController.swift; sourceTree = "<group>"; };
 		1410C80A20A59C8F00F83E0B /* Color+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
 		1410C80C20A5A58A00F83E0B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -176,30 +175,31 @@
 		14F9FB8C20A7104800F37D02 /* QLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QLUtils.swift; path = ../../QuickLayout/QLUtils.swift; sourceTree = "<group>"; };
 		14F9FB8D20A7104800F37D02 /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+QuickLayout.swift"; path = "../../QuickLayout/UIView+QuickLayout.swift"; sourceTree = "<group>"; };
 		14F9FB8E20A7104800F37D02 /* UIView+QLContentWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+QLContentWrap.swift"; path = "../../QuickLayout/UIView+QLContentWrap.swift"; sourceTree = "<group>"; };
-		187C4B408E57CB5F671776A4 /* Pods-QuickLayoutiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C5E11892465D8817108BFFE /* Pods-QuickLayoutTvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2646AF13E523E25E0580AF59 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D92328C1562657328339496 /* Pods_QuickLayoutTvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACED13E371F8667AD7BE526 /* Pods_QuickLayoutiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA85A2223F313FD65DA89B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		54A46EC9872302940907DF91 /* Pods_QuickLayoutiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A9B000317FFBE3B631B4A77 /* Pods_QuickLayoutiOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutiOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFC58295CCDC36B45004A49 /* Pods-QuickLayoutMacOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		574AE78830638107DF368786 /* Pods_QuickLayoutMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* QuickLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		68748DEF2ED2C4FA730668AB /* Pods_QuickLayoutMacOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutMacOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69BEC781B6038C8485A83780 /* Pods_QuickLayoutTvOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTvOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73B534967C21F87938ED9039 /* Pods_QuickLayoutMacOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutMacOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6357A08E655F8097B5B38284 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.release.xcconfig"; path = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6D420E2827AFB3C40A8524BE /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		746E589880166BB41E5869FC /* Pods_QuickLayoutMacOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutMacOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0E436E838A2B960D27763 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9CC7CAA16107585CD8BC821B /* Pods-QuickLayoutTvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A9DC3C872E1FC0C52B72EC93 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		CF5714AE77056AD231108C09 /* Pods-QuickLayoutTvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		80A3935FD8CC5B8E2D6FB06F /* Pods-QuickLayoutMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSTests.release.xcconfig"; path = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B3533E5B30635D8390765E7 /* Pods-QuickLayoutiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSTests.release.xcconfig"; path = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A388037B943D052F269215E /* Pods-QuickLayoutTvOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.release.xcconfig"; path = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9F2EE2068CC99358AE2AD876 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AACADBB83F254133868D80B6 /* Pods_QuickLayoutTvOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTvOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C869EFF41313E84EAE1B22 /* Pods-QuickLayoutiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.release.xcconfig"; path = "Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BE10E6DFB97FB92F6880E3C9 /* Pods-QuickLayoutTvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutTvOSTests.release.xcconfig"; path = "Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF744FE52C7CD43181AC1BE0 /* QuickLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QuickLayout.podspec; path = ../QuickLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D3C7E92F91F444D37172F3EA /* Pods-QuickLayoutMacOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutMacOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D93302D2F372FF6279458A7E /* Pods-QuickLayoutiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
-		DDF5979958F7EEE7A9149B33 /* Pods-QuickLayoutiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EF215C95E44BFCA3E101BA3B /* Pods_QuickLayoutTvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLayoutTvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7E1A8EAC66426A1AB24C5A9 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB5A451C3736BC25FA5516E8 /* Pods-QuickLayoutiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLayoutiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DBB33F87F62063C611F2CD7 /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */,
+				0B23A7D913D3ED7CDC922F5C /* Pods_QuickLayoutTvOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44FB5FF26C9F50317405C03D /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */,
+				30DB0BA86FBAC303731AB481 /* Pods_QuickLayoutMacOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F15AA3DC92740B4A34B998 /* Pods_QuickLayoutTvOSTests.framework in Frameworks */,
+				A4DB1CCF4F51E4C623BA9F2D /* Pods_QuickLayoutTvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CF7466A700F079EE846AA /* Pods_QuickLayoutMacOSTests.framework in Frameworks */,
+				0C8163D401F511723246E43B /* Pods_QuickLayoutMacOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EB2A54FC7EAB549F63D2ED /* Pods_QuickLayoutiOSTests.framework in Frameworks */,
+				006D0075F756F1CB5ED75014 /* Pods_QuickLayoutiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F9FB8520A70FC300F37D02 /* QuickLayout.framework in Frameworks */,
-				08E4CD44657699854E73DA60 /* Pods_QuickLayoutiOSDemo.framework in Frameworks */,
+				B24DECA317443D6286054958 /* Pods_QuickLayoutiOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,38 +353,6 @@
 			path = QuickLayout;
 			sourceTree = "<group>";
 		};
-		5230301C06B167091F223C73 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A9DC3C872E1FC0C52B72EC93 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */,
-				0D162836943976F38B1A7540 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */,
-				5FFC58295CCDC36B45004A49 /* Pods-QuickLayoutMacOSTests.debug.xcconfig */,
-				D3C7E92F91F444D37172F3EA /* Pods-QuickLayoutMacOSTests.release.xcconfig */,
-				1292EBF81511015D55E874E8 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */,
-				0402FE9FCC8E2AD6238DDABE /* Pods-QuickLayoutTvOSDemo.release.xcconfig */,
-				9CC7CAA16107585CD8BC821B /* Pods-QuickLayoutTvOSTests.debug.xcconfig */,
-				CF5714AE77056AD231108C09 /* Pods-QuickLayoutTvOSTests.release.xcconfig */,
-				F7E1A8EAC66426A1AB24C5A9 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */,
-				D93302D2F372FF6279458A7E /* Pods-QuickLayoutiOSDemo.release.xcconfig */,
-				DDF5979958F7EEE7A9149B33 /* Pods-QuickLayoutiOSTests.debug.xcconfig */,
-				187C4B408E57CB5F671776A4 /* Pods-QuickLayoutiOSTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		541BF80AB971917D7BEB50F1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68748DEF2ED2C4FA730668AB /* Pods_QuickLayoutMacOSDemo.framework */,
-				73B534967C21F87938ED9039 /* Pods_QuickLayoutMacOSTests.framework */,
-				69BEC781B6038C8485A83780 /* Pods_QuickLayoutTvOSDemo.framework */,
-				EF215C95E44BFCA3E101BA3B /* Pods_QuickLayoutTvOSTests.framework */,
-				5A9B000317FFBE3B631B4A77 /* Pods_QuickLayoutiOSDemo.framework */,
-				54A46EC9872302940907DF91 /* Pods_QuickLayoutiOSTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -394,8 +362,8 @@
 				14D20A04209F7426009436E4 /* QuickLayoutTests */,
 				14F9FB7F20A70FC300F37D02 /* QuickLayout */,
 				607FACD11AFB9204008FA782 /* Products */,
-				5230301C06B167091F223C73 /* Pods */,
-				541BF80AB971917D7BEB50F1 /* Frameworks */,
+				C5D546D100642488E55DC3AD /* Pods */,
+				B716C58BDE53C69365EC68B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -451,6 +419,39 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B716C58BDE53C69365EC68B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				746E589880166BB41E5869FC /* Pods_QuickLayoutMacOSDemo.framework */,
+				574AE78830638107DF368786 /* Pods_QuickLayoutMacOSTests.framework */,
+				AACADBB83F254133868D80B6 /* Pods_QuickLayoutTvOSDemo.framework */,
+				2D92328C1562657328339496 /* Pods_QuickLayoutTvOSTests.framework */,
+				0F5EAAEB978860389B4472A0 /* Pods_QuickLayoutiOSDemo.framework */,
+				3ACED13E371F8667AD7BE526 /* Pods_QuickLayoutiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D546D100642488E55DC3AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D420E2827AFB3C40A8524BE /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */,
+				6357A08E655F8097B5B38284 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */,
+				10DDE8252793A2582F04294F /* Pods-QuickLayoutMacOSTests.debug.xcconfig */,
+				80A3935FD8CC5B8E2D6FB06F /* Pods-QuickLayoutMacOSTests.release.xcconfig */,
+				9F2EE2068CC99358AE2AD876 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */,
+				9A388037B943D052F269215E /* Pods-QuickLayoutTvOSDemo.release.xcconfig */,
+				1C5E11892465D8817108BFFE /* Pods-QuickLayoutTvOSTests.debug.xcconfig */,
+				BE10E6DFB97FB92F6880E3C9 /* Pods-QuickLayoutTvOSTests.release.xcconfig */,
+				2646AF13E523E25E0580AF59 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */,
+				B9C869EFF41313E84EAE1B22 /* Pods-QuickLayoutiOSDemo.release.xcconfig */,
+				EB5A451C3736BC25FA5516E8 /* Pods-QuickLayoutiOSTests.debug.xcconfig */,
+				8B3533E5B30635D8390765E7 /* Pods-QuickLayoutiOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -469,11 +470,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1484F18B20A7486C00EA19A8 /* Build configuration list for PBXNativeTarget "QuickLayoutTvOSDemo" */;
 			buildPhases = (
-				DBF5EC85966B7C0242C4E849 /* [CP] Check Pods Manifest.lock */,
+				00AFCCD0312BF92445EB3746 /* [CP] Check Pods Manifest.lock */,
 				1484F17920A7486A00EA19A8 /* Sources */,
 				1484F17A20A7486A00EA19A8 /* Frameworks */,
 				1484F17B20A7486A00EA19A8 /* Resources */,
-				21384408EE37D12E88D3C415 /* [CP] Embed Pods Frameworks */,
+				6F9665DD218AF348C53110E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -488,11 +489,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14A7003220A782F5000E2F3A /* Build configuration list for PBXNativeTarget "QuickLayoutMacOSDemo" */;
 			buildPhases = (
-				25DD66F95933BD7102574544 /* [CP] Check Pods Manifest.lock */,
+				32A0C6E74993A05C085371C9 /* [CP] Check Pods Manifest.lock */,
 				14A7002120A782F5000E2F3A /* Sources */,
 				14A7002220A782F5000E2F3A /* Frameworks */,
 				14A7002320A782F5000E2F3A /* Resources */,
-				CEE218198FB3690888704DAA /* [CP] Embed Pods Frameworks */,
+				0E87823735D90950B0B10DCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -507,11 +508,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14CAF61120A8DF5C00E89417 /* Build configuration list for PBXNativeTarget "QuickLayoutTvOSTests" */;
 			buildPhases = (
-				AF1B1AAE0E03D133AAB4A4E2 /* [CP] Check Pods Manifest.lock */,
+				B18FC10503869BCFD5D6A8FF /* [CP] Check Pods Manifest.lock */,
 				14CAF60820A8DF5C00E89417 /* Sources */,
 				14CAF60D20A8DF5C00E89417 /* Frameworks */,
 				14CAF60F20A8DF5C00E89417 /* Resources */,
-				7EA6841CCA6664F2D32437B8 /* [CP] Embed Pods Frameworks */,
+				45326DB9C528F92372A54EA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -528,11 +529,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14CAF62220A8E7CD00E89417 /* Build configuration list for PBXNativeTarget "QuickLayoutMacOSTests" */;
 			buildPhases = (
-				14264A57094100C1F6D2F3B9 /* [CP] Check Pods Manifest.lock */,
+				93D6CF07200AFCC54655F7F4 /* [CP] Check Pods Manifest.lock */,
 				14CAF61720A8E7CD00E89417 /* Sources */,
 				14CAF61820A8E7CD00E89417 /* Frameworks */,
 				14CAF61920A8E7CD00E89417 /* Resources */,
-				A6D2D6AB56EE5B17F6232C00 /* [CP] Embed Pods Frameworks */,
+				54E4E72E2E3B0CA942ACB370 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,12 +549,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14D20A0A209F7426009436E4 /* Build configuration list for PBXNativeTarget "QuickLayoutiOSTests" */;
 			buildPhases = (
-				9AA813CC8FDDAFEE27234DBB /* [CP] Check Pods Manifest.lock */,
+				566F6CFC1F28C75F4132BDD5 /* [CP] Check Pods Manifest.lock */,
 				14D209FF209F7426009436E4 /* Sources */,
 				14D20A00209F7426009436E4 /* Frameworks */,
 				14D20A01209F7426009436E4 /* Resources */,
 				14CA7B4220B7495800B08EB0 /* SwiftLint */,
-				6967434C0824AD43F7AB151A /* [CP] Embed Pods Frameworks */,
+				453E5F78306A0DA550C67C82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -587,13 +588,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "QuickLayoutiOSDemo" */;
 			buildPhases = (
-				AE85AE48D09B5A701CD1CFF5 /* [CP] Check Pods Manifest.lock */,
+				D2F3215FFE82E2A8456CFDEB /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				14F9FB8A20A70FC300F37D02 /* Embed Frameworks */,
 				14AD5BDB20B6DAA70041C237 /* SwiftLint */,
-				9B3CA934CEC456A89E4DDD14 /* [CP] Embed Pods Frameworks */,
+				372DCEC1EFB7A9666704F0A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -662,6 +663,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -743,7 +745,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14264A57094100C1F6D2F3B9 /* [CP] Check Pods Manifest.lock */ = {
+		00AFCCD0312BF92445EB3746 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -758,11 +760,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutMacOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutTvOSDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E87823735D90950B0B10DCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout-macOS/QuickLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		14AD5BDB20B6DAA70041C237 /* SwiftLint */ = {
@@ -777,7 +797,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ..\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\ncd Example";
+			shellScript = "cd ..\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\ncd Example\n";
 		};
 		14CA7B4220B7495800B08EB0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -793,29 +813,7 @@
 			shellPath = /bin/sh;
 			shellScript = "cd ..\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\ncd Example";
 		};
-		21384408EE37D12E88D3C415 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QuickLayout-tvOS/QuickLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		25DD66F95933BD7102574544 /* [CP] Check Pods Manifest.lock */ = {
+		32A0C6E74993A05C085371C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -837,55 +835,85 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6967434C0824AD43F7AB151A /* [CP] Embed Pods Frameworks */ = {
+		372DCEC1EFB7A9666704F0A5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout-iOS/QuickLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7EA6841CCA6664F2D32437B8 /* [CP] Embed Pods Frameworks */ = {
+		45326DB9C528F92372A54EA4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble-tvOS/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick-tvOS/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9AA813CC8FDDAFEE27234DBB /* [CP] Check Pods Manifest.lock */ = {
+		453E5F78306A0DA550C67C82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54E4E72E2E3B0CA942ACB370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566F6CFC1F28C75F4132BDD5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -907,53 +935,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B3CA934CEC456A89E4DDD14 /* [CP] Embed Pods Frameworks */ = {
+		6F9665DD218AF348C53110E0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QuickLayout-iOS/QuickLayout.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout-tvOS/QuickLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutiOSDemo/Pods-QuickLayoutiOSDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A6D2D6AB56EE5B17F6232C00 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE85AE48D09B5A701CD1CFF5 /* [CP] Check Pods Manifest.lock */ = {
+		93D6CF07200AFCC54655F7F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -968,14 +968,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutiOSDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutMacOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF1B1AAE0E03D133AAB4A4E2 /* [CP] Check Pods Manifest.lock */ = {
+		B18FC10503869BCFD5D6A8FF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -997,29 +997,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEE218198FB3690888704DAA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QuickLayout-macOS/QuickLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DBF5EC85966B7C0242C4E849 /* [CP] Check Pods Manifest.lock */ = {
+		D2F3215FFE82E2A8456CFDEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1034,7 +1012,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutTvOSDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QuickLayoutiOSDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1195,7 +1173,7 @@
 /* Begin XCBuildConfiguration section */
 		1484F18920A7486C00EA19A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1292EBF81511015D55E874E8 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */;
+			baseConfigurationReference = 9F2EE2068CC99358AE2AD876 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -1217,7 +1195,7 @@
 				PRODUCT_NAME = QuickLayoutDemo;
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1225,7 +1203,7 @@
 		};
 		1484F18A20A7486C00EA19A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0402FE9FCC8E2AD6238DDABE /* Pods-QuickLayoutTvOSDemo.release.xcconfig */;
+			baseConfigurationReference = 9A388037B943D052F269215E /* Pods-QuickLayoutTvOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -1245,7 +1223,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.QuickLayoutTvOSDemo;
 				PRODUCT_NAME = QuickLayoutDemo;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1253,7 +1231,7 @@
 		};
 		14A7003320A782F5000E2F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9DC3C872E1FC0C52B72EC93 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
+			baseConfigurationReference = 6D420E2827AFB3C40A8524BE /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1279,13 +1257,13 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		14A7003420A782F5000E2F3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D162836943976F38B1A7540 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */;
+			baseConfigurationReference = 6357A08E655F8097B5B38284 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1309,13 +1287,13 @@
 				PRODUCT_NAME = QuickLayoutDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		14CAF61220A8DF5C00E89417 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CC7CAA16107585CD8BC821B /* Pods-QuickLayoutTvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 1C5E11892465D8817108BFFE /* Pods-QuickLayoutTvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1339,7 +1317,7 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLayoutDemo.app/QuickLayoutDemo";
 			};
@@ -1347,7 +1325,7 @@
 		};
 		14CAF61320A8DF5C00E89417 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF5714AE77056AD231108C09 /* Pods-QuickLayoutTvOSTests.release.xcconfig */;
+			baseConfigurationReference = BE10E6DFB97FB92F6880E3C9 /* Pods-QuickLayoutTvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1369,7 +1347,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLayoutDemo.app/QuickLayoutDemo";
 			};
@@ -1377,7 +1355,7 @@
 		};
 		14CAF62320A8E7CD00E89417 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FFC58295CCDC36B45004A49 /* Pods-QuickLayoutMacOSTests.debug.xcconfig */;
+			baseConfigurationReference = 10DDE8252793A2582F04294F /* Pods-QuickLayoutMacOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1401,14 +1379,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLayoutDemo.app/Contents/MacOS/QuickLayoutDemo";
 			};
 			name = Debug;
 		};
 		14CAF62420A8E7CD00E89417 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3C7E92F91F444D37172F3EA /* Pods-QuickLayoutMacOSTests.release.xcconfig */;
+			baseConfigurationReference = 80A3935FD8CC5B8E2D6FB06F /* Pods-QuickLayoutMacOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1430,14 +1408,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huri.QuickLayoutMacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLayoutDemo.app/Contents/MacOS/QuickLayoutDemo";
 			};
 			name = Release;
 		};
 		14D20A0B209F7426009436E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDF5979958F7EEE7A9149B33 /* Pods-QuickLayoutiOSTests.debug.xcconfig */;
+			baseConfigurationReference = EB5A451C3736BC25FA5516E8 /* Pods-QuickLayoutiOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1459,7 +1437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huri.$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLayoutDemo.app/QuickLayoutDemo";
 			};
@@ -1467,7 +1445,7 @@
 		};
 		14D20A0C209F7426009436E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 187C4B408E57CB5F671776A4 /* Pods-QuickLayoutiOSTests.release.xcconfig */;
+			baseConfigurationReference = 8B3533E5B30635D8390765E7 /* Pods-QuickLayoutiOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1487,7 +1465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huri.$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLayoutDemo.app/QuickLayoutDemo";
 			};
@@ -1524,7 +1502,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1559,7 +1537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huri.QuickLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1616,7 +1594,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1662,14 +1640,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E1A8EAC66426A1AB24C5A9 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */;
+			baseConfigurationReference = 2646AF13E523E25E0580AF59 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1684,14 +1662,14 @@
 				PRODUCT_NAME = QuickLayoutDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D93302D2F372FF6279458A7E /* Pods-QuickLayoutiOSDemo.release.xcconfig */;
+			baseConfigurationReference = B9C869EFF41313E84EAE1B22 /* Pods-QuickLayoutiOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1706,7 +1684,7 @@
 				PRODUCT_NAME = QuickLayoutDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
