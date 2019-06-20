@@ -7,6 +7,7 @@
 [![Version](https://img.shields.io/cocoapods/v/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SwiftPM Compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Accio: Supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio) 
 [![codecov](https://codecov.io/gh/huri000/QuickLayout/branch/master/graph/badge.svg)](https://codecov.io/gh/huri000/QuickLayout)
 [![License](https://img.shields.io/cocoapods/l/QuickLayout.svg?style=flat-square)](http://cocoapods.org/pods/QuickLayout)
 
@@ -24,6 +25,7 @@ You can harness the power of QuickLayout to align your interface programmaticall
   * [CocoaPods](#cocoapods)
   * [Carthage](#carthage)
   * [Swift Package Manager](#swift-package-manager)
+  * [Accio](#accio)
   * [Manually](#manually)
 * [Usage](#usage)
   * [Constant edges](#constant-edges)
@@ -125,6 +127,25 @@ Using Xcode 11.0+ go to your project file and enter the project URL of this repo
 ```ogdl
 https://github.com/huri000/QuickLayout
 ```
+
+## Accio
+
+[Accio](https://github.com/JamitLabs/Accio) is a decentralized dependency manager driven by SwiftPM that works for iOS/tvOS/watchOS/macOS projects.
+
+You can install Accio with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew tap JamitLabs/Accio https://github.com/JamitLabs/Accio.git
+$ brew install accio
+```
+
+To integrate QuickLayout into your Xcode project using Accio, specify the following in your `Package.swift` manifest:
+
+```swift
+.package(url: "https://github.com/huri000/QuickLayout.git", .exact("3.0.0"))
+```
+
+After specifying `"QuickLayout"` as a dependency of the target in which you want to use it, run `accio install`.
 
 #### Manually
 
