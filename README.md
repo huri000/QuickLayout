@@ -121,7 +121,9 @@ github "huri000/QuickLayout" == 3.0.0
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
 Using Xcode 11.0+ go to your project file and enter the project URL of this repository:
-`https://github.com/huri000/QuickLayout`
+```ogdl
+https://github.com/huri000/QuickLayout
+```
 
 #### Manually
 
