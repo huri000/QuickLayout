@@ -22,6 +22,7 @@ You can harness the power of QuickLayout to align your interface programmaticall
 * [Installation](#installation)
   * [CocoaPods](#cocoapods)
   * [Carthage](#carthage)
+  * [Swift Package Manager](#swift-package-manager)
   * [Manually](#manually)
 * [Usage](#usage)
   * [Constant edges](#constant-edges)
@@ -115,6 +116,12 @@ To integrate QuickLayout into your Xcode project using Carthage, specify the fol
 ```ogdl
 github "huri000/QuickLayout" == 3.0.0
 ```
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
+
+Using Xcode 11.0+ go to your project file and enter the project URL of this repository:
+`https://github.com/huri000/QuickLayout`
 
 #### Manually
 
