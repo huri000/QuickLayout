@@ -1,6 +1,9 @@
 # Change Log
 Any notable changes to this project will be documented in this file.
 
+## 3.0.1
+Supports SwiftPM.
+
 ## 3.0.0
 
 Update to Swift 5. 
