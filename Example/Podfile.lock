@@ -9,7 +9,7 @@ DEPENDENCIES:
   - QuickLayout (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Nimble
     - Quick
 
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  QuickLayout: 0b910663e673bdc622b8643704c86341717bb217
+  QuickLayout: 465d40b09b749b7730099a10e34ae0f6eb58b861
 
 PODFILE CHECKSUM: a75bd3f69f45e4cf9ed6700dc2ff0b8a0a868024
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.3
