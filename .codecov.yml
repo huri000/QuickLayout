@@ -2,7 +2,7 @@ coverage:
   status:
     project:
       default:
-        target: 100%
+        target: 50%
         threshold: 2%
   ignore:
     - cmake-debug-build/*
