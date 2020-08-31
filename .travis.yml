@@ -16,7 +16,7 @@ before_install:
 
 script:
 - set -o pipefail
-- xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' -configuration Debug | xcpretty
+- xcodebuild clean build test -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11' -configuration Debug | xcpretty
 # - brew upgrade swiftlint
 - swiftlint
 - bash <(curl -s https://codecov.io/bash) -J 'QuickLayout'
