@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02BECED889EE284EE4AEFE0792708C68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */; };
 		0405577C1D1FEE237EFEBDCFE6B1307D /* QuickLayout-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E3E6D1368BCC1F04A53F8125607C47 /* QuickLayout-iOS-dummy.m */; };
 		05A7194DE49562CC40934ADC6E215236 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37372C92BCD53AF8A13DD01AF3953596 /* QuickSelectedTestSuiteBuilder.swift */; };
 		0675B93DCE3525633A8A9484B542D16D /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D9DF2D8EFB4A92761C3A3F0E6462790 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,7 +15,6 @@
 		08CD83E1C213BFA538EB73C54B24AA13 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43BB7BD9B05C5CF3254031C0712733 /* BeEmpty.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		08F2CFD1D698626D868816A6EA86C385 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC48D38DF3972980F2362D307FF198 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		09236C14925120A66AA20A54B3B23DCC /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8B3F4BCAD1941558AE32B1D03F6E1 /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		0A7F3A7EBC3BD4C94C8BDE72165F0084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */; };
 		0A9BD0231E3C7C5298187B93C76B8AE8 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A669AF0A9B4044C4E0E17912BB5C31 /* Closures.swift */; };
 		0AD0D2F17CF7B804BA470C6D579498B3 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DBD2CC286F5E318CDA8892BE56CA0 /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		0B3F07614D4235998515B4F9D06BF727 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782C63FE9698D904FE9563F19F57D16 /* ExampleHooks.swift */; };
@@ -24,6 +22,7 @@
 		0C02BB98E3657B00276BF40B26F61ADE /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FA50538127941F60229C1434F710C /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		0C03BCAEECE951A1C27836E12647BCEB /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6898C8E23B2315E3D7A0739093FA621 /* World+DSL.swift */; };
 		0C5B06968538308140FB619F5DFF725D /* QLCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DFBE70F2AB5923F38F0B031AFC657 /* QLCompatibility.swift */; };
+		0F9ED87953A9D9015710CD21DBAE3159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */; };
 		105E628A3F61A33A94069BFAC0591659 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0F346DC8A15E61D9926EF8F515FBB /* EndWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		123D9FEA18AA63402C92E7037CEC23BF /* QLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E99062E13424C56C65A71A053733B /* QLUtils.swift */; };
 		126D5CE24DB90B9DC1FCA795FC07D367 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9879AD3E1BBC985851152B7E3FBF3 /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -43,15 +42,15 @@
 		198BC4EA5564701374E6251478BF49FA /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA673660F83136B4849E900F295E1A93 /* HaveCount.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1B95966292908D7EA3851B513DA919D1 /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB4CFD369D8B4B62339A5F50B236FDB /* URL+FileName.swift */; };
 		1BF3F4E08DA2DE3D5CC41ACA9E4A3369 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA377FD1BB57665712A0FB5DA9899E2 /* CwlCatchException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		1C647E7E03740E556C0FC64ACEFB0131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */; };
 		1C9E0C3A996EDD7D6E40CCAA472C6F37 /* CwlCatchBadInstructionPosix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CDA4471A6D14B75CDEF55DFDF9572F /* CwlCatchBadInstructionPosix.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		1D7A2C7C3184C1B6797F22777C6D101C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */; };
+		1D8065D717E8B114E390DCF16E243570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */; };
 		1DB68E3CC1CE950AA7AC6DDACCD207AC /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D13741AFFDB8E7EC4450BE05E0B4CD /* DSL+Wait.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1DF1AF750C78DB18260B2268469F5DF3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1DF2E41F1F65E6EDB533E2718B580 /* Configuration.swift */; };
 		1E66D221F19E9F3641685537CA713B48 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9174834FFA41F7CE331CAF8E5BFE72F /* BeLessThanOrEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1EAF764ADDBF10C02976AA0784C92EC1 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69713EA313C8C9C287EA6456B6D37E8 /* ExampleMetadata.swift */; };
 		1F0886913E5EAD03D8220AC18F64959A /* NMBStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = 69AB55F090813A6ACAD4ADC9E57A8095 /* NMBStringify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F63B73FA01B9AC022F60090A535B1D9 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FFB62DDE1192C0D5A1299F0DB49EC2 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		207D2FFBB2159C363A0C9DC40D6B0C33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */; };
 		220A5AA0FB19596BADE4C38BD5AD92B1 /* Pods-QuickLayoutiOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D3C81B24E45CAC11A6263E577E696C /* Pods-QuickLayoutiOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		221337FB4A4497A27CADEEC3F69A7ACE /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E40D57407BC160F2ACF970BDD8FBA9 /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		224C84CBF525274757015DDDE6A643F2 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61C964895263E6F43594EA0CECAACE /* NSBundle+CurrentTestBundle.swift */; };
@@ -66,13 +65,13 @@
 		254BAB5576432B1B995C7394F5D889F0 /* QLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E99062E13424C56C65A71A053733B /* QLUtils.swift */; };
 		25DF2F3995C264D1C04C376A843E899A /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A64795AB80A4AD333F2B537F76BC4F /* QuickSpec.m */; };
 		25E700B614A1967483915ACD41714EE8 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628CE8D9B1EEDAF1DDA639D186AC53BD /* DSL.swift */; };
+		271F18C270A5C6E108CF4D518B649869 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */; };
 		273A44A96783CC604816431E143BCB8C /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36662E366593FCF97701AB4ECB88F18B /* ErrorUtility.swift */; };
 		296B5A49E130FF7629F8DC3A6D801D5F /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37372C92BCD53AF8A13DD01AF3953596 /* QuickSelectedTestSuiteBuilder.swift */; };
 		296B9860A7DCB3CDEAED33E2CCE731E7 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799949C589BCC65E8BE0AA34E6E2769D /* Contain.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		299D77BEC7435D536EF07CDC937A7842 /* Quick-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADF8AFF1C974B4EB1AF1C9A007C3997 /* Quick-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B141D1CC36E09414462C939BF807135 /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C746D3C7CBB766D7DA02174CAF58AE /* UIView+QuickLayout.swift */; };
 		2B73E48531595BB00C60C7413617AFE9 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DB88765B3F622CCCFFF29FCEF9D7BF /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B98176DA4CB920F379D52A8BA040413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */; };
 		2C2620AD57D54267EE25CBC5A675AD03 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD829DC0F74632AE24E51765FDEE4540 /* Stringers.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2C33403603F2ADA855CE23C7C926CFAF /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EBCF4435C5E8CDFABA5FC7EAA6D47D /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CE700A594A24125542DDD52B4A444D1 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004C059F4A508FB835244C00EDB2D85 /* UIView+QLContentWrap.swift */; };
@@ -84,14 +83,12 @@
 		2E5F719EAAA82D232B18D0C26E04FAFD /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F90CFB1DEE6BD70100716EDFCB931E /* ExampleGroup.swift */; };
 		30E45451E22E76BCEC0DF11AB5DF10A7 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259B623A14A2B349FCDE7F11B1F10C7 /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		319E176F1BE5B28EE00E6DF256EAAB8F /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29D4BE2E8591E1110939F1E3782BA6 /* BeGreaterThanOrEqualTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		3262ACFF0DF6BD0636EE898E75C65F18 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F153066FA211135664A1DEA35376F69 /* XCTest.framework */; };
 		332FDCACBA956096F847303F1147664A /* CwlBadInstructionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87312CE65301D5A487077BB8A82E85EF /* CwlBadInstructionException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		33B8C753E290BFD3A711BF75C9F3E7A0 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D60109E5D87347392504FD046FE613 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		33D27D28D9B26909DAE315FB29E295E8 /* NSString+C99ExtendedIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30591F6C706DD78FCBAD77ED44DAA97F /* NSString+C99ExtendedIdentifier.swift */; };
 		34886B9B2090E5BBC8C1460FA461B98E /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF4F9B5FE70A39DCDA12954F59F8B45 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35D56376F29E894DD1713E37F1B99E8C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA1DF2E41F1F65E6EDB533E2718B580 /* Configuration.swift */; };
 		35D728AA1A2334DDEE731FC8A0F04E40 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BD78CBDA8090EE2A766858EB74C44D /* Equal.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		372248D3A733C7423A72C8967D6FEE00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */; };
 		381ED582590C0E501958417CC0F0368F /* UIView+QuickLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C746D3C7CBB766D7DA02174CAF58AE /* UIView+QuickLayout.swift */; };
 		384BDF68F81DBB1DFEE7E50998440855 /* ElementsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BBBCCAA9EE2CEAD7D451047B9C39EF /* ElementsEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		397B56BA771233FC94A00FCC1A36F3B1 /* NSBundle+CurrentTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61C964895263E6F43594EA0CECAACE /* NSBundle+CurrentTestBundle.swift */; };
@@ -101,6 +98,7 @@
 		3DCFF854CDC4AB5D39AE581BDA94F889 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 270421F24497CC2467255D633CB05AF5 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DF4446DF0E3C5695077ED6630179F9C /* Quick-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B92E5FCDC92C0D038E7F8D431C68BF /* Quick-macOS-dummy.m */; };
 		3EC1D70EB5B534DD140ED9402201473B /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 628908F1CFC9FC418C2DC39EB90160F4 /* QuickConfiguration.m */; };
+		4010994DF9AB78D7B2BD8EDD21327767 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */; };
 		41F8D053E5BF87F8A0767B3FFBAB9D2A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A754281AC7DA4D93EDCCF45B9A725A1 /* Match.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		420AA30982E55E54216B1C6D653411DA /* ToSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F4EAC19250CF915839FD9129E32DB5 /* ToSucceed.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		43B0E5F023E442208E1DFF414AF3AE3A /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FDF2DB8E54C6368E6638B8A238CF /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -116,22 +114,23 @@
 		4A9D5A7ED167D066D6403B273EB7B2CF /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7FA50538127941F60229C1434F710C /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		4C6428D7EC48E21B09672A6394DF6679 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F250051084547F89190963A3D853353 /* QuickSpecBase.m */; };
 		4CE4FBB45C870D35E0FEE7B55F00F196 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7637C61B41B8022F29F16987E9CDD /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		4FC40636CCA49AA04A6A921AEE3A691E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */; };
 		507AD7269615C4AA145F9DC239327AEC /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D229894C54E236451EC05A4CDA89354 /* XCTestObservationCenter+Register.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5269106099C7D4B66315D0BCC8ED9FE0 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0146D04D56D1E5B0E2FFDED17F583 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		529037F705568D32F73B399B9F1387DC /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC173D3692C0BF74A367F7C9B6C4A16 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		52D3CD179714C748BAC38AD48A4FDA4F /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628CE8D9B1EEDAF1DDA639D186AC53BD /* DSL.swift */; };
 		534A73DFC50C8843C070F583F8A07737 /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 270421F24497CC2467255D633CB05AF5 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		548592AA32E9C15B472529C36E1AF16E /* CwlCatchBadInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A603F22C1793B89A0BDE0D86B6A3C /* CwlCatchBadInstruction.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		551B42839550D66396A97239992DEA54 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A34C2B0D8D83652C564D86747C4D6B2 /* XCTest.framework */; };
 		565959EE931A93CF7FCB5DF2F55DE77B /* Pods-QuickLayoutiOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E2746AD31FCAEDDD49FD62C1797908 /* Pods-QuickLayoutiOSTests-dummy.m */; };
 		5688E9C7A2A4970EC8AF3F4877DC0EED /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F753594DBFA9E65B35ED61AB2E6E7044 /* XCTestSuite+QuickTestSuiteBuilder.m */; };
+		56B6278AA799604A7D4FA5A710AEA7B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */; };
 		5796B97C9266E9E67AF8C24257C32861 /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBCA5B052F3DD5645FDE9265AB3A0A /* CwlCatchException.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		57E167A1BBC3D7EFDEC8346FDA9AC704 /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7FDF2DB8E54C6368E6638B8A238CF /* PostNotification.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		59D967A44629E83DC3A07336D92E106B /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A6D2AB1D18B4C0E23BF676303C35D /* Behavior.swift */; };
-		5AD3236819C804F8EE8B7CEB70959A2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */; };
 		5C1BDB27A9D485875CF477F483952B36 /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A64795AB80A4AD333F2B537F76BC4F /* QuickSpec.m */; };
 		5C2B8CAF69A7802938F31CE6B8154ABE /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BD5DBE069932918DFB2062BFBCFF0 /* NimbleXCTestHandler.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5C59C6F267C722E8990709399CE32453 /* QuickLayout-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DA15B7B59D39808A68A5DE26E1D3463 /* QuickLayout-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D637B44C79A8CF873F61E1D00092FA0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */; };
 		5D6E1CAE71EFE449D22EA12C6679179A /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8B3F4BCAD1941558AE32B1D03F6E1 /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5DAA445A2F16580B12680ED7765BFC76 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D9DF2D8EFB4A92761C3A3F0E6462790 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F4A07666EDCF46B1CDC190DDED2CF7B /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8683FA034BC07E394B7D1477C785A /* Functional.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -156,7 +155,6 @@
 		692E275EF24137DED2FCA7A783E89E8D /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170B7F5699954D8BDD2DFD4A23A2D15 /* Await.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		6A107F2CCB9706705B03CC05D9A508B1 /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D60109E5D87347392504FD046FE613 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		6A151DFF1A57D40454DAE7A39271EDD4 /* Nimble-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D05BCF7D1260558DB809030A21F140 /* Nimble-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AC5C14C369300C9162CA992A84A3CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */; };
 		6B050AC8741540054114526D030FCA9B /* Pods-QuickLayoutTvOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B74789DDD15BB34C3E0DB2A350B8D4 /* Pods-QuickLayoutTvOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BE4DB7862C558E6F4DFAE5F8913E907 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F250051084547F89190963A3D853353 /* QuickSpecBase.m */; };
 		6C34AE73799C67908F3DBF9C31823FDF /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0D4AAD52C594826ACACE35FE71014E /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -170,6 +168,7 @@
 		7328BE8BC15E8F134F1B4775C3E61769 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A669AF0A9B4044C4E0E17912BB5C31 /* Closures.swift */; };
 		739E3C463CCE669B1498A3EA0859273C /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BD78CBDA8090EE2A766858EB74C44D /* Equal.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		73E923D8F22FCA71CE10430D3A1AD1AE /* Quick-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1958897C3B67B13E1A64C521CE085121 /* Quick-iOS-dummy.m */; };
+		745F9D5CBDB23104B94079878C99B1B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC319E0CE9714DBD1862F4C135F6D33B /* XCTest.framework */; };
 		756ABDEFD86078835A74830E55903C72 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259B623A14A2B349FCDE7F11B1F10C7 /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		75DE565CBA8D0BD74F9B74A890242107 /* Nimble-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F660CB1D8D0B68651088A248EF3B2B /* Nimble-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75F85F293A4240029213CCDD30468CC0 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732D3E1BAE8055E91136C0B05CC5DE6 /* Filter.swift */; };
@@ -196,12 +195,12 @@
 		886CC44FF883CD49EB5929BC49EB23C0 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DB0B0B5927A54DC8545117B5E832C1 /* QCKDSL.m */; };
 		89FF3F6C04DFC58E0C62E5B51D24429E /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0D4AAD52C594826ACACE35FE71014E /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8B7E172B96873F3FF1F96CF3745C56F9 /* Pods-QuickLayoutTvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A49B7FA1533DC888EB2A531B29FA9583 /* Pods-QuickLayoutTvOSTests-dummy.m */; };
+		8C250B363E0B2FD9EF3319856321627D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */; };
 		8C48CB1C4C350251C93485EFF1438BDE /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBCA5B052F3DD5645FDE9265AB3A0A /* CwlCatchException.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8C8CBE733D8316AAA1CAD114A0177ED2 /* QuickLayout-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BE748BDEBC326CD1FC19A6FDA8BE91 /* QuickLayout-macOS-dummy.m */; };
 		8CBF1F13A36950E03ED5C16CB0D2BAD9 /* Pods-QuickLayoutTvOSDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7638EB681BA2A401678B16110F52DA /* Pods-QuickLayoutTvOSDemo-dummy.m */; };
 		8D75F7BE2EEF307E629B2F0BF8AF2769 /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36662E366593FCF97701AB4ECB88F18B /* ErrorUtility.swift */; };
 		8E9260712BBF293A06D16CC1E9EC5CE7 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FFB62DDE1192C0D5A1299F0DB49EC2 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8ECAE2289F68002FCB76694768701B66 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */; };
 		8EDEEB8F2D71293EC7FFA28BF2F73A8C /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279301AD36A56CEFFA63DC28EE2310B /* Example.swift */; };
 		8F38F601A468063A396B800D5E86BBB4 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512F75E0A25BB7BF2548D6AE3E4B4D7 /* Predicate.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8F401F47D4A4D79B57FBE193B7FE4F40 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC48D38DF3972980F2362D307FF198 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -220,6 +219,7 @@
 		9B09FC693ED655A876890F54C7EFCDE0 /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36662E366593FCF97701AB4ECB88F18B /* ErrorUtility.swift */; };
 		9C150F6BBDAD3A5A60ED8517B1D5C5AF /* XCTestObservationCenter+Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D229894C54E236451EC05A4CDA89354 /* XCTestObservationCenter+Register.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		9C600683DA17241980384E8AE9BBF38D /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11984316EBE0369D4D8AE948F0213FE4 /* BeLogical.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		9C842B304D83C6BE1E57AC0D326C7C54 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC11C3B57C5AB15A405409C1AC4CEC /* XCTest.framework */; };
 		9D5E1BAC6B08873A6EEFF0AB20E4201F /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA794458DF5F0DCAACD46A5BFE8285 /* Expectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		9F10E25704D348DED7F1336173B5E765 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA794458DF5F0DCAACD46A5BFE8285 /* Expectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		9FD6CA5A6FE369908A5515632E1397BB /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004C059F4A508FB835244C00EDB2D85 /* UIView+QLContentWrap.swift */; };
@@ -227,12 +227,11 @@
 		A2A7191C77429FD6A8E21094BF3E6191 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279301AD36A56CEFFA63DC28EE2310B /* Example.swift */; };
 		A2D58C425A80A80A1895EAFAE788CBB7 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A669AF0A9B4044C4E0E17912BB5C31 /* Closures.swift */; };
 		A32AEC6A780FA6548026D94C42DFC8D7 /* ThrowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3072ADDBBD07C3D35F78AC4E93F67 /* ThrowError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		A3720D1499FDD76D7570C7177A23684C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */; };
 		A3EF2EE21350C9587979AAF2F4D48FCB /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B782C63FE9698D904FE9563F19F57D16 /* ExampleHooks.swift */; };
 		A3FB324F90F3352BCB5C24D16A92E8DC /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DB0B0B5927A54DC8545117B5E832C1 /* QCKDSL.m */; };
 		A402360405D5427FD37BAAAD536A6CD7 /* QuickLayout-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B967CF1A7FF3595AD922ECF615CB572 /* QuickLayout-tvOS-dummy.m */; };
 		A44580CFC8D53052D45746BBA270543A /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D60109E5D87347392504FD046FE613 /* BeIdenticalTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		A4C945BFF3852D88CDD6FEDB2C270875 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */; };
+		A53786B858453F44033BD9F22B2961BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */; };
 		A5F3EDE8019D09AB1678953D2FBC3A1C /* QLCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DFBE70F2AB5923F38F0B031AFC657 /* QLCompatibility.swift */; };
 		A7F4239CB98B6D6F308F89918D9594E5 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170B7F5699954D8BDD2DFD4A23A2D15 /* Await.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A825DDC3BF3F08610F82283EF5633419 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C06B4C57F6C9B48CA1706A95D2BF0 /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -241,7 +240,6 @@
 		AB1359CB220F45118CC4B4A0EA86150C /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC095407B7FA0DF71E04DF84C083FA51 /* AdapterProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		AB8FE31FB17C368889E5E8D1438C903C /* NMBStringify.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F190812581887AC01A1528C8F35573 /* NMBStringify.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		ABA8839A7F06FFC8B1C46A2C0E1411C3 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C601095E153253BE8E7E6EC8B0588 /* NMBExceptionCapture.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		AD095E1ED66D4C0572EF2805DF72292B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */; };
 		ADD953896671F6209EA1561964F5A70E /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6898C8E23B2315E3D7A0739093FA621 /* World+DSL.swift */; };
 		ADDF507B6D3606B2A02A83C4EB6901F6 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D892210CD52B82D7AA7B3ABD7B2864 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE7136072D0B44F9277FBF6683E750C0 /* Pods-QuickLayoutMacOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9552CA1682A91327FAF593F78B2E6398 /* Pods-QuickLayoutMacOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -275,6 +273,7 @@
 		C080284D67C8AAFF0AF758B45EB24AA5 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29D4BE2E8591E1110939F1E3782BA6 /* BeGreaterThanOrEqualTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C0EBE1D7B3DC767E2624C6780B764D56 /* mach_excServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8455DB5C08DFD15E068D5B4E0F97306E /* mach_excServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1C1D45EFB78AE9523E6CC1B2D41D5E6 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628CE8D9B1EEDAF1DDA639D186AC53BD /* DSL.swift */; };
+		C373C0C76BB376C98D34100A3F4D63CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */; };
 		C3E255E7575A9A41EF6AFC50DEBB22B5 /* ExpectationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B0146D04D56D1E5B0E2FFDED17F583 /* ExpectationMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C4AA3CDBA9AD6C2A2FEE043C8677F6A6 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0CF802DBDDF0BAA96332018E97CBA /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C4BFECE46662E93B0DC1C050E0D7E11D /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E387F28035E8AF336DF3FE83D80884 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -285,10 +284,10 @@
 		C68D23FD90D4ECC25059B6877F1E3FAD /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0CF802DBDDF0BAA96332018E97CBA /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		C829552BBA82B481D56A65AC6B3C307D /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211348A62944C6E7D7DFBCE7904E76A8 /* Callsite.swift */; };
 		C9072BA178AA16BEBB106BA9D1A585A8 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EBCF4435C5E8CDFABA5FC7EAA6D47D /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C911FFD63941EF47D90B9274867E2817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */; };
 		C949F42BE6103B68A6D0F523552F8431 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DE6C35317E6DFA16D5BC2AE3AE26A3 /* World.swift */; };
 		CA4F8F6E6A8DB6766E8F56CDCD0B8E26 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA69A42BCC38CCB77903ED759885319 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CA7196DB614CE5061FE275E2A9E6BABE /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA69A42BCC38CCB77903ED759885319 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		CB25D012C165C2D9AD4039620B3E018D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */; };
 		CC79B82145C47D30C028AC029FB2D983 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3279301AD36A56CEFFA63DC28EE2310B /* Example.swift */; };
 		CCB45CE8BDE6A19F6613371F92AFF182 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC092BE462FF451385CFF6D0DA4B061 /* BeVoid.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CD21B08F8C879EE91B29F8B371D5A090 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA69A42BCC38CCB77903ED759885319 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -299,7 +298,7 @@
 		D282791FA43CF2F435A9B45C547427EA /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978DBD2CC286F5E318CDA8892BE56CA0 /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D349DABC8DD288388B03BFA87894B30C /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11984316EBE0369D4D8AE948F0213FE4 /* BeLogical.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D3868A1184281A8637D10BFFCACD428B /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37372C92BCD53AF8A13DD01AF3953596 /* QuickSelectedTestSuiteBuilder.swift */; };
-		D48171F637D0EE101C3C1179F2BCCCD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */; };
+		D4FA17C25FE6630048D99C1A52E4CD8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */; };
 		D5D330C4C240CA1F455DA74A54B39637 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D9DF2D8EFB4A92761C3A3F0E6462790 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5DBEE490EFBE3FF50A1B275A0C75AC2 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E387F28035E8AF336DF3FE83D80884 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D651307E036E6648D671711CBC31A766 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8206F016F0997CDBF34045D4066F4E /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -308,6 +307,7 @@
 		D72E6AE166DE3086A7C849B5AB458B64 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F50DB5D6A49CDCCC874AF750409F3C /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D731512D51064D6DEF9902CD85B7EB53 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E4D81E9A94A3BF9957B94E829865BD /* MatcherProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D7F77549E1A6C1984D06B11A201014A3 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F90CFB1DEE6BD70100716EDFCB931E /* ExampleGroup.swift */; };
+		D7FB46C2474EDB240ED54D81DB078481 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */; };
 		D9E071CD9EAC1623B5FF034790BF0371 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF4F9B5FE70A39DCDA12954F59F8B45 /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB72234ADACF3A724D6EB45ACE2B90A6 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603CF91832C2D8B74E1915A589E0B855 /* SatisfyAnyOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DBA3E766BF04F7F9CE39D69C52FFB1EB /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC48D38DF3972980F2362D307FF198 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -319,7 +319,6 @@
 		E08EFB0883C203ADE26358A008F1F72F /* SatisfyAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57533AE8D42BCAA816DABEAF5AA307 /* SatisfyAllOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E0AE02C82573204F4B20570607882766 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0F346DC8A15E61D9926EF8F515FBB /* EndWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E15E35B42D404AAD7D6EED09A814A774 /* Quick-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43AEAD569E949704939FD589D69360 /* Quick-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1C924D6DFC02C9AE874F66970094AC9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */; };
 		E27D113776288D59747A561A6E0E1A16 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F753594DBFA9E65B35ED61AB2E6E7044 /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		E2E0382A425465FA5F25A47428B3CDEA /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 270421F24497CC2467255D633CB05AF5 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E304CB3455DA6D2234E09F556253BDD8 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0F346DC8A15E61D9926EF8F515FBB /* EndWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -329,7 +328,6 @@
 		E990D31ECE97FA0C3A5F7EC827569262 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A57D36A4EE57C0F96C50E1DABB11C3 /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		E9B07E9BA9B2B4A5EC76341A5225E8D1 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6898C8E23B2315E3D7A0739093FA621 /* World+DSL.swift */; };
 		EBB63B8B79F01BA883554907E97E0DE6 /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 312805F24033FCDAB381366FE4FC9BCA /* CwlMachBadInstructionHandler.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		EBBFE86E60EF3042A16631DC4EE43974 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6D259E4FC813C7C278DB9DBC5972B6 /* XCTest.framework */; };
 		ECDB463C52F7E385B4F10CA66B90AEA1 /* Nimble-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CF5603483DD894D77E4C79F30E064E /* Nimble-macOS-dummy.m */; };
 		ED206B0972C1F932B918FCADFE8905C2 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0D4AAD52C594826ACACE35FE71014E /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		ED3AEDE259B2854AFD85E9B05CCFFA3A /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB4CFD369D8B4B62339A5F50B236FDB /* URL+FileName.swift */; };
@@ -339,6 +337,8 @@
 		EFDBB6094C7B7F1A27F69E7B5AB94FDB /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD683EDF2F936145E16D231B58F7EE /* DSL.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		EFDDBFEFC085EE204CE0B71EE8F3AC46 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEDDA8402AFE4CEF64F77E91D67E9E5 /* SuiteHooks.swift */; };
 		EFF90A25D732E383BF18F05530340DFA /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7637C61B41B8022F29F16987E9CDD /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		F00492B27738D7E2C7D8CB7634BAECBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A18C7D1773F02D1F01F161DA68999B /* XCTest.framework */; };
+		F01DED0F2C55ADCD2383E3774D4404B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */; };
 		F0698EF401F152A4AB303C642C6FF15E /* CwlPreconditionTesting_POSIX.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAAA05CAB893D851851ADC0F1998201 /* CwlPreconditionTesting_POSIX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F129DB0C1C90965DC3693D196B386E0D /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D13741AFFDB8E7EC4450BE05E0B4CD /* DSL+Wait.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		F13C9D2DF7C83D30529A98CA8F3C7635 /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799949C589BCC65E8BE0AA34E6E2769D /* Contain.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -474,18 +474,17 @@
 		12EE54E93F656AA70F22D4AD01AE7767 /* Pods_QuickLayoutTvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuickLayoutTvOSTests.framework; path = "Pods-QuickLayoutTvOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1426AF63B1E50CAE3FF1DB628706ECA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		14AC48D38DF3972980F2362D307FF198 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Sources/Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		15B4F88E1DF6D5536463EAE3E586B659 /* UIViewArray+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewArray+QuickLayout.swift"; path = "QuickLayout/UIViewArray+QuickLayout.swift"; sourceTree = "<group>"; };
 		16C746D3C7CBB766D7DA02174CAF58AE /* UIView+QuickLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+QuickLayout.swift"; path = "QuickLayout/UIView+QuickLayout.swift"; sourceTree = "<group>"; };
 		18C23BC1424152A784857FEA41DBBFE6 /* Pods-QuickLayoutTvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuickLayoutTvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1958897C3B67B13E1A64C521CE085121 /* Quick-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-iOS-dummy.m"; sourceTree = "<group>"; };
-		1A34C2B0D8D83652C564D86747C4D6B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1B967CF1A7FF3595AD922ECF615CB572 /* QuickLayout-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuickLayout-tvOS-dummy.m"; path = "../QuickLayout-tvOS/QuickLayout-tvOS-dummy.m"; sourceTree = "<group>"; };
 		1BAA513C8EA7A7C08833663D4F4982C3 /* Pods_QuickLayoutiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuickLayoutiOSTests.framework; path = "Pods-QuickLayoutiOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8C601095E153253BE8E7E6EC8B0588 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Sources/NimbleObjectiveC/NMBExceptionCapture.m; sourceTree = "<group>"; };
 		1F4A888BA6297C937D61BC3567D51A70 /* Pods_QuickLayoutMacOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuickLayoutMacOSDemo.framework; path = "Pods-QuickLayoutMacOSDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7637C61B41B8022F29F16987E9CDD /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Sources/Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
 		1FF4F9B5FE70A39DCDA12954F59F8B45 /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Sources/QuickObjectiveC/Quick.h; sourceTree = "<group>"; };
-		20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		211348A62944C6E7D7DFBCE7904E76A8 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Sources/Quick/Callsite.swift; sourceTree = "<group>"; };
 		221859E0B40F56E013189BF36E5CBE6F /* Quick-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Quick-tvOS.release.xcconfig"; path = "../Quick-tvOS/Quick-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		24A57D36A4EE57C0F96C50E1DABB11C3 /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Sources/Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
@@ -526,7 +525,6 @@
 		41BE748BDEBC326CD1FC19A6FDA8BE91 /* QuickLayout-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QuickLayout-macOS-dummy.m"; path = "../QuickLayout-macOS/QuickLayout-macOS-dummy.m"; sourceTree = "<group>"; };
 		43BF072799EECB47EDB9AECDF25BF711 /* Pods-QuickLayoutMacOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickLayoutMacOSTests-Info.plist"; sourceTree = "<group>"; };
 		43D9879AD3E1BBC985851152B7E3FBF3 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
-		4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46A7FDF2DB8E54C6368E6638B8A238CF /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
 		46E8683FA034BC07E394B7D1477C785A /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
 		47A2C383232A52461229E09F34849980 /* QuickLayout-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuickLayout-tvOS-prefix.pch"; path = "../QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch"; sourceTree = "<group>"; };
@@ -544,15 +542,14 @@
 		59BD78CBDA8090EE2A766858EB74C44D /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Sources/Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
 		59DB726E0415D578B10C238185ECBD2F /* QuickLayout-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "QuickLayout-tvOS.release.xcconfig"; path = "../QuickLayout-tvOS/QuickLayout-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		5ADF8AFF1C974B4EB1AF1C9A007C3997 /* Quick-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Quick-macOS-umbrella.h"; path = "../Quick-macOS/Quick-macOS-umbrella.h"; sourceTree = "<group>"; };
-		5B6D259E4FC813C7C278DB9DBC5972B6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5C02F95F074D4926DCAE725EA6ED9740 /* QuickLayout-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickLayout-iOS-umbrella.h"; sourceTree = "<group>"; };
 		5E59C98CA911D327A003DEF07E4C0EF4 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
-		5F153066FA211135664A1DEA35376F69 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5FCFD19893D9FD0B8ED477E19D171E4C /* Pods-QuickLayoutiOSDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickLayoutiOSDemo-Info.plist"; sourceTree = "<group>"; };
 		603CF91832C2D8B74E1915A589E0B855 /* SatisfyAnyOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAnyOf.swift; path = Sources/Nimble/Matchers/SatisfyAnyOf.swift; sourceTree = "<group>"; };
 		60CF5603483DD894D77E4C79F30E064E /* Nimble-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Nimble-macOS-dummy.m"; path = "../Nimble-macOS/Nimble-macOS-dummy.m"; sourceTree = "<group>"; };
 		60E3E6D1368BCC1F04A53F8125607C47 /* QuickLayout-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickLayout-iOS-dummy.m"; sourceTree = "<group>"; };
 		61164869313CEE368DC77B0391A84A50 /* Pods_QuickLayoutTvOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuickLayoutTvOSDemo.framework; path = "Pods-QuickLayoutTvOSDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A18C7D1773F02D1F01F161DA68999B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		628908F1CFC9FC418C2DC39EB90160F4 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
 		628CE8D9B1EEDAF1DDA639D186AC53BD /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Quick/DSL/DSL.swift; sourceTree = "<group>"; };
 		66B408746B0483B93632A302431CA258 /* Quick-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Quick-tvOS.modulemap"; path = "../Quick-tvOS/Quick-tvOS.modulemap"; sourceTree = "<group>"; };
@@ -563,6 +560,7 @@
 		6C75F1611A854B193C41ADEFE9EDFFF9 /* QuickLayout-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "QuickLayout-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6D1DC2C94F2AF147B6C1CD7FFE1C4810 /* Quick-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Quick-macOS-prefix.pch"; path = "../Quick-macOS/Quick-macOS-prefix.pch"; sourceTree = "<group>"; };
 		6DF87BF498346AF2F2BD6F731B7D6F74 /* Pods-QuickLayoutTvOSDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QuickLayoutTvOSDemo.modulemap"; sourceTree = "<group>"; };
+		6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6FAA00F50F9A0EEEEB5DAED8B32ED0CC /* QuickLayout-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QuickLayout-macOS-umbrella.h"; path = "../QuickLayout-macOS/QuickLayout-macOS-umbrella.h"; sourceTree = "<group>"; };
 		71CDA4471A6D14B75CDEF55DFDF9572F /* CwlCatchBadInstructionPosix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstructionPosix.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstructionPosix.swift; sourceTree = "<group>"; };
 		71F97AA9417B8721B03464F58B2F6F8C /* QuickLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickLayout.framework; path = "QuickLayout-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -593,7 +591,6 @@
 		8B024C4F864B4B1106D02C63CC2780E0 /* Pods-QuickLayoutiOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickLayoutiOSTests-Info.plist"; sourceTree = "<group>"; };
 		8BC9066C900300C0068C30463FF9B7B2 /* Pods-QuickLayoutiOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuickLayoutiOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8C93A4F5CDE8CC7AC419179A6DE5CFCD /* Pods-QuickLayoutMacOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuickLayoutMacOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		8CAAA05CAB893D851851ADC0F1998201 /* CwlPreconditionTesting_POSIX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlPreconditionTesting_POSIX.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/Posix/CwlPreconditionTesting_POSIX.h; sourceTree = "<group>"; };
 		8CDC3E844367A84326548AD07BD72318 /* QuickLayout-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "QuickLayout-tvOS.debug.xcconfig"; path = "../QuickLayout-tvOS/QuickLayout-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8D13173FCA56FC8C64B0E8A281F0B56B /* Quick-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Quick-tvOS-dummy.m"; path = "../Quick-tvOS/Quick-tvOS-dummy.m"; sourceTree = "<group>"; };
@@ -613,6 +610,7 @@
 		9BCE9C301B2FBC16A788D0598211A989 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
 		9D887D8161C0F5426C4D73B2FB9E2CEE /* Nimble-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Nimble-tvOS-dummy.m"; path = "../Nimble-tvOS/Nimble-tvOS-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9E8A6D2AB1D18B4C0E23BF676303C35D /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Quick/Behavior.swift; sourceTree = "<group>"; };
 		9F250051084547F89190963A3D853353 /* QuickSpecBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpecBase.m; path = Sources/QuickSpecBase/QuickSpecBase.m; sourceTree = "<group>"; };
 		9FEDDA8402AFE4CEF64F77E91D67E9E5 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Sources/Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
@@ -648,6 +646,7 @@
 		C188E5DEF027F2453FEA37C942BD74B9 /* Pods-QuickLayoutiOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuickLayoutiOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C1CA794458DF5F0DCAACD46A5BFE8285 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
 		C2982BF33E95388F76AD0F618373054E /* Nimble-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Nimble-macOS-prefix.pch"; path = "../Nimble-macOS/Nimble-macOS-prefix.pch"; sourceTree = "<group>"; };
+		C2CC11C3B57C5AB15A405409C1AC4CEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C2D13741AFFDB8E7EC4450BE05E0B4CD /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		C2FCA34B3522D944BAA3DC6A57D99686 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble.framework; path = "Nimble-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BBBCCAA9EE2CEAD7D451047B9C39EF /* ElementsEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementsEqual.swift; path = Sources/Nimble/Matchers/ElementsEqual.swift; sourceTree = "<group>"; };
@@ -682,6 +681,7 @@
 		E8511A95581CB0A6A4391D6704BCB733 /* Pods-QuickLayoutMacOSDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuickLayoutMacOSDemo-dummy.m"; sourceTree = "<group>"; };
 		E936A2D396B15D68D010EE4FE59C05CA /* Pods-QuickLayoutTvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuickLayoutTvOSTests-frameworks.sh"; sourceTree = "<group>"; };
 		EA673660F83136B4849E900F295E1A93 /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
+		EC319E0CE9714DBD1862F4C135F6D33B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EC83997B9704801E3DE7EE801A4C0CFD /* Pods-QuickLayoutiOSDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuickLayoutiOSDemo-umbrella.h"; sourceTree = "<group>"; };
 		EE6BFA8F449E6F9D2C87350BB35F028C /* CwlDarwinDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlDarwinDefinitions.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlDarwinDefinitions.swift; sourceTree = "<group>"; };
 		EE977203641E85C3EFB096A4C0EE6E13 /* Pods-QuickLayoutTvOSDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuickLayoutTvOSDemo-umbrella.h"; sourceTree = "<group>"; };
@@ -711,8 +711,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B98176DA4CB920F379D52A8BA040413 /* Foundation.framework in Frameworks */,
-				551B42839550D66396A97239992DEA54 /* XCTest.framework in Frameworks */,
+				1D8065D717E8B114E390DCF16E243570 /* Foundation.framework in Frameworks */,
+				745F9D5CBDB23104B94079878C99B1B4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +720,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD3236819C804F8EE8B7CEB70959A2A /* Foundation.framework in Frameworks */,
+				4010994DF9AB78D7B2BD8EDD21327767 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,7 +728,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02BECED889EE284EE4AEFE0792708C68 /* Foundation.framework in Frameworks */,
+				56B6278AA799604A7D4FA5A710AEA7B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,8 +736,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C945BFF3852D88CDD6FEDB2C270875 /* Cocoa.framework in Frameworks */,
-				EBBFE86E60EF3042A16631DC4EE43974 /* XCTest.framework in Frameworks */,
+				5D637B44C79A8CF873F61E1D00092FA0 /* Cocoa.framework in Frameworks */,
+				F00492B27738D7E2C7D8CB7634BAECBE /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,7 +745,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD095E1ED66D4C0572EF2805DF72292B /* Foundation.framework in Frameworks */,
+				4FC40636CCA49AA04A6A921AEE3A691E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +753,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3720D1499FDD76D7570C7177A23684C /* Cocoa.framework in Frameworks */,
+				A53786B858453F44033BD9F22B2961BA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,8 +761,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC5C14C369300C9162CA992A84A3CCD /* Foundation.framework in Frameworks */,
-				3262ACFF0DF6BD0636EE898E75C65F18 /* XCTest.framework in Frameworks */,
+				1C647E7E03740E556C0FC64ACEFB0131 /* Foundation.framework in Frameworks */,
+				9C842B304D83C6BE1E57AC0D326C7C54 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +770,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7A2C7C3184C1B6797F22777C6D101C /* Foundation.framework in Frameworks */,
+				8C250B363E0B2FD9EF3319856321627D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,7 +778,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C924D6DFC02C9AE874F66970094AC9 /* Cocoa.framework in Frameworks */,
+				D7FB46C2474EDB240ED54D81DB078481 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,7 +786,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372248D3A733C7423A72C8967D6FEE00 /* Foundation.framework in Frameworks */,
+				C911FFD63941EF47D90B9274867E2817 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,7 +794,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ECAE2289F68002FCB76694768701B66 /* Cocoa.framework in Frameworks */,
+				271F18C270A5C6E108CF4D518B649869 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,7 +802,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				207D2FFBB2159C363A0C9DC40D6B0C33 /* Foundation.framework in Frameworks */,
+				D4FA17C25FE6630048D99C1A52E4CD8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,7 +810,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7F3A7EBC3BD4C94C8BDE72165F0084 /* Foundation.framework in Frameworks */,
+				0F9ED87953A9D9015710CD21DBAE3159 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,7 +818,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB25D012C165C2D9AD4039620B3E018D /* Foundation.framework in Frameworks */,
+				C373C0C76BB376C98D34100A3F4D63CA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -826,22 +826,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48171F637D0EE101C3C1179F2BCCCD0 /* Cocoa.framework in Frameworks */,
+				F01DED0F2C55ADCD2383E3774D4404B1 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		076F783DD6651903C0A2A874BF68B54E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				20DD0A37B169C17D4300E105375452A5 /* Foundation.framework */,
-				5F153066FA211135664A1DEA35376F69 /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		0F7426BCDBA7D36BD137C1A61C1EE1EB /* Quick */ = {
 			isa = PBXGroup;
 			children = (
@@ -879,15 +870,6 @@
 			);
 			name = Quick;
 			path = Quick;
-			sourceTree = "<group>";
-		};
-		1C6F22D3483333FC431384136F3431AF /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				4462CE6B493FD47F77A8A78D9FF3D38D /* Foundation.framework */,
-				1A34C2B0D8D83652C564D86747C4D6B2 /* XCTest.framework */,
-			);
-			name = tvOS;
 			sourceTree = "<group>";
 		};
 		1F20891A33ED7E19ED459174ED564DF3 /* Pods-QuickLayoutiOSTests */ = {
@@ -936,12 +918,30 @@
 			path = "Example/Pods/Target Support Files/QuickLayout-iOS";
 			sourceTree = "<group>";
 		};
+		3060474A192C532EB00CB521FD8580AB /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F6B9B4C7CD061FD4B0D63ACDC58A6F0 /* Foundation.framework */,
+				EC319E0CE9714DBD1862F4C135F6D33B /* XCTest.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
 		38FDCEA96CA9E3AEFA2E3657883BFA09 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				98155A6A9B1D454B567C15CC4700A6B4 /* QuickLayout */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		456D96BC01953D5D7AE134F3B6D94941 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				14E1BAFE77255258E329103A3CF5E477 /* Cocoa.framework */,
+				61A18C7D1773F02D1F01F161DA68999B /* XCTest.framework */,
+			);
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 		4B52F6E71C48EFF93A44C7A920F29F78 /* Support Files */ = {
@@ -1175,9 +1175,9 @@
 		9BC4803E4CDA94E7E1E278EBA0AA1305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				076F783DD6651903C0A2A874BF68B54E /* iOS */,
-				E9EDB2EAD17FA52AE8FBEB8488C39B1F /* OS X */,
-				1C6F22D3483333FC431384136F3431AF /* tvOS */,
+				B9D98CE34F4EC544F0960018DF237DA7 /* iOS */,
+				456D96BC01953D5D7AE134F3B6D94941 /* OS X */,
+				3060474A192C532EB00CB521FD8580AB /* tvOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1197,6 +1197,15 @@
 			);
 			name = "Pods-QuickLayoutMacOSDemo";
 			path = "Target Support Files/Pods-QuickLayoutMacOSDemo";
+			sourceTree = "<group>";
+		};
+		B9D98CE34F4EC544F0960018DF237DA7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D979BC8E04699C003B81A5B60D155AC /* Foundation.framework */,
+				C2CC11C3B57C5AB15A405409C1AC4CEC /* XCTest.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		C88441AC6755D5957349A21BD33FD3D0 /* Support Files */ = {
@@ -1247,15 +1256,6 @@
 				0F7426BCDBA7D36BD137C1A61C1EE1EB /* Quick */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E9EDB2EAD17FA52AE8FBEB8488C39B1F /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				8CA96865A965D5D8980DA2F80748AF30 /* Cocoa.framework */,
-				5B6D259E4FC813C7C278DB9DBC5972B6 /* XCTest.framework */,
-			);
-			name = "OS X";
 			sourceTree = "<group>";
 		};
 		F60A72B37104E9B36C1406C1FCC365B5 /* Pod */ = {
@@ -2334,137 +2334,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		081166FAF0ED5CF2146EBEB44376B9BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDB61E045FB79D8FA41D7FA00EDF77C2 /* Quick-tvOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Quick-tvOS/Quick-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = Quick;
-				PRODUCT_NAME = Quick;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0C649B37804ABCF23AB859AF07AA94DD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD07932FCFFB726941E99DF5B020D529 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		12819CDB8175DD6D0EB45AA635B247B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7814AFF9B69D5C2528FF45F9EE9F6DBD /* Nimble-tvOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-tvOS/Nimble-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = Nimble;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1D2A23582D06031EB75007718BF8CF1D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CDC3E844367A84326548AD07BD72318 /* QuickLayout-tvOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2BC0AAF04B113BDE9004890DFB53A5FD /* Release */ = {
+		005F605B0157E96A0560CBF719F7FBD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93C6D4C2394996EE10E422765C09BB22 /* Nimble-iOS.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2492,12 +2365,45 @@
 			};
 			name = Release;
 		};
-		35691229C073E6A2A605A8F9B029D91B /* Release */ = {
+		11172211AD25B4492C8F512D88F9ABE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA32465871B76290B14BEDB8FA468F7 /* Pods-QuickLayoutMacOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		130458ABD9E5A57EC311457864E7EFEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85871F1CE8BD2861E3718F4AC473CCBD /* Pods-QuickLayoutiOSDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2526,82 +2432,42 @@
 			};
 			name = Release;
 		};
-		3FA274F5169ECF45701FCB3745411160 /* Debug */ = {
+		139DFBAC5D1D1C7007B3DD4947186287 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0E2187543A171027ED6AE4F535BEDE4 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
+			baseConfigurationReference = AD394BD7E315DF10FDCB2C20773AB92F /* Nimble-tvOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble-tvOS/Nimble-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		40F4BD56C2EA6AD31A0C4FE72C283C4A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B248FD93667074D8F30AA0751FDD3419 /* Nimble-macOS.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-macOS/Nimble-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS.modulemap";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS.modulemap";
 				PRODUCT_MODULE_NAME = Nimble;
 				PRODUCT_NAME = Nimble;
-				SDKROOT = macosx;
+				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		45966D929133D1A568D199623C88EB6E /* Debug */ = {
+		20B29782BE0494FFBCB636D1C4F7D5A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABF8D10008BC8075857622FD04D02B90 /* Pods-QuickLayoutTvOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2629,12 +2495,11 @@
 			};
 			name = Debug;
 		};
-		48CC708C42602965B8B064C4529330FD /* Release */ = {
+		25646E716F443F3A20675B51C0F05328 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 988D74E61DADCC44F6687668F7396F2B /* Pods-QuickLayoutTvOSTests.release.xcconfig */;
+			baseConfigurationReference = 3AC8003C48F96B42CC1A44D979C7B5E9 /* Pods-QuickLayoutTvOSDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2643,11 +2508,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2663,10 +2528,11 @@
 			};
 			name = Release;
 		};
-		5C569406B4444AA4F2E06C5A36718761 /* Debug */ = {
+		27143CCAD301DA4A0DB8C7CACBBD5B14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2689,6 +2555,643 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		2F5FC4CF34D21C68F68A0F32BCFEE121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DB726E0415D578B10C238185ECBD2F /* QuickLayout-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		30317F03805F6B0C09AC9BDFDDD8D0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221859E0B40F56E013189BF36E5CBE6F /* Quick-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Quick-tvOS/Quick-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Quick;
+				PRODUCT_NAME = Quick;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		30D0973E8A0177BDAE05B02C35D8D554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA9DB1EDE019F12301F27FB459487A6D /* Quick-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Quick-macOS/Quick-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick-macOS/Quick-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Quick-macOS/Quick-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Quick;
+				PRODUCT_NAME = Quick;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32571A87FC0BD711C3FE814A462EA5F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD07932FCFFB726941E99DF5B020D529 /* Pods-QuickLayoutTvOSDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A3F2409D8F7A60D4DD66C47EAC78A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E2187543A171027ED6AE4F535BEDE4 /* Pods-QuickLayoutMacOSDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4CB9E880514D52DF1CEE0473DC2F4F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F035AF24AEAFC433AE7E05798F969C12 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BFA10825E2EE66586E236BED042ADA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC8D84CEA7E101556DA1BBC453C8878 /* Quick-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Quick-iOS/Quick-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick-iOS/Quick-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick-iOS/Quick-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Quick;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D9DC825282811F5C5EE295F21CF3CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF80021D1CC67A2DAC06AB27E67A2910 /* Pods-QuickLayoutiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5EF9B2DF3E13C00E9C2E455304BD8443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74188EBCAFF89A259C6132AE8DDF78B /* Pods-QuickLayoutMacOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65A22707FB13CDD06E7122553F72667A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C8625734A2F1EA5FFA0D7E03D64241 /* Quick-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Quick-macOS/Quick-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick-macOS/Quick-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Quick-macOS/Quick-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Quick;
+				PRODUCT_NAME = Quick;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67A60BF83D1C453AA1626436B1B00209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB61E045FB79D8FA41D7FA00EDF77C2 /* Quick-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Quick-tvOS/Quick-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Quick;
+				PRODUCT_NAME = Quick;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72BF9ABC8240092641C8A34F9EE5CDB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B248FD93667074D8F30AA0751FDD3419 /* Nimble-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble-macOS/Nimble-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Nimble;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73C6EF22168F7FA8E1007614D8AC7E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B566A5FD352D1F2370263D8FCD5A278 /* QuickLayout-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77BC9E674129D0D1DFD7FA75811CFE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1050DF51F714CB5E6C59ED6EF5E11B /* Nimble-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble-iOS/Nimble-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble-iOS/Nimble-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Nimble-iOS/Nimble-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Nimble;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CEB69974509DD44F0CECB5027CF7A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C084EA9DDD494AAE7B66B537E8A8A9B /* Pods-QuickLayoutiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8BFC50C5D1FDBC645AA24C5E54D364EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DBEDE8DCD799618A1A918C144746F9 /* Nimble-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble-macOS/Nimble-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Nimble;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E5678AA9190E90714CE1D48A4A853D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6C759BBE711D8BDD5C70FEB3F5BE3E /* Quick-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Quick-iOS/Quick-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick-iOS/Quick-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick-iOS/Quick-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Quick;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9279EB769AE5FBDEEDAA0B07A9FC8A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266CD33715844BA76113654EFB1A556D /* QuickLayout-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EDCF0D114F476DADB53C13B78F4D85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2729,111 +3232,12 @@
 			};
 			name = Debug;
 		};
-		636A42C4D80FD72F02B9B8AF7A65A444 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F035AF24AEAFC433AE7E05798F969C12 /* Pods-QuickLayoutMacOSDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSDemo/Pods-QuickLayoutMacOSDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6DAB658D8E7A18870540B3B4BCF4DE41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD1050DF51F714CB5E6C59ED6EF5E11B /* Nimble-iOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-iOS/Nimble-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-iOS/Nimble-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble-iOS/Nimble-iOS.modulemap";
-				PRODUCT_MODULE_NAME = Nimble;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6EE2F6D3A544EA086407DA248F0CEA3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B566A5FD352D1F2370263D8FCD5A278 /* QuickLayout-iOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7E1B1B7F3C27B5B59931A44D0DD62A10 /* Release */ = {
+		9F07CE9529869E17B6751A1BD2FE6378 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53182F9A0D62D16F9EB7388DAADC746E /* QuickLayout-macOS.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2843,7 +3247,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2861,512 +3264,11 @@
 			};
 			name = Release;
 		};
-		8044586E78F1BCBEB1F19AEB4A8C2B89 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AC8D84CEA7E101556DA1BBC453C8878 /* Quick-iOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Quick-iOS/Quick-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick-iOS/Quick-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick-iOS/Quick-iOS.modulemap";
-				PRODUCT_MODULE_NAME = Quick;
-				PRODUCT_NAME = Quick;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8C499681D2F8171DB2207A3354523D4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59DB726E0415D578B10C238185ECBD2F /* QuickLayout-tvOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		90850A4FE274BB69FFAAEDADF1820FED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80C8625734A2F1EA5FFA0D7E03D64241 /* Quick-macOS.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Quick-macOS/Quick-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick-macOS/Quick-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Quick-macOS/Quick-macOS.modulemap";
-				PRODUCT_MODULE_NAME = Quick;
-				PRODUCT_NAME = Quick;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		921D830BA61AB1D9FB71E4482899E707 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F74188EBCAFF89A259C6132AE8DDF78B /* Pods-QuickLayoutMacOSTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9B8F987C0E8D5CDBFA45CC6383C21BE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221859E0B40F56E013189BF36E5CBE6F /* Quick-tvOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Quick-tvOS/Quick-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick-tvOS/Quick-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = Quick;
-				PRODUCT_NAME = Quick;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4A642939E561B5056F2A9E00CE5FED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 266CD33715844BA76113654EFB1A556D /* QuickLayout-macOS.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-macOS/QuickLayout-macOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ADDE3E8FE11D11A26B430EEEC0543457 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD394BD7E315DF10FDCB2C20773AB92F /* Nimble-tvOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-tvOS/Nimble-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = Nimble;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AE2CC8B4C13BC6FD52C2084951FE4FEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AC8003C48F96B42CC1A44D979C7B5E9 /* Pods-QuickLayoutTvOSDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutTvOSDemo/Pods-QuickLayoutTvOSDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B1A19B4C957904E28919EBE784173991 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A6C759BBE711D8BDD5C70FEB3F5BE3E /* Quick-iOS.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Quick-iOS/Quick-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick-iOS/Quick-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Quick-iOS/Quick-iOS.modulemap";
-				PRODUCT_MODULE_NAME = Quick;
-				PRODUCT_NAME = Quick;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BB79616D4C239BB34F118A34344B8BC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF80021D1CC67A2DAC06AB27E67A2910 /* Pods-QuickLayoutiOSTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C401C88047D85D60BCBD64B57486DB79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C084EA9DDD494AAE7B66B537E8A8A9B /* Pods-QuickLayoutiOSTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutiOSTests/Pods-QuickLayoutiOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C5ED4CAD5CAAE35D414465331A62A9FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA32465871B76290B14BEDB8FA468F7 /* Pods-QuickLayoutMacOSTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutMacOSTests/Pods-QuickLayoutMacOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C6658C963C2567BA276D2D0755879757 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA9DB1EDE019F12301F27FB459487A6D /* Quick-macOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Quick-macOS/Quick-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Quick-macOS/Quick-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Quick-macOS/Quick-macOS.modulemap";
-				PRODUCT_MODULE_NAME = Quick;
-				PRODUCT_NAME = Quick;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D4846377C075B01A4C05167BD9410039 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C75F1611A854B193C41ADEFE9EDFFF9 /* QuickLayout-iOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS.modulemap";
-				PRODUCT_MODULE_NAME = QuickLayout;
-				PRODUCT_NAME = QuickLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E1E007332B85CA5FC459DB41E5EC9E89 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7DBEDE8DCD799618A1A918C144746F9 /* Nimble-macOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Nimble-macOS/Nimble-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/Nimble-macOS/Nimble-macOS.modulemap";
-				PRODUCT_MODULE_NAME = Nimble;
-				PRODUCT_NAME = Nimble;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F86A8ABC13F511D229072DE4CB39FEFE /* Debug */ = {
+		A7C2320246CF38ABB37E826D0E72DDB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09C8B1C9016F417A1697E49D1D0BB384 /* Pods-QuickLayoutiOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3394,67 +3296,129 @@
 			};
 			name = Debug;
 		};
-		FC6D26D2C0C0747DC32728D956E1352E /* Release */ = {
+		B08634EEC9EB8E9625183C5864F099B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CDC3E844367A84326548AD07BD72318 /* QuickLayout-tvOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-tvOS/QuickLayout-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2DC320F64A34AC4B5A1195BA71ED90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988D74E61DADCC44F6687668F7396F2B /* Pods-QuickLayoutTvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuickLayoutTvOSTests/Pods-QuickLayoutTvOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		EAA5653F6352DEC9E4902D56E45A2289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C75F1611A854B193C41ADEFE9EDFFF9 /* QuickLayout-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuickLayout-iOS/QuickLayout-iOS.modulemap";
+				PRODUCT_MODULE_NAME = QuickLayout;
+				PRODUCT_NAME = QuickLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF8B3CCFE663E4B98A6DA37B717EB9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7814AFF9B69D5C2528FF45F9EE9F6DBD /* Nimble-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nimble-tvOS/Nimble-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Nimble-tvOS/Nimble-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Nimble;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -3462,8 +3426,8 @@
 		044A8FFE6B5E56FD712F939DCACA1BAF /* Build configuration list for PBXNativeTarget "QuickLayout-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4A642939E561B5056F2A9E00CE5FED5 /* Debug */,
-				7E1B1B7F3C27B5B59931A44D0DD62A10 /* Release */,
+				9279EB769AE5FBDEEDAA0B07A9FC8A6B /* Debug */,
+				9F07CE9529869E17B6751A1BD2FE6378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3471,8 +3435,8 @@
 		0D807A4CD4D619FCFCF9EDF2456D3E18 /* Build configuration list for PBXNativeTarget "Nimble-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12819CDB8175DD6D0EB45AA635B247B6 /* Debug */,
-				ADDE3E8FE11D11A26B430EEEC0543457 /* Release */,
+				FF8B3CCFE663E4B98A6DA37B717EB9CC /* Debug */,
+				139DFBAC5D1D1C7007B3DD4947186287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3480,8 +3444,8 @@
 		11F803CC43299562A7193F75A69D8D83 /* Build configuration list for PBXNativeTarget "Quick-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90850A4FE274BB69FFAAEDADF1820FED /* Debug */,
-				C6658C963C2567BA276D2D0755879757 /* Release */,
+				65A22707FB13CDD06E7122553F72667A /* Debug */,
+				30D0973E8A0177BDAE05B02C35D8D554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3489,8 +3453,8 @@
 		1C1AEB24229AC9DEF928516E2E8CD034 /* Build configuration list for PBXNativeTarget "Nimble-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40F4BD56C2EA6AD31A0C4FE72C283C4A /* Debug */,
-				E1E007332B85CA5FC459DB41E5EC9E89 /* Release */,
+				72BF9ABC8240092641C8A34F9EE5CDB6 /* Debug */,
+				8BFC50C5D1FDBC645AA24C5E54D364EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3498,8 +3462,8 @@
 		438C33E6238111F2DEFBDE8E80F68E55 /* Build configuration list for PBXNativeTarget "Nimble-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DAB658D8E7A18870540B3B4BCF4DE41 /* Debug */,
-				2BC0AAF04B113BDE9004890DFB53A5FD /* Release */,
+				77BC9E674129D0D1DFD7FA75811CFE7B /* Debug */,
+				005F605B0157E96A0560CBF719F7FBD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3507,8 +3471,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C569406B4444AA4F2E06C5A36718761 /* Debug */,
-				FC6D26D2C0C0747DC32728D956E1352E /* Release */,
+				9EDCF0D114F476DADB53C13B78F4D85F /* Debug */,
+				27143CCAD301DA4A0DB8C7CACBBD5B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3516,8 +3480,8 @@
 		4B2380C214A5F98F0C230B411E36AB01 /* Build configuration list for PBXNativeTarget "Pods-QuickLayoutTvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45966D929133D1A568D199623C88EB6E /* Debug */,
-				48CC708C42602965B8B064C4529330FD /* Release */,
+				20B29782BE0494FFBCB636D1C4F7D5A2 /* Debug */,
+				B2DC320F64A34AC4B5A1195BA71ED90F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3525,8 +3489,8 @@
 		5C4E62F797369EC544D52A81174B0494 /* Build configuration list for PBXNativeTarget "Pods-QuickLayoutiOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C401C88047D85D60BCBD64B57486DB79 /* Debug */,
-				BB79616D4C239BB34F118A34344B8BC3 /* Release */,
+				7CEB69974509DD44F0CECB5027CF7A5C /* Debug */,
+				5D9DC825282811F5C5EE295F21CF3CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3534,8 +3498,8 @@
 		6528D43EE02DED7F8913A4D7D672F922 /* Build configuration list for PBXNativeTarget "Pods-QuickLayoutMacOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5ED4CAD5CAAE35D414465331A62A9FE /* Debug */,
-				921D830BA61AB1D9FB71E4482899E707 /* Release */,
+				11172211AD25B4492C8F512D88F9ABE7 /* Debug */,
+				5EF9B2DF3E13C00E9C2E455304BD8443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3543,8 +3507,8 @@
 		795D9C1C654CCFA3F81B84195C30F2B0 /* Build configuration list for PBXNativeTarget "Quick-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1A19B4C957904E28919EBE784173991 /* Debug */,
-				8044586E78F1BCBEB1F19AEB4A8C2B89 /* Release */,
+				8E5678AA9190E90714CE1D48A4A853D5 /* Debug */,
+				5BFA10825E2EE66586E236BED042ADA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3552,8 +3516,8 @@
 		9573B69C37E2E508F7340CDA1F4FB134 /* Build configuration list for PBXNativeTarget "Quick-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				081166FAF0ED5CF2146EBEB44376B9BA /* Debug */,
-				9B8F987C0E8D5CDBFA45CC6383C21BE1 /* Release */,
+				67A60BF83D1C453AA1626436B1B00209 /* Debug */,
+				30317F03805F6B0C09AC9BDFDDD8D0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3561,8 +3525,8 @@
 		AF479275F88579872E3A0EBFF7A2A519 /* Build configuration list for PBXNativeTarget "Pods-QuickLayoutiOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F86A8ABC13F511D229072DE4CB39FEFE /* Debug */,
-				35691229C073E6A2A605A8F9B029D91B /* Release */,
+				A7C2320246CF38ABB37E826D0E72DDB3 /* Debug */,
+				130458ABD9E5A57EC311457864E7EFEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3570,8 +3534,8 @@
 		C8AC118275696DCEC77030C24204EFDB /* Build configuration list for PBXNativeTarget "Pods-QuickLayoutTvOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C649B37804ABCF23AB859AF07AA94DD /* Debug */,
-				AE2CC8B4C13BC6FD52C2084951FE4FEB /* Release */,
+				32571A87FC0BD711C3FE814A462EA5F7 /* Debug */,
+				25646E716F443F3A20675B51C0F05328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3579,8 +3543,8 @@
 		D79C406FD83DA83AFCBBF1430FF323BE /* Build configuration list for PBXNativeTarget "QuickLayout-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EE2F6D3A544EA086407DA248F0CEA3E /* Debug */,
-				D4846377C075B01A4C05167BD9410039 /* Release */,
+				73C6EF22168F7FA8E1007614D8AC7E45 /* Debug */,
+				EAA5653F6352DEC9E4902D56E45A2289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3588,8 +3552,8 @@
 		F21FFF090E2E1AAFEB09FADC5FFDC2C0 /* Build configuration list for PBXNativeTarget "Pods-QuickLayoutMacOSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FA274F5169ECF45701FCB3745411160 /* Debug */,
-				636A42C4D80FD72F02B9B8AF7A65A444 /* Release */,
+				3A3F2409D8F7A60D4DD66C47EAC78A5D /* Debug */,
+				4CB9E880514D52DF1CEE0473DC2F4F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3597,8 +3561,8 @@
 		F94A3895CC9B7826AA644370BAB9BE03 /* Build configuration list for PBXNativeTarget "QuickLayout-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D2A23582D06031EB75007718BF8CF1D /* Debug */,
-				8C499681D2F8171DB2207A3354523D4A /* Release */,
+				B08634EEC9EB8E9625183C5864F099B3 /* Debug */,
+				2F5FC4CF34D21C68F68A0F32BCFEE121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
