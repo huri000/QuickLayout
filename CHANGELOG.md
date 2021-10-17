@@ -1,6 +1,12 @@
 # Change Log
 Any notable changes to this project will be documented in this file.
 
+## 3.0.2
+
+### Fixes
+
+- Issue #38 - Cannot build using Carthage with Xcode 13 (Beta)
+
 ## 3.0.1
 Supports SwiftPM.
 
