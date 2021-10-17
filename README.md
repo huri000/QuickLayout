@@ -94,7 +94,7 @@ $ gem install cocoapods
 To integrate QuickLayout into your Xcode project using CocoaPods, specify the following in your `Podfile`:
 
 ```ruby
-pod 'QuickLayout', '3.0.0'
+pod 'QuickLayout', '3.0.2'
 ```
 
 Then, run the following command:
@@ -117,7 +117,7 @@ $ brew install carthage
 To integrate QuickLayout into your Xcode project using Carthage, specify the following in your `Cartfile`:
 
 ```ogdl
-github "huri000/QuickLayout" == 3.0.0
+github "huri000/QuickLayout" == 3.0.2
 ```
 ### Swift Package Manager
 
@@ -142,7 +142,7 @@ $ brew install accio
 To integrate QuickLayout into your Xcode project using Accio, specify the following in your `Package.swift` manifest:
 
 ```swift
-.package(url: "https://github.com/huri000/QuickLayout.git", .exact("3.0.0"))
+.package(url: "https://github.com/huri000/QuickLayout.git", .exact("3.0.2"))
 ```
 
 After specifying `"QuickLayout"` as a dependency of the target in which you want to use it, run `accio install`.
